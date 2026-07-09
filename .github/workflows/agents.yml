@@ -104,6 +104,9 @@ jobs:
           cd ../social-media-agent && python social_media_agent.py --once
           cd ../buzz-hunter-agent && python buzz_hunter.py --once
 
+      - name: 🤝 Agent Meeting (hourly cross-correlation)
+        run: python agent_meeting.py
+
       - name: 💾 Save reports
         run: |
           git config user.name "Mudholkars Bot"
