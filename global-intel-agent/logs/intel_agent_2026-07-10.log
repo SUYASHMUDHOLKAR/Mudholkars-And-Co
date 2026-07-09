@@ -88,3 +88,48 @@
 2026-07-10 01:11:47,038 | INFO     | Step 4/4: Mapping to Indian sectors and stocks...
 2026-07-10 01:11:47,049 | INFO     | JSON report saved: reports/intel_20260710_011147.json
 2026-07-10 01:11:47,050 | INFO     | Text report saved: reports/intel_20260710_011147.txt
+2026-07-10 03:14:37,478 | INFO     | Global Intelligence Agent — Mudholkars and Co
+2026-07-10 03:14:37,478 | INFO     | Monitoring 25 global event categories across 25 news sources
+2026-07-10 03:14:37,478 | INFO     | ============================================================
+2026-07-10 03:14:37,478 | INFO     | GLOBAL INTEL AGENT — Starting cycle
+2026-07-10 03:14:37,478 | INFO     | ============================================================
+2026-07-10 03:14:37,478 | INFO     | Step 1/4: Scraping news sources...
+2026-07-10 03:14:37,520 | WARNING  | [Reuters Top News] Fetch error: HTTPSConnectionPool(host='feeds.reuters.com', port=443): Max retries exceeded with url: /reuters/topNews (Caused by NameResolutionError("HTTPSConnection(host='feeds.reuters.com', port=443): Failed to resolve 'feeds.reuters.com' ([Errno 8] nodename nor servname provided, or not known)"))
+2026-07-10 03:14:37,520 | INFO     | [Reuters Top News              ] fetched 0 articles
+2026-07-10 03:14:37,522 | WARNING  | [Reuters Business] Fetch error: HTTPSConnectionPool(host='feeds.reuters.com', port=443): Max retries exceeded with url: /reuters/businessNews (Caused by NameResolutionError("HTTPSConnection(host='feeds.reuters.com', port=443): Failed to resolve 'feeds.reuters.com' ([Errno 8] nodename nor servname provided, or not known)"))
+2026-07-10 03:14:37,522 | INFO     | [Reuters Business              ] fetched 0 articles
+2026-07-10 03:14:37,796 | INFO     | [BBC World News                ] fetched 8 articles
+2026-07-10 03:14:38,596 | INFO     | [BBC Business                  ] fetched 5 articles
+2026-07-10 03:14:38,774 | INFO     | [Al Jazeera                    ] fetched 10 articles
+2026-07-10 03:14:38,984 | INFO     | [Economic Times Markets        ] fetched 10 articles
+2026-07-10 03:14:39,296 | INFO     | [Economic Times Economy        ] fetched 0 articles
+2026-07-10 03:14:39,473 | INFO     | [Mint Markets                  ] fetched 10 articles
+2026-07-10 03:14:39,576 | WARNING  | [Business Standard] Fetch error: 403 Client Error: Forbidden for url: https://www.business-standard.com/rss/home_page_top_stories.rss
+2026-07-10 03:14:39,576 | INFO     | [Business Standard             ] fetched 0 articles
+2026-07-10 03:14:39,711 | WARNING  | [Financial Express] Fetch error: 410 Client Error: Gone for url: https://www.financialexpress.com/feed/
+2026-07-10 03:14:39,711 | INFO     | [Financial Express             ] fetched 0 articles
+2026-07-10 03:14:40,710 | INFO     | [NDTV Business                 ] fetched 10 articles
+2026-07-10 03:14:41,152 | INFO     | [Investing.com News            ] fetched 10 articles
+2026-07-10 03:14:41,778 | INFO     | [MarketWatch                   ] fetched 10 articles
+2026-07-10 03:14:42,285 | INFO     | [CNBC World                    ] fetched 10 articles
+2026-07-10 03:14:43,528 | INFO     | [Bloomberg Markets             ] fetched 10 articles
+2026-07-10 03:14:44,079 | INFO     | [The Guardian Business         ] fetched 10 articles
+2026-07-10 03:14:44,362 | INFO     | [NYT Business                  ] fetched 9 articles
+2026-07-10 03:14:44,726 | INFO     | [FT World                      ] fetched 10 articles
+2026-07-10 03:14:44,983 | WARNING  | [Geopolitical Monitor] Fetch error: 403 Client Error: Forbidden for url: https://www.geopoliticalmonitor.com/feed/
+2026-07-10 03:14:44,984 | INFO     | [Geopolitical Monitor          ] fetched 0 articles
+2026-07-10 03:14:46,076 | INFO     | [Energy Monitor                ] fetched 3 articles
+2026-07-10 03:14:46,311 | INFO     | [Tech Crunch                   ] fetched 10 articles
+2026-07-10 03:14:46,457 | INFO     | [Ars Technica                  ] fetched 10 articles
+2026-07-10 03:14:46,663 | INFO     | [WHO News                      ] fetched 0 articles
+2026-07-10 03:14:47,038 | INFO     | [NASA News                     ] fetched 5 articles
+2026-07-10 03:14:47,186 | INFO     | [IMF News                      ] fetched 0 articles
+2026-07-10 03:14:47,186 | INFO     | Total articles fetched: 150
+2026-07-10 03:14:47,186 | INFO     |   Fetched 150 articles from 25 sources
+2026-07-10 03:14:47,186 | INFO     | Step 2/4: Classifying into 25 event buckets...
+2026-07-10 03:14:47,206 | INFO     | Classified 150 articles into 25 categories
+2026-07-10 03:14:47,206 | INFO     |   India-relevant: 26 | Critical: 18 | High: 16
+2026-07-10 03:14:47,206 | INFO     | Step 3/4: Scoring market impact...
+2026-07-10 03:14:47,209 | INFO     | Step 4/4: Mapping to Indian sectors and stocks...
+2026-07-10 03:14:47,222 | INFO     | JSON report saved: reports/intel_20260710_031447.json
+2026-07-10 03:14:47,222 | INFO     | Text report saved: reports/intel_20260710_031447.txt

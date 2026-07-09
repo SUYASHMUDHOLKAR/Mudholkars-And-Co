@@ -1,0 +1,106 @@
+=================================================================
+  GLOBAL INTELLIGENCE REPORT — Mudholkars and Co
+  10 Jul 2026 03:14 IST
+=================================================================
+
+ARTICLES ANALYSED  : 150
+India Relevant     : 26
+Severity Breakdown : CRITICAL=18  HIGH=16  MEDIUM=54
+
+⚠ CRITICAL ALERTS (18)
+----------------------------------------
+  [GEOPOLITICAL          ] Jones Soda CEO buys $99,999 in company shares and warrants
+    → Geopolitical tension → risk-off, FII outflows, defensive stocks
+    → Urgency: IMMEDIATE  |  Source: Investing.com News
+  [GEOPOLITICAL          ] US military denies involvement after explosions heard in Iran
+    → Geopolitical tension → risk-off, FII outflows, defensive stocks
+    → Urgency: IMMEDIATE  |  Source: Al Jazeera
+  [GEOPOLITICAL          ] The dot-com crash was a $5 trillion blip. Why the next financial crisi
+    → Geopolitical tension → risk-off, FII outflows, defensive stocks
+    → Urgency: IMMEDIATE  |  Source: MarketWatch
+  [GEOPOLITICAL          ] Palestinians mourn Gaza World Cup screenings organiser killed in Israe
+    → Geopolitical tension → risk-off, FII outflows, defensive stocks
+    → Urgency: IMMEDIATE  |  Source: BBC World News
+  [GEOPOLITICAL          ] Allstate accuses Broadcom of auditing it because it quit VMware, CA
+    → Geopolitical tension → risk-off, FII outflows, defensive stocks
+    → Urgency: IMMEDIATE  |  Source: Ars Technica
+
+TOP 10 EVENTS BY MARKET IMPACT
+----------------------------------------
+   1. [CRITICAL] [GOVERNMENT_POLICY     ] Score=100  ▼ 🇮🇳
+      MPs urge Labour to ditch £330m Palantir software contract with NHS
+   2. [CRITICAL] [GEOPOLITICAL          ] Score= 80  ▼
+      Jones Soda CEO buys $99,999 in company shares and warrants
+      Sectors: IT(BEAR), METALS(BEAR), DEFENCE(BULL)
+   3. [CRITICAL] [GEOPOLITICAL          ] Score= 80  ▼
+      US military denies involvement after explosions heard in Iran
+      Sectors: IT(BEAR), METALS(BEAR), DEFENCE(BULL)
+   4. [CRITICAL] [GEOPOLITICAL          ] Score= 80  ▼
+      The dot-com crash was a $5 trillion blip. Why the next financial crisis cou
+      Sectors: IT(BEAR), METALS(BEAR), DEFENCE(BULL)
+   5. [CRITICAL] [GEOPOLITICAL          ] Score= 80  ▼
+      Palestinians mourn Gaza World Cup screenings organiser killed in Israeli st
+      Sectors: IT(BEAR), METALS(BEAR), DEFENCE(BULL)
+   6. [CRITICAL] [GEOPOLITICAL          ] Score= 80  ▼
+      Allstate accuses Broadcom of auditing it because it quit VMware, CA
+      Sectors: IT(BEAR), METALS(BEAR), DEFENCE(BULL)
+   7. [CRITICAL] [GEOPOLITICAL          ] Score= 80  ▼
+      South African protesters intimidate migrants as aid group issues warning
+      Sectors: IT(BEAR), METALS(BEAR), DEFENCE(BULL)
+   8. [CRITICAL] [GEOPOLITICAL          ] Score= 80  ▼
+      Two more men plead guilty in US for deadly 2021 human-smuggling truck crash
+      Sectors: IT(BEAR), METALS(BEAR), DEFENCE(BULL)
+   9. [CRITICAL] [CENTRAL_BANK          ] Score= 80  ◆
+      Kevin Warsh names members of his Federal Reserve task forces, including Mar
+      Sectors: BANKING(MIXE), NBFC(BEAR), REALTY(BEAR)
+  10. [CRITICAL] [GEOPOLITICAL          ] Score= 80  ▼
+      Pakistan, Qatar Step In To Mediate As Fresh US-Iran Clashes Spark War Fears
+      Sectors: IT(BEAR), METALS(BEAR), DEFENCE(BULL)
+
+INDIAN SECTOR OUTLOOK (from global news)
+----------------------------------------
+  ▲ DEFENCE           : BULLISH        (score +30.2)  |  HAL, BEL, BHEL
+  ▲ TELECOM           : BULLISH        (score +13.0)  |  BHARTIARTL, IDEA
+  ▲ GREEN_ENERGY      : BULLISH        (score +11.2)  |  ADANIGREEN, TATAPOWER, GREENKO
+  ▲ OIL_GAS           : BULLISH        (score +9.0)  |  RELIANCE, ONGC, IOC
+  ▲ BANKING           : BULLISH        (score +6.2)  |  HDFCBANK, ICICIBANK, KOTAKBANK
+  ▲ PHARMA            : BULLISH        (score +4.6)  |  SUNPHARMA, DRREDDY, CIPLA
+  ▲ INFRA             : BULLISH        (score +2.6)  |  LT, KNR, NCC
+  ▲ POWER             : BULLISH        (score +2.4)  |  NTPC, POWERGRID, TATAPOWER
+  ▲ CEMENT            : BULLISH        (score +2.4)  |  ULTRACEMCO, SHREECEM, AMBUJACEMENT
+  ◆ AGRI              : NEUTRAL        (score +0.0)  |  UPL, PIIND, COROMANDEL
+  ▼ INSURANCE         : BEARISH        (score -1.6)  |  HDFCLIFE, SBILIFE, ICICIGI
+  ▼ FMCG              : BEARISH        (score -7.0)  |  HINDUNILVR, ITC, NESTLEIND
+  ▼ PAINTS            : BEARISH        (score -11.0)  |  ASIANPAINT, BERGER, INDIGO
+  ▼ NBFC              : BEARISH        (score -12.5)  |  BAJFINANCE, BAJAJFINSV, CHOLAFIN
+  ▼ AVIATION          : BEARISH        (score -16.7)  |  INDIGO, SPICEJET
+  ▼ REALTY            : BEARISH        (score -17.8)  |  DLF, GODREJPROP, OBEROIRLTY
+  ▼ AUTO              : BEARISH        (score -24.6)  |  MARUTI, TATAMOTORS, M&M
+  ▼ METALS            : BEARISH        (score -28.0)  |  TATASTEEL, JSWSTEEL, HINDALCO
+  ▼ IT                : BEARISH        (score -35.6)  |  TCS, INFY, WIPRO
+
+EVENTS BY CATEGORY
+----------------------------------------
+  TECHNOLOGY_DISRUPTION       : 45 articles
+  GEOPOLITICAL                : 29 articles
+  ENERGY_COMMODITIES          : 13 articles
+  CENTRAL_BANK                : 8 articles
+  GOVERNMENT_POLICY           : 8 articles
+  TRADE_ECONOMICS             : 7 articles
+  PANDEMIC_HEALTH             : 7 articles
+  AUTOMOBILE_EV               : 6 articles
+  CORPORATE_EVENTS            : 5 articles
+  BANKING_FINANCE             : 4 articles
+  LEGAL_REGULATION            : 3 articles
+  SUPPLY_CHAIN                : 3 articles
+  ELECTION_POLITICS           : 2 articles
+  CURRENCY_DEBT               : 2 articles
+  LABOR_SOCIAL                : 2 articles
+  DEFENSE_SPACE               : 1 articles
+  CLIMATE_ESG                 : 1 articles
+  AGRICULTURE_FOOD            : 1 articles
+  INFRASTRUCTURE              : 1 articles
+  REAL_ESTATE                 : 1 articles
+  NATURAL_DISASTER            : 1 articles
+
+=================================================================

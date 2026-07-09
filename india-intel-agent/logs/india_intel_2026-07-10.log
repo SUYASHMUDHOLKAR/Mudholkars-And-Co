@@ -96,3 +96,52 @@
 2026-07-10 01:27:02,229 | INFO     | Step 3/3: Scoring Nifty/sector impact...
 2026-07-10 01:27:02,236 | INFO     | JSON saved: reports/india_intel_20260710_012702.json
 2026-07-10 01:27:02,237 | INFO     | Text saved: reports/india_intel_20260710_012702.txt
+2026-07-10 03:14:47,391 | INFO     | India Intelligence Agent — Mudholkars and Co
+2026-07-10 03:14:47,391 | INFO     | 25 Indian news sources × 25 India-specific event categories
+2026-07-10 03:14:47,391 | INFO     | ============================================================
+2026-07-10 03:14:47,391 | INFO     | INDIA INTEL AGENT — Starting cycle
+2026-07-10 03:14:47,391 | INFO     | ============================================================
+2026-07-10 03:14:47,391 | INFO     | Step 1/3: Scraping Indian news sources...
+2026-07-10 03:14:47,480 | INFO     | [Economic Times Markets             ] 7 articles
+2026-07-10 03:14:47,576 | INFO     | [Economic Times Economy             ] 0 articles
+2026-07-10 03:14:47,737 | INFO     | [Economic Times Politics            ] 10 articles
+2026-07-10 03:14:47,842 | INFO     | [Economic Times Industry            ] 10 articles
+2026-07-10 03:14:47,914 | INFO     | [Mint Markets                       ] 4 articles
+2026-07-10 03:14:48,006 | INFO     | [Mint Economy                       ] 0 articles
+2026-07-10 03:14:48,126 | INFO     | [Mint Companies                     ] 6 articles
+2026-07-10 03:14:49,044 | INFO     | [NDTV Profit                        ] 10 articles
+2026-07-10 03:14:50,017 | INFO     | [NDTV India                         ] 10 articles
+2026-07-10 03:14:50,634 | WARNING  | [MoneyControl News] Error: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/latestnews.xml
+2026-07-10 03:14:50,635 | INFO     | [MoneyControl News                  ] 0 articles
+2026-07-10 03:14:50,755 | WARNING  | [MoneyControl Markets] Error: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/marketreports.xml
+2026-07-10 03:14:50,756 | INFO     | [MoneyControl Markets               ] 0 articles
+2026-07-10 03:14:50,849 | WARNING  | [Business Standard] Error: 403 Client Error: Forbidden for url: https://www.business-standard.com/rss/home_page_top_stories.rss
+2026-07-10 03:14:50,850 | INFO     | [Business Standard                  ] 0 articles
+2026-07-10 03:14:51,630 | WARNING  | [Zee Business] Error: 404 Client Error: Not Found for url: https://www.zeebiz.com:443/feed
+2026-07-10 03:14:51,631 | INFO     | [Zee Business                       ] 0 articles
+2026-07-10 03:14:51,846 | INFO     | [The Hindu Business                 ] 10 articles
+2026-07-10 03:14:52,073 | INFO     | [India Today Business               ] 10 articles
+2026-07-10 03:14:52,432 | WARNING  | [Press Trust of India] Error: HTTPSConnectionPool(host='feeds.ptinews.com', port=443): Max retries exceeded with url: /pti%2Fnews (Caused by NameResolutionError("HTTPSConnection(host='feeds.ptinews.com', port=443): Failed to resolve 'feeds.ptinews.com' ([Errno 8] nodename nor servname provided, or not known)"))
+2026-07-10 03:14:52,433 | INFO     | [Press Trust of India               ] 0 articles
+2026-07-10 03:14:52,858 | INFO     | [RBI Press Releases                 ] 0 articles
+2026-07-10 03:14:53,057 | WARNING  | [SEBI Orders] Error: 404 Client Error: Not Found for url: https://www.sebi.gov.in/sebi_data/rss/sebi_orders_rss.xml
+2026-07-10 03:14:53,057 | INFO     | [SEBI Orders                        ] 0 articles
+2026-07-10 03:14:53,161 | WARNING  | [BSE Corporate Filings] Error: 403 Client Error: Forbidden for url: https://www.bseindia.com/Msource/Board/BSECorpaction.xml
+2026-07-10 03:14:53,161 | INFO     | [BSE Corporate Filings              ] 0 articles
+2026-07-10 03:14:53,595 | WARNING  | [PIB India (Govt Press)] Error: 403 Client Error: Forbidden for url: https://www.pib.gov.in/RssMain.aspx?ModId=6&Lang=1&Regid=3
+2026-07-10 03:14:53,596 | INFO     | [PIB India (Govt Press)             ] 0 articles
+2026-07-10 03:14:53,599 | WARNING  | [Reuters India] Error: HTTPSConnectionPool(host='feeds.reuters.com', port=443): Max retries exceeded with url: /reuters/INbusinessNews (Caused by NameResolutionError("HTTPSConnection(host='feeds.reuters.com', port=443): Failed to resolve 'feeds.reuters.com' ([Errno 8] nodename nor servname provided, or not known)"))
+2026-07-10 03:14:53,599 | INFO     | [Reuters India                      ] 0 articles
+2026-07-10 03:14:54,760 | WARNING  | [Bloomberg India] Error: 404 Client Error: Not Found for url: https://feeds.bloomberg.com/india/news.rss
+2026-07-10 03:14:54,760 | INFO     | [Bloomberg India                    ] 0 articles
+2026-07-10 03:15:04,913 | WARNING  | [NSE India News] Timeout
+2026-07-10 03:15:04,915 | INFO     | [NSE India News                     ] 0 articles
+2026-07-10 03:15:05,331 | INFO     | [Investing.com India                ] 10 articles
+2026-07-10 03:15:05,423 | INFO     | [ET Auto                            ] 0 articles
+2026-07-10 03:15:05,423 | INFO     | Total India articles: 87
+2026-07-10 03:15:05,423 | INFO     | Step 2/3: Classifying into 25 India categories...
+2026-07-10 03:15:05,433 | INFO     | Classified 87 India articles
+2026-07-10 03:15:05,433 | INFO     |   Critical=21  High=11  Total=87
+2026-07-10 03:15:05,433 | INFO     | Step 3/3: Scoring Nifty/sector impact...
+2026-07-10 03:15:05,441 | INFO     | JSON saved: reports/india_intel_20260710_031505.json
+2026-07-10 03:15:05,442 | INFO     | Text saved: reports/india_intel_20260710_031505.txt
