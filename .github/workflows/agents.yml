@@ -1,64 +1,121 @@
-name: Mudholkars & Co — Agent Army
+name: 🏢 Mudholkars & Co — 24/7 Agent Army
 
 on:
   schedule:
-    # Market hours IST 9:30-15:30 = UTC 4:00-10:00
-    - cron: '0 4 * * 1-5'    # 9:30 AM IST - Morning scan
-    - cron: '30 6 * * 1-5'   # 12:00 PM IST - Mid-day
-    - cron: '45 9 * * 1-5'   # 3:15 PM IST - Before close
-    - cron: '30 10 * * 1-5'  # 4:00 PM IST - EOD full report
+    # ═══════════════════════════════════════════════════════════
+    # TRADING HOURS: Every 15 min (IST 9:15-15:30 = UTC 3:45-10:00)
+    # ═══════════════════════════════════════════════════════════
+    - cron: '*/15 3-10 * * 1-5'
+
+    # ═══════════════════════════════════════════════════════════
+    # RESEARCH HOURS: Every 60 min (off-market, 24/7)
+    # ═══════════════════════════════════════════════════════════
+    - cron: '0 */1 * * *'
 
   workflow_dispatch:
     inputs:
       mode:
         description: 'Run mode'
         required: true
-        default: 'full'
+        default: 'auto'
         type: choice
         options:
-          - full
-          - quick
-          - portfolio-status
+          - auto
+          - trading
+          - research
+          - full-scan
 
 env:
-  GROWW_API_KEY: ${{ secrets.GROWW_API_KEY }}
-  GROWW_API_SECRET: ${{ secrets.GROWW_API_SECRET }}
-  TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-  TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-  INITIAL_CAPITAL: '5000'
+  TZ: 'Asia/Kolkata'
 
 jobs:
-  run-agents:
+  # ═══════════════════════════════════════════════════════════
+  # MAIN JOB: Detects mode and runs appropriate agents
+  # ═══════════════════════════════════════════════════════════
+  run-company:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 12
 
     steps:
-      - name: Checkout code
+      - name: 📥 Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Python
+      - name: 🐍 Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
           cache: 'pip'
 
-      - name: Install dependencies
-        run: pip install -r requirements.txt
+      - name: 📦 Install dependencies
+        run: pip install -r requirements.txt -q
 
-      - name: Run Full Pipeline
-        run: python full_pipeline.py --quick
+      - name: 🔐 Create .env from secrets
+        run: |
+          echo "GROWW_ACCESS_TOKEN=${{ secrets.GROWW_ACCESS_TOKEN }}" >> .env
+          echo "GROWW_API_SECRET=${{ secrets.GROWW_API_SECRET }}" >> .env
+          echo "TELEGRAM_BOT_TOKEN=${{ secrets.TELEGRAM_BOT_TOKEN }}" >> .env
+          echo "TELEGRAM_CHAT_ID=${{ secrets.TELEGRAM_CHAT_ID }}" >> .env
+          echo "INITIAL_CAPITAL=5000" >> .env
 
-      - name: Upload reports
-        uses: actions/upload-artifact@v4
-        with:
-          name: reports-${{ github.run_number }}
-          path: reports/
-          retention-days: 30
+      - name: 🏢 Run Company (auto-detect mode)
+        run: |
+          HOUR=$(TZ=Asia/Kolkata date +%H)
+          DOW=$(date +%u)  # 1=Mon, 7=Sun
 
-      - name: Commit reports (if any)
+          echo "Current IST hour: $HOUR | Day: $DOW"
+
+          # Weekend = research only
+          if [ "$DOW" -ge 6 ]; then
+            echo "📚 WEEKEND MODE — Research only"
+            cd global-intel-agent && python intel_agent.py --once
+            cd ../india-intel-agent && python india_intel_agent.py --once
+            cd ../social-media-agent && python social_media_agent.py --once
+            cd ../india-social-agent && python india_social_agent.py --once
+            cd ../buzz-hunter-agent && python buzz_hunter.py --once
+            exit 0
+          fi
+
+          # Pre-market (8:30-9:15 IST)
+          if [ "$HOUR" -eq 8 ] || ([ "$HOUR" -eq 9 ] && [ "$(TZ=Asia/Kolkata date +%M)" -lt 15 ]); then
+            echo "🌅 PRE-MARKET — Morning scan"
+            python full_pipeline.py --quick
+            exit 0
+          fi
+
+          # Trading hours (9:15-15:30 IST = hours 9-15)
+          if [ "$HOUR" -ge 9 ] && [ "$HOUR" -le 15 ]; then
+            echo "📈 TRADING MODE — Full pipeline (aggressive)"
+            python full_pipeline.py --quick
+            exit 0
+          fi
+
+          # Post-market (15:30-16:30 IST)
+          if [ "$HOUR" -eq 15 ] || [ "$HOUR" -eq 16 ]; then
+            echo "📊 POST-MARKET — Full analysis + sector scan"
+            python full_pipeline.py
+            cd sector-intel-division && python run_sectors.py --all --period 1mo
+            exit 0
+          fi
+
+          # Off-hours = Research mode
+          echo "📚 RESEARCH MODE — Intel gathering"
+          cd global-intel-agent && python intel_agent.py --once
+          cd ../india-intel-agent && python india_intel_agent.py --once
+          cd ../social-media-agent && python social_media_agent.py --once
+          cd ../buzz-hunter-agent && python buzz_hunter.py --once
+
+      - name: 💾 Save reports
         run: |
           git config user.name "Mudholkars Bot"
           git config user.email "bot@mudholkars.co"
-          git add reports/daily_calls_latest.json reports/portfolio_state.json 2>/dev/null || true
-          git diff --staged --quiet || git commit -m "📊 Daily report $(date +%Y-%m-%d)"
+          git add reports/ 2>/dev/null || true
+          git diff --staged --quiet || git commit -m "📊 $(TZ=Asia/Kolkata date '+%d %b %H:%M IST') | $(cat reports/health.json 2>/dev/null | python3 -c 'import sys,json;d=json.load(sys.stdin);print(d.get(\"mode\",\"RUN\"))' 2>/dev/null || echo 'cycle')"
           git push || true
+
+      - name: 📤 Upload artifacts
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: reports-${{ github.run_number }}
+          path: reports/
+          retention-days: 7
