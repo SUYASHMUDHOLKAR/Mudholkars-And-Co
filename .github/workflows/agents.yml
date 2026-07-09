@@ -6,6 +6,8 @@ on:
     - cron: '*/15 3-10 * * 1-5'
     # Research hours: every 60 min (24/7)
     - cron: '0 */1 * * *'
+    # Weekly learning review: Sunday 8 PM IST (UTC 14:30)
+    - cron: '30 14 * * 0'
 
   workflow_dispatch:
     inputs:
