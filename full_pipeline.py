@@ -40,6 +40,7 @@ logger = logging.getLogger("FullPipeline")
 from consensus_engine import ConsensusEngine
 from risk_agent import RiskAgent
 from enhanced_strategy import EnhancedSignalGenerator, TrailingStopLoss
+from nse_data_feed import NSEDataFeed
 
 
 def run_full_pipeline(quick: bool = False):
@@ -155,8 +156,31 @@ def run_full_pipeline(quick: bool = False):
         logger.warning(f"  Buzz scan skipped: {e}")
         news_buzz = {}
 
-    # ── STEP 5: CONSENSUS ENGINE ──────────────────────────────────
-    logger.info("\n🧠 STEP 5: Consensus Engine — Combining all signals...")
+    # ── STEP 5: NSE DATA FEED (FII/DII + Options) ───────────────────
+    logger.info("\n🏦 STEP 5: NSE FII/DII + Options Chain...")
+    try:
+        nse = NSEDataFeed()
+        market_signal = nse.get_market_signal()
+        logger.info(f"  FII: {market_signal.get('fii_dii',{}).get('signal','?')} | PCR: {market_signal.get('nifty_pcr',0):.2f} | Combined: {market_signal.get('combined_signal','?')}")
+
+        fii_bias = market_signal.get("fii_dii", {}).get("market_impact", "NEUTRAL")
+        pcr_sig = market_signal.get("nifty_pcr_signal", "NEUTRAL")
+
+        for stock in all_stocks_signals:
+            if fii_bias in ("BULLISH", "MILD_BULLISH"):
+                all_stocks_signals[stock]["FII_DII"] = {"direction": "BULLISH", "score": 68, "signal": f"FII buying {market_signal.get('fii_dii',{}).get('fii_net_cr',0):+.0f}Cr", "weight": 1.3}
+            elif fii_bias in ("BEARISH", "MILD_BEARISH"):
+                all_stocks_signals[stock]["FII_DII"] = {"direction": "BEARISH", "score": 32, "signal": f"FII selling", "weight": 1.3}
+
+            if pcr_sig in ("STRONG_BULLISH", "BULLISH"):
+                all_stocks_signals[stock]["Options"] = {"direction": "BULLISH", "score": 65, "signal": f"PCR={market_signal.get('nifty_pcr',0):.2f} bullish", "weight": 1.2}
+            elif pcr_sig == "BEARISH":
+                all_stocks_signals[stock]["Options"] = {"direction": "BEARISH", "score": 35, "signal": "PCR bearish", "weight": 1.2}
+    except Exception as e:
+        logger.warning(f"  NSE feed skipped: {e}")
+
+    # ── STEP 6: CONSENSUS ENGINE ──────────────────────────────────
+    logger.info("\n🧠 STEP 6: Consensus Engine — Combining all signals...")
     ce = ConsensusEngine()
 
     all_stocks_signals = {}
