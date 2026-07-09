@@ -39,6 +39,7 @@ logger = logging.getLogger("FullPipeline")
 
 from consensus_engine import ConsensusEngine
 from risk_agent import RiskAgent
+from enhanced_strategy import EnhancedSignalGenerator, TrailingStopLoss
 
 
 def run_full_pipeline(quick: bool = False):
