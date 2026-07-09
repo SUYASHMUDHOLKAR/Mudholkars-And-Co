@@ -1,0 +1,7 @@
+# India Social Media Agent — Dependencies (all FREE, no API keys)
+# pip3 install -r requirements.txt
+
+requests==2.32.3
+vaderSentiment==3.3.2
+pytrends==4.9.2
+tzdata==2026.2

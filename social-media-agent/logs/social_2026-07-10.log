@@ -1,0 +1,41 @@
+2026-07-10 01:28:23,249 | INFO     | Global Social Media Sentiment Agent — Mudholkars and Co
+2026-07-10 01:28:23,249 | INFO     | ============================================================
+2026-07-10 01:28:23,249 | INFO     | GLOBAL SOCIAL MEDIA AGENT — Starting
+2026-07-10 01:28:23,249 | INFO     | ============================================================
+2026-07-10 01:28:23,256 | INFO     | Fetching global social media data...
+2026-07-10 01:28:24,050 | WARNING  | Reddit r/wallstreetbets error: 403 Client Error: Blocked for url: https://www.reddit.com/r/wallstreetbets/hot.json?limit=25
+2026-07-10 01:28:24,762 | WARNING  | Reddit r/stocks error: 403 Client Error: Blocked for url: https://www.reddit.com/r/stocks/hot.json?limit=25
+2026-07-10 01:28:25,485 | WARNING  | Reddit r/investing error: 403 Client Error: Blocked for url: https://www.reddit.com/r/investing/hot.json?limit=25
+2026-07-10 01:28:25,942 | WARNING  | Reddit r/options error: 403 Client Error: Blocked for url: https://www.reddit.com/r/options/hot.json?limit=25
+2026-07-10 01:28:26,317 | WARNING  | Reddit r/StockMarket error: 403 Client Error: Blocked for url: https://www.reddit.com/r/StockMarket/hot.json?limit=25
+2026-07-10 01:28:27,094 | WARNING  | Reddit r/SecurityAnalysis error: 403 Client Error: Blocked for url: https://www.reddit.com/r/SecurityAnalysis/hot.json?limit=25
+2026-07-10 01:28:27,910 | WARNING  | Reddit r/Daytrading error: 403 Client Error: Blocked for url: https://www.reddit.com/r/Daytrading/hot.json?limit=25
+2026-07-10 01:28:28,249 | WARNING  | Reddit r/dividends error: 403 Client Error: Blocked for url: https://www.reddit.com/r/dividends/hot.json?limit=25
+2026-07-10 01:28:28,346 | WARNING  | StockTwits trending error: 403 Client Error: Forbidden for url: https://api.stocktwits.com/api/2/trending/symbols.json
+2026-07-10 01:28:32,520 | INFO     | Google Trends: 6 keywords fetched
+2026-07-10 01:28:32,865 | WARNING  | Google Trends realtime error: The request failed: Google returned a response with code 404
+2026-07-10 01:28:32,866 | INFO     | Total posts: 0 | Trends: 6 keywords
+2026-07-10 01:28:32,866 | INFO     | Fetched 0 posts total
+2026-07-10 01:28:32,866 | WARNING  | No posts fetched
+2026-07-10 01:30:46,084 | INFO     | Global Social Media Sentiment Agent — Mudholkars and Co
+2026-07-10 01:30:46,084 | INFO     | ============================================================
+2026-07-10 01:30:46,084 | INFO     | GLOBAL SOCIAL MEDIA AGENT — Starting
+2026-07-10 01:30:46,084 | INFO     | ============================================================
+2026-07-10 01:30:46,095 | INFO     | Fetching global financial media...
+2026-07-10 01:30:46,231 | INFO     | [Investing.com            ] 10 posts
+2026-07-10 01:30:46,814 | INFO     | [SeekingAlpha             ] 7 posts
+2026-07-10 01:30:47,789 | INFO     | [MarketWatch Top          ] 10 posts
+2026-07-10 01:30:48,818 | INFO     | [MarketWatch Markets      ] 15 posts
+2026-07-10 01:30:49,747 | INFO     | [CNBC Markets             ] 15 posts
+2026-07-10 01:30:50,766 | INFO     | [CNBC World               ] 15 posts
+2026-07-10 01:30:52,369 | INFO     | [Bloomberg Markets        ] 15 posts
+2026-07-10 01:30:53,041 | INFO     | [FT Markets               ] 15 posts
+2026-07-10 01:30:53,598 | INFO     | [NYT Business             ] 15 posts
+2026-07-10 01:30:54,409 | INFO     | [Guardian Business        ] 15 posts
+2026-07-10 01:30:54,904 | INFO     | [TechCrunch               ] 15 posts
+2026-07-10 01:30:55,310 | INFO     | [Ars Technica             ] 15 posts
+2026-07-10 01:30:56,697 | WARNING  | Google Trends error: The request failed: Google returned a response with code 429
+2026-07-10 01:30:56,698 | INFO     | Total: 162 posts, 0 trend keywords
+2026-07-10 01:30:56,698 | INFO     | Fetched 162 posts total
+2026-07-10 01:30:56,732 | INFO     | Overall sentiment: NEUTRAL (compound=0.026)
+2026-07-10 01:30:56,735 | INFO     | Trending tickers: META, GOOGL, AMZN, QQQ, BTC

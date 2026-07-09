@@ -1,0 +1,8 @@
+.git
+__pycache__
+*.pyc
+*.log
+.DS_Store
+logs/
+reports/
+.github/

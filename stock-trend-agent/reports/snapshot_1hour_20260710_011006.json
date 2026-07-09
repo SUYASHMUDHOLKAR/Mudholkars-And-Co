@@ -1,0 +1,1482 @@
+{
+  "cycle": "1hour",
+  "timestamp": "2026-07-09T19:40:06.192901Z",
+  "indicators": {
+    "AAPL": {
+      "symbol": "AAPL",
+      "rsi": {
+        "symbol": "AAPL",
+        "date": "2026-07-09",
+        "rsi": 63.62,
+        "signal": "NEUTRAL",
+        "period": 14
+      },
+      "macd": {
+        "symbol": "AAPL",
+        "date": "2026-07-09",
+        "macd": 3.9291,
+        "signal": 1.2229,
+        "histogram": 2.7062,
+        "trend": "BULLISH",
+        "momentum": "INCREASING",
+        "crossover": "NONE"
+      },
+      "ema_20": {
+        "symbol": "AAPL",
+        "date": "2026-07-09",
+        "ema": 300.6368,
+        "period": 20
+      },
+      "bollinger": {
+        "symbol": "AAPL",
+        "date": "2026-07-09",
+        "upper_band": 318.0332,
+        "middle_band": 296.894,
+        "lower_band": 275.7548,
+        "band_width_pct": 14.24,
+        "period": 20
+      },
+      "adx": {
+        "symbol": "AAPL",
+        "date": "2026-07-09",
+        "adx": 22.89,
+        "trend_strength": "MODERATE",
+        "period": 14
+      },
+      "stochastic": {
+        "symbol": "AAPL",
+        "date": "2026-07-09",
+        "stoch_k": 99.83,
+        "stoch_d": 94.42,
+        "signal": "OVERBOUGHT"
+      },
+      "atr": {
+        "symbol": "AAPL",
+        "date": "2026-07-09",
+        "atr": 8.2994,
+        "period": 14
+      }
+    },
+    "MSFT": {
+      "symbol": "MSFT",
+      "rsi": {
+        "symbol": "MSFT",
+        "date": "2026-07-09",
+        "rsi": 46.44,
+        "signal": "NEUTRAL",
+        "period": 14
+      },
+      "macd": {
+        "symbol": "MSFT",
+        "date": "2026-07-09",
+        "macd": -6.2124,
+        "signal": -8.5826,
+        "histogram": 2.3702,
+        "trend": "BULLISH",
+        "momentum": "INCREASING",
+        "crossover": "NONE"
+      },
+      "ema_20": {
+        "symbol": "MSFT",
+        "date": "2026-07-09",
+        "ema": 386.1376,
+        "period": 20
+      },
+      "bollinger": {
+        "symbol": "MSFT",
+        "date": "2026-07-09",
+        "upper_band": 404.4393,
+        "middle_band": 381.0625,
+        "lower_band": 357.6857,
+        "band_width_pct": 12.27,
+        "period": 20
+      },
+      "adx": {
+        "symbol": "MSFT",
+        "date": "2026-07-09",
+        "adx": 18.22,
+        "trend_strength": "WEAK",
+        "period": 14
+      },
+      "stochastic": {
+        "symbol": "MSFT",
+        "date": "2026-07-09",
+        "stoch_k": 73.09,
+        "stoch_d": 76.64,
+        "signal": "NEUTRAL"
+      },
+      "atr": {
+        "symbol": "MSFT",
+        "date": "2026-07-09",
+        "atr": 12.0099,
+        "period": 14
+      }
+    },
+    "NVDA": {
+      "symbol": "NVDA",
+      "rsi": {
+        "symbol": "NVDA",
+        "date": "2026-07-09",
+        "rsi": 50.85,
+        "signal": "NEUTRAL",
+        "period": 14
+      },
+      "macd": {
+        "symbol": "NVDA",
+        "date": "2026-07-09",
+        "macd": -2.7076,
+        "signal": -3.2696,
+        "histogram": 0.562,
+        "trend": "BULLISH",
+        "momentum": "INCREASING",
+        "crossover": "NONE"
+      },
+      "ema_20": {
+        "symbol": "NVDA",
+        "date": "2026-07-09",
+        "ema": 202.0257,
+        "period": 20
+      },
+      "bollinger": {
+        "symbol": "NVDA",
+        "date": "2026-07-09",
+        "upper_band": 212.6414,
+        "middle_band": 201.485,
+        "lower_band": 190.3286,
+        "band_width_pct": 11.07,
+        "period": 20
+      },
+      "adx": {
+        "symbol": "NVDA",
+        "date": "2026-07-09",
+        "adx": 17.83,
+        "trend_strength": "WEAK",
+        "period": 14
+      },
+      "stochastic": {
+        "symbol": "NVDA",
+        "date": "2026-07-09",
+        "stoch_k": 58.66,
+        "stoch_d": 49.11,
+        "signal": "NEUTRAL"
+      },
+      "atr": {
+        "symbol": "NVDA",
+        "date": "2026-07-09",
+        "atr": 7.019,
+        "period": 14
+      }
+    },
+    "GOOGL": {
+      "symbol": "GOOGL",
+      "rsi": {
+        "symbol": "GOOGL",
+        "date": "2026-07-09",
+        "rsi": 47.71,
+        "signal": "NEUTRAL",
+        "period": 14
+      },
+      "macd": {
+        "symbol": "GOOGL",
+        "date": "2026-07-09",
+        "macd": -1.7795,
+        "signal": -3.206,
+        "histogram": 1.4265,
+        "trend": "BULLISH",
+        "momentum": "INCREASING",
+        "crossover": "NONE"
+      },
+      "ema_20": {
+        "symbol": "GOOGL",
+        "date": "2026-07-09",
+        "ema": 360.3442,
+        "period": 20
+      },
+      "bollinger": {
+        "symbol": "GOOGL",
+        "date": "2026-07-09",
+        "upper_band": 376.2611,
+        "middle_band": 357.8075,
+        "lower_band": 339.3539,
+        "band_width_pct": 10.31,
+        "period": 20
+      },
+      "adx": {
+        "symbol": "GOOGL",
+        "date": "2026-07-09",
+        "adx": 14.62,
+        "trend_strength": "WEAK",
+        "period": 14
+      },
+      "stochastic": {
+        "symbol": "GOOGL",
+        "date": "2026-07-09",
+        "stoch_k": 65.06,
+        "stoch_d": 73.1,
+        "signal": "NEUTRAL"
+      },
+      "atr": {
+        "symbol": "GOOGL",
+        "date": "2026-07-09",
+        "atr": 11.0575,
+        "period": 14
+      }
+    },
+    "AMZN": {
+      "symbol": "AMZN",
+      "rsi": {
+        "symbol": "AMZN",
+        "date": "2026-07-09",
+        "rsi": 51.62,
+        "signal": "NEUTRAL",
+        "period": 14
+      },
+      "macd": {
+        "symbol": "AMZN",
+        "date": "2026-07-09",
+        "macd": -1.9987,
+        "signal": -3.7342,
+        "histogram": 1.7355,
+        "trend": "BULLISH",
+        "momentum": "INCREASING",
+        "crossover": "NONE"
+      },
+      "ema_20": {
+        "symbol": "AMZN",
+        "date": "2026-07-09",
+        "ema": 243.0651,
+        "period": 20
+      },
+      "bollinger": {
+        "symbol": "AMZN",
+        "date": "2026-07-09",
+        "upper_band": 250.3488,
+        "middle_band": 239.7655,
+        "lower_band": 229.1822,
+        "band_width_pct": 8.83,
+        "period": 20
+      },
+      "adx": {
+        "symbol": "AMZN",
+        "date": "2026-07-09",
+        "adx": 21.99,
+        "trend_strength": "MODERATE",
+        "period": 14
+      },
+      "stochastic": {
+        "symbol": "AMZN",
+        "date": "2026-07-09",
+        "stoch_k": 84.06,
+        "stoch_d": 81.14,
+        "signal": "OVERBOUGHT"
+      },
+      "atr": {
+        "symbol": "AMZN",
+        "date": "2026-07-09",
+        "atr": 7.7048,
+        "period": 14
+      }
+    },
+    "META": {
+      "symbol": "META",
+      "rsi": {
+        "symbol": "META",
+        "date": "2026-07-09",
+        "rsi": 59.29,
+        "signal": "NEUTRAL",
+        "period": 14
+      },
+      "macd": {
+        "symbol": "META",
+        "date": "2026-07-09",
+        "macd": 2.5439,
+        "signal": -5.4092,
+        "histogram": 7.9531,
+        "trend": "BULLISH",
+        "momentum": "INCREASING",
+        "crossover": "NONE"
+      },
+      "ema_20": {
+        "symbol": "META",
+        "date": "2026-07-09",
+        "ema": 590.4258,
+        "period": 20
+      },
+      "bollinger": {
+        "symbol": "META",
+        "date": "2026-07-09",
+        "upper_band": 625.6291,
+        "middle_band": 579.429,
+        "lower_band": 533.2289,
+        "band_width_pct": 15.95,
+        "period": 20
+      },
+      "adx": {
+        "symbol": "META",
+        "date": "2026-07-09",
+        "adx": 16.59,
+        "trend_strength": "WEAK",
+        "period": 14
+      },
+      "stochastic": {
+        "symbol": "META",
+        "date": "2026-07-09",
+        "stoch_k": 98.11,
+        "stoch_d": 85.04,
+        "signal": "OVERBOUGHT"
+      },
+      "atr": {
+        "symbol": "META",
+        "date": "2026-07-09",
+        "atr": 24.4708,
+        "period": 14
+      }
+    },
+    "TSLA": {
+      "symbol": "TSLA",
+      "rsi": {
+        "symbol": "TSLA",
+        "date": "2026-07-09",
+        "rsi": 50.32,
+        "signal": "NEUTRAL",
+        "period": 14
+      },
+      "macd": {
+        "symbol": "TSLA",
+        "date": "2026-07-09",
+        "macd": -0.7046,
+        "signal": -1.6631,
+        "histogram": 0.9585,
+        "trend": "BULLISH",
+        "momentum": "INCREASING",
+        "crossover": "NONE"
+      },
+      "ema_20": {
+        "symbol": "TSLA",
+        "date": "2026-07-09",
+        "ema": 403.1727,
+        "period": 20
+      },
+      "bollinger": {
+        "symbol": "TSLA",
+        "date": "2026-07-09",
+        "upper_band": 428.5634,
+        "middle_band": 399.4717,
+        "lower_band": 370.3801,
+        "band_width_pct": 14.57,
+        "period": 20
+      },
+      "adx": {
+        "symbol": "TSLA",
+        "date": "2026-07-09",
+        "adx": 13.46,
+        "trend_strength": "WEAK",
+        "period": 14
+      },
+      "stochastic": {
+        "symbol": "TSLA",
+        "date": "2026-07-09",
+        "stoch_k": 56.09,
+        "stoch_d": 49.7,
+        "signal": "NEUTRAL"
+      },
+      "atr": {
+        "symbol": "TSLA",
+        "date": "2026-07-09",
+        "atr": 19.4092,
+        "period": 14
+      }
+    },
+    "JPM": {
+      "symbol": "JPM",
+      "rsi": {
+        "symbol": "JPM",
+        "date": "2026-07-09",
+        "rsi": 60.45,
+        "signal": "NEUTRAL",
+        "period": 14
+      },
+      "macd": {
+        "symbol": "JPM",
+        "date": "2026-07-09",
+        "macd": 6.6759,
+        "signal": 6.8176,
+        "histogram": -0.1418,
+        "trend": "BEARISH",
+        "momentum": "DECREASING",
+        "crossover": "BEARISH_CROSSOVER"
+      },
+      "ema_20": {
+        "symbol": "JPM",
+        "date": "2026-07-09",
+        "ema": 327.2954,
+        "period": 20
+      },
+      "bollinger": {
+        "symbol": "JPM",
+        "date": "2026-07-09",
+        "upper_band": 343.9434,
+        "middle_band": 327.9933,
+        "lower_band": 312.0431,
+        "band_width_pct": 9.73,
+        "period": 20
+      },
+      "adx": {
+        "symbol": "JPM",
+        "date": "2026-07-09",
+        "adx": 29.56,
+        "trend_strength": "STRONG",
+        "period": 14
+      },
+      "stochastic": {
+        "symbol": "JPM",
+        "date": "2026-07-09",
+        "stoch_k": 62.66,
+        "stoch_d": 63.32,
+        "signal": "NEUTRAL"
+      },
+      "atr": {
+        "symbol": "JPM",
+        "date": "2026-07-09",
+        "atr": 7.2043,
+        "period": 14
+      }
+    },
+    "V": {
+      "symbol": "V",
+      "rsi": {
+        "symbol": "V",
+        "date": "2026-07-09",
+        "rsi": 59.6,
+        "signal": "NEUTRAL",
+        "period": 14
+      },
+      "macd": {
+        "symbol": "V",
+        "date": "2026-07-09",
+        "macd": 7.539,
+        "signal": 6.2671,
+        "histogram": 1.2719,
+        "trend": "BULLISH",
+        "momentum": "INCREASING",
+        "crossover": "NONE"
+      },
+      "ema_20": {
+        "symbol": "V",
+        "date": "2026-07-09",
+        "ema": 339.9989,
+        "period": 20
+      },
+      "bollinger": {
+        "symbol": "V",
+        "date": "2026-07-09",
+        "upper_band": 361.4572,
+        "middle_band": 336.758,
+        "lower_band": 312.0588,
+        "band_width_pct": 14.67,
+        "period": 20
+      },
+      "adx": {
+        "symbol": "V",
+        "date": "2026-07-09",
+        "adx": 27.84,
+        "trend_strength": "STRONG",
+        "period": 14
+      },
+      "stochastic": {
+        "symbol": "V",
+        "date": "2026-07-09",
+        "stoch_k": 54.52,
+        "stoch_d": 59.44,
+        "signal": "NEUTRAL"
+      },
+      "atr": {
+        "symbol": "V",
+        "date": "2026-07-09",
+        "atr": 8.0858,
+        "period": 14
+      }
+    },
+    "UNH": {
+      "symbol": "UNH",
+      "rsi": {
+        "symbol": "UNH",
+        "date": "2026-07-09",
+        "rsi": 64.38,
+        "signal": "NEUTRAL",
+        "period": 14
+      },
+      "macd": {
+        "symbol": "UNH",
+        "date": "2026-07-09",
+        "macd": 10.8067,
+        "signal": 10.7667,
+        "histogram": 0.04,
+        "trend": "BULLISH",
+        "momentum": "INCREASING",
+        "crossover": "BULLISH_CROSSOVER"
+      },
+      "ema_20": {
+        "symbol": "UNH",
+        "date": "2026-07-09",
+        "ema": 414.4381,
+        "period": 20
+      },
+      "bollinger": {
+        "symbol": "UNH",
+        "date": "2026-07-09",
+        "upper_band": 434.2174,
+        "middle_band": 414.4191,
+        "lower_band": 394.6209,
+        "band_width_pct": 9.55,
+        "period": 20
+      },
+      "adx": {
+        "symbol": "UNH",
+        "date": "2026-07-09",
+        "adx": 45.89,
+        "trend_strength": "STRONG",
+        "period": 14
+      },
+      "stochastic": {
+        "symbol": "UNH",
+        "date": "2026-07-09",
+        "stoch_k": 88.71,
+        "stoch_d": 88.76,
+        "signal": "OVERBOUGHT"
+      },
+      "atr": {
+        "symbol": "UNH",
+        "date": "2026-07-09",
+        "atr": 10.1099,
+        "period": 14
+      }
+    },
+    "^GSPC": {
+      "symbol": "^GSPC",
+      "rsi": {
+        "symbol": "^GSPC",
+        "date": "2026-07-09",
+        "rsi": 57.68,
+        "signal": "NEUTRAL",
+        "period": 14
+      },
+      "macd": {
+        "symbol": "^GSPC",
+        "date": "2026-07-09",
+        "macd": 28.8062,
+        "signal": 23.3132,
+        "histogram": 5.493,
+        "trend": "BULLISH",
+        "momentum": "INCREASING",
+        "crossover": "NONE"
+      },
+      "ema_20": {
+        "symbol": "^GSPC",
+        "date": "2026-07-09",
+        "ema": 7464.1005,
+        "period": 20
+      },
+      "bollinger": {
+        "symbol": "^GSPC",
+        "date": "2026-07-09",
+        "upper_band": 7598.3686,
+        "middle_band": 7447.8661,
+        "lower_band": 7297.3636,
+        "band_width_pct": 4.04,
+        "period": 20
+      },
+      "adx": {
+        "symbol": "^GSPC",
+        "date": "2026-07-09",
+        "adx": 16.97,
+        "trend_strength": "WEAK",
+        "period": 14
+      },
+      "stochastic": {
+        "symbol": "^GSPC",
+        "date": "2026-07-09",
+        "stoch_k": 95.61,
+        "stoch_d": 82.12,
+        "signal": "OVERBOUGHT"
+      },
+      "atr": {
+        "symbol": "^GSPC",
+        "date": "2026-07-09",
+        "atr": 88.6733,
+        "period": 14
+      }
+    },
+    "^IXIC": {
+      "symbol": "^IXIC",
+      "rsi": {
+        "symbol": "^IXIC",
+        "date": "2026-07-09",
+        "rsi": 53.59,
+        "signal": "NEUTRAL",
+        "period": 14
+      },
+      "macd": {
+        "symbol": "^IXIC",
+        "date": "2026-07-09",
+        "macd": 9.5299,
+        "signal": 2.1258,
+        "histogram": 7.4042,
+        "trend": "BULLISH",
+        "momentum": "INCREASING",
+        "crossover": "BULLISH_CROSSOVER"
+      },
+      "ema_20": {
+        "symbol": "^IXIC",
+        "date": "2026-07-09",
+        "ema": 25960.8457,
+        "period": 20
+      },
+      "bollinger": {
+        "symbol": "^IXIC",
+        "date": "2026-07-09",
+        "upper_band": 26695.586,
+        "middle_band": 25913.6671,
+        "lower_band": 25131.7482,
+        "band_width_pct": 6.03,
+        "period": 20
+      },
+      "adx": {
+        "symbol": "^IXIC",
+        "date": "2026-07-09",
+        "adx": 21.13,
+        "trend_strength": "MODERATE",
+        "period": 14
+      },
+      "stochastic": {
+        "symbol": "^IXIC",
+        "date": "2026-07-09",
+        "stoch_k": 76.77,
+        "stoch_d": 59.14,
+        "signal": "NEUTRAL"
+      },
+      "atr": {
+        "symbol": "^IXIC",
+        "date": "2026-07-09",
+        "atr": 477.4209,
+        "period": 14
+      }
+    },
+    "^DJI": {
+      "symbol": "^DJI",
+      "rsi": {
+        "symbol": "^DJI",
+        "date": "2026-07-09",
+        "rsi": 59.86,
+        "signal": "NEUTRAL",
+        "period": 14
+      },
+      "macd": {
+        "symbol": "^DJI",
+        "date": "2026-07-09",
+        "macd": 554.089,
+        "signal": 558.5406,
+        "histogram": -4.4516,
+        "trend": "BEARISH",
+        "momentum": "DECREASING",
+        "crossover": "BEARISH_CROSSOVER"
+      },
+      "ema_20": {
+        "symbol": "^DJI",
+        "date": "2026-07-09",
+        "ema": 51989.3395,
+        "period": 20
+      },
+      "bollinger": {
+        "symbol": "^DJI",
+        "date": "2026-07-09",
+        "upper_band": 53339.4597,
+        "middle_band": 51909.0781,
+        "lower_band": 50478.6965,
+        "band_width_pct": 5.51,
+        "period": 20
+      },
+      "adx": {
+        "symbol": "^DJI",
+        "date": "2026-07-09",
+        "adx": 26.71,
+        "trend_strength": "STRONG",
+        "period": 14
+      },
+      "stochastic": {
+        "symbol": "^DJI",
+        "date": "2026-07-09",
+        "stoch_k": 56.36,
+        "stoch_d": 63.57,
+        "signal": "NEUTRAL"
+      },
+      "atr": {
+        "symbol": "^DJI",
+        "date": "2026-07-09",
+        "atr": 585.9489,
+        "period": 14
+      }
+    },
+    "^RUT": {
+      "symbol": "^RUT",
+      "rsi": {
+        "symbol": "^RUT",
+        "date": "2026-07-09",
+        "rsi": 56.68,
+        "signal": "NEUTRAL",
+        "period": 14
+      },
+      "macd": {
+        "symbol": "^RUT",
+        "date": "2026-07-09",
+        "macd": 30.3463,
+        "signal": 37.0464,
+        "histogram": -6.7001,
+        "trend": "BEARISH",
+        "momentum": "DECREASING",
+        "crossover": "NONE"
+      },
+      "ema_20": {
+        "symbol": "^RUT",
+        "date": "2026-07-09",
+        "ema": 2969.7918,
+        "period": 20
+      },
+      "bollinger": {
+        "symbol": "^RUT",
+        "date": "2026-07-09",
+        "upper_band": 3061.9442,
+        "middle_band": 2973.7614,
+        "lower_band": 2885.5786,
+        "band_width_pct": 5.93,
+        "period": 20
+      },
+      "adx": {
+        "symbol": "^RUT",
+        "date": "2026-07-09",
+        "adx": 9.61,
+        "trend_strength": "WEAK",
+        "period": 14
+      },
+      "stochastic": {
+        "symbol": "^RUT",
+        "date": "2026-07-09",
+        "stoch_k": 57.95,
+        "stoch_d": 48.06,
+        "signal": "NEUTRAL"
+      },
+      "atr": {
+        "symbol": "^RUT",
+        "date": "2026-07-09",
+        "atr": 49.2583,
+        "period": 14
+      }
+    },
+    "^N225": {
+      "symbol": "^N225",
+      "rsi": {
+        "symbol": "^N225",
+        "date": "2026-07-08",
+        "rsi": 45.85,
+        "signal": "NEUTRAL",
+        "period": 14
+      },
+      "macd": {
+        "symbol": "^N225",
+        "date": "2026-07-08",
+        "macd": 842.6458,
+        "signal": 1424.9468,
+        "histogram": -582.301,
+        "trend": "BEARISH",
+        "momentum": "DECREASING",
+        "crossover": "NONE"
+      },
+      "ema_20": {
+        "symbol": "^N225",
+        "date": "2026-07-08",
+        "ema": 68661.4923,
+        "period": 20
+      },
+      "bollinger": {
+        "symbol": "^N225",
+        "date": "2026-07-08",
+        "upper_band": 73187.3939,
+        "middle_band": 69375.2979,
+        "lower_band": 65563.2018,
+        "band_width_pct": 10.99,
+        "period": 20
+      },
+      "adx": {
+        "symbol": "^N225",
+        "date": "2026-07-08",
+        "adx": 20.89,
+        "trend_strength": "MODERATE",
+        "period": 14
+      },
+      "stochastic": {
+        "symbol": "^N225",
+        "date": "2026-07-08",
+        "stoch_k": 0.0,
+        "stoch_d": 17.72,
+        "signal": "OVERSOLD"
+      },
+      "atr": {
+        "symbol": "^N225",
+        "date": "2026-07-08",
+        "atr": 1900.8262,
+        "period": 14
+      }
+    },
+    "^HSI": {
+      "symbol": "^HSI",
+      "rsi": {
+        "symbol": "^HSI",
+        "date": "2026-07-08",
+        "rsi": 51.84,
+        "signal": "NEUTRAL",
+        "period": 14
+      },
+      "macd": {
+        "symbol": "^HSI",
+        "date": "2026-07-08",
+        "macd": -434.6117,
+        "signal": -547.3522,
+        "histogram": 112.7405,
+        "trend": "BULLISH",
+        "momentum": "INCREASING",
+        "crossover": "NONE"
+      },
+      "ema_20": {
+        "symbol": "^HSI",
+        "date": "2026-07-08",
+        "ema": 23839.9418,
+        "period": 20
+      },
+      "bollinger": {
+        "symbol": "^HSI",
+        "date": "2026-07-08",
+        "upper_band": 25072.3868,
+        "middle_band": 23770.3009,
+        "lower_band": 22468.215,
+        "band_width_pct": 10.96,
+        "period": 20
+      },
+      "adx": {
+        "symbol": "^HSI",
+        "date": "2026-07-08",
+        "adx": 31.29,
+        "trend_strength": "STRONG",
+        "period": 14
+      },
+      "stochastic": {
+        "symbol": "^HSI",
+        "date": "2026-07-08",
+        "stoch_k": 82.34,
+        "stoch_d": 55.94,
+        "signal": "OVERBOUGHT"
+      },
+      "atr": {
+        "symbol": "^HSI",
+        "date": "2026-07-08",
+        "atr": 465.0361,
+        "period": 14
+      }
+    },
+    "000001.SS": {
+      "symbol": "000001.SS",
+      "rsi": {
+        "symbol": "000001.SS",
+        "date": "2026-07-08",
+        "rsi": 39.25,
+        "signal": "NEUTRAL",
+        "period": 14
+      },
+      "macd": {
+        "symbol": "000001.SS",
+        "date": "2026-07-08",
+        "macd": -18.34,
+        "signal": -7.2531,
+        "histogram": -11.0869,
+        "trend": "BEARISH",
+        "momentum": "DECREASING",
+        "crossover": "NONE"
+      },
+      "ema_20": {
+        "symbol": "000001.SS",
+        "date": "2026-07-08",
+        "ema": 4056.3614,
+        "period": 20
+      },
+      "bollinger": {
+        "symbol": "000001.SS",
+        "date": "2026-07-08",
+        "upper_band": 4168.4343,
+        "middle_band": 4064.1013,
+        "lower_band": 3959.7683,
+        "band_width_pct": 5.13,
+        "period": 20
+      },
+      "adx": {
+        "symbol": "000001.SS",
+        "date": "2026-07-08",
+        "adx": 16.96,
+        "trend_strength": "WEAK",
+        "period": 14
+      },
+      "stochastic": {
+        "symbol": "000001.SS",
+        "date": "2026-07-08",
+        "stoch_k": 1.43,
+        "stoch_d": 12.39,
+        "signal": "OVERSOLD"
+      },
+      "atr": {
+        "symbol": "000001.SS",
+        "date": "2026-07-08",
+        "atr": 59.9094,
+        "period": 14
+      }
+    },
+    "^NSEI": {
+      "symbol": "^NSEI",
+      "rsi": {
+        "symbol": "^NSEI",
+        "date": "2026-07-08",
+        "rsi": 48.51,
+        "signal": "NEUTRAL",
+        "period": 14
+      },
+      "macd": {
+        "symbol": "^NSEI",
+        "date": "2026-07-08",
+        "macd": 130.382,
+        "signal": 110.062,
+        "histogram": 20.3201,
+        "trend": "BULLISH",
+        "momentum": "INCREASING",
+        "crossover": "NONE"
+      },
+      "ema_20": {
+        "symbol": "^NSEI",
+        "date": "2026-07-08",
+        "ema": 23992.2467,
+        "period": 20
+      },
+      "bollinger": {
+        "symbol": "^NSEI",
+        "date": "2026-07-08",
+        "upper_band": 24587.8057,
+        "middle_band": 23954.4724,
+        "lower_band": 23321.139,
+        "band_width_pct": 5.29,
+        "period": 20
+      },
+      "adx": {
+        "symbol": "^NSEI",
+        "date": "2026-07-08",
+        "adx": 12.92,
+        "trend_strength": "WEAK",
+        "period": 14
+      },
+      "stochastic": {
+        "symbol": "^NSEI",
+        "date": "2026-07-08",
+        "stoch_k": 13.02,
+        "stoch_d": 63.7,
+        "signal": "OVERSOLD"
+      },
+      "atr": {
+        "symbol": "^NSEI",
+        "date": "2026-07-08",
+        "atr": 264.8601,
+        "period": 14
+      }
+    },
+    "^BSESN": {
+      "symbol": "^BSESN",
+      "rsi": {
+        "symbol": "^BSESN",
+        "date": "2026-07-08",
+        "rsi": 49.35,
+        "signal": "NEUTRAL",
+        "period": 14
+      },
+      "macd": {
+        "symbol": "^BSESN",
+        "date": "2026-07-08",
+        "macd": 503.6751,
+        "signal": 433.2193,
+        "histogram": 70.4558,
+        "trend": "BULLISH",
+        "momentum": "INCREASING",
+        "crossover": "NONE"
+      },
+      "ema_20": {
+        "symbol": "^BSESN",
+        "date": "2026-07-08",
+        "ema": 76778.5931,
+        "period": 20
+      },
+      "bollinger": {
+        "symbol": "^BSESN",
+        "date": "2026-07-08",
+        "upper_band": 78919.9555,
+        "middle_band": 76676.8254,
+        "lower_band": 74433.6953,
+        "band_width_pct": 5.85,
+        "period": 20
+      },
+      "adx": {
+        "symbol": "^BSESN",
+        "date": "2026-07-08",
+        "adx": 13.84,
+        "trend_strength": "WEAK",
+        "period": 14
+      },
+      "stochastic": {
+        "symbol": "^BSESN",
+        "date": "2026-07-08",
+        "stoch_k": 16.31,
+        "stoch_d": 64.23,
+        "signal": "OVERSOLD"
+      },
+      "atr": {
+        "symbol": "^BSESN",
+        "date": "2026-07-08",
+        "atr": 888.4902,
+        "period": 14
+      }
+    },
+    "^KS11": {
+      "symbol": "^KS11",
+      "rsi": {
+        "symbol": "^KS11",
+        "date": "2026-07-08",
+        "rsi": 38.91,
+        "signal": "NEUTRAL",
+        "period": 14
+      },
+      "macd": {
+        "symbol": "^KS11",
+        "date": "2026-07-08",
+        "macd": -71.2429,
+        "signal": 105.7272,
+        "histogram": -176.9701,
+        "trend": "BEARISH",
+        "momentum": "DECREASING",
+        "crossover": "NONE"
+      },
+      "ema_20": {
+        "symbol": "^KS11",
+        "date": "2026-07-08",
+        "ema": 8131.4442,
+        "period": 20
+      },
+      "bollinger": {
+        "symbol": "^KS11",
+        "date": "2026-07-08",
+        "upper_band": 9373.8274,
+        "middle_band": 8356.8485,
+        "lower_band": 7339.8696,
+        "band_width_pct": 24.34,
+        "period": 20
+      },
+      "adx": {
+        "symbol": "^KS11",
+        "date": "2026-07-08",
+        "adx": 17.21,
+        "trend_strength": "WEAK",
+        "period": 14
+      },
+      "stochastic": {
+        "symbol": "^KS11",
+        "date": "2026-07-08",
+        "stoch_k": 2.75,
+        "stoch_d": 16.72,
+        "signal": "OVERSOLD"
+      },
+      "atr": {
+        "symbol": "^KS11",
+        "date": "2026-07-08",
+        "atr": 506.9092,
+        "period": 14
+      }
+    },
+    "^AXJO": {
+      "symbol": "^AXJO",
+      "rsi": {
+        "symbol": "^AXJO",
+        "date": "2026-07-08",
+        "rsi": 50.74,
+        "signal": "NEUTRAL",
+        "period": 14
+      },
+      "macd": {
+        "symbol": "^AXJO",
+        "date": "2026-07-08",
+        "macd": 15.4274,
+        "signal": 19.2818,
+        "histogram": -3.8543,
+        "trend": "BEARISH",
+        "momentum": "DECREASING",
+        "crossover": "NONE"
+      },
+      "ema_20": {
+        "symbol": "^AXJO",
+        "date": "2026-07-08",
+        "ema": 8784.0269,
+        "period": 20
+      },
+      "bollinger": {
+        "symbol": "^AXJO",
+        "date": "2026-07-08",
+        "upper_band": 8961.3055,
+        "middle_band": 8810.6651,
+        "lower_band": 8660.0247,
+        "band_width_pct": 3.42,
+        "period": 20
+      },
+      "adx": {
+        "symbol": "^AXJO",
+        "date": "2026-07-08",
+        "adx": 12.76,
+        "trend_strength": "WEAK",
+        "period": 14
+      },
+      "stochastic": {
+        "symbol": "^AXJO",
+        "date": "2026-07-08",
+        "stoch_k": 50.57,
+        "stoch_d": 49.67,
+        "signal": "NEUTRAL"
+      },
+      "atr": {
+        "symbol": "^AXJO",
+        "date": "2026-07-08",
+        "atr": 85.1404,
+        "period": 14
+      }
+    },
+    "^TWII": {
+      "symbol": "^TWII",
+      "rsi": {
+        "symbol": "^TWII",
+        "date": "2026-07-08",
+        "rsi": 52.98,
+        "signal": "NEUTRAL",
+        "period": 14
+      },
+      "macd": {
+        "symbol": "^TWII",
+        "date": "2026-07-08",
+        "macd": 724.0368,
+        "signal": 936.9106,
+        "histogram": -212.8739,
+        "trend": "BEARISH",
+        "momentum": "DECREASING",
+        "crossover": "NONE"
+      },
+      "ema_20": {
+        "symbol": "^TWII",
+        "date": "2026-07-08",
+        "ema": 45659.9997,
+        "period": 20
+      },
+      "bollinger": {
+        "symbol": "^TWII",
+        "date": "2026-07-08",
+        "upper_band": 48166.285,
+        "middle_band": 45762.2541,
+        "lower_band": 43358.2232,
+        "band_width_pct": 10.51,
+        "period": 20
+      },
+      "adx": {
+        "symbol": "^TWII",
+        "date": "2026-07-08",
+        "adx": 17.0,
+        "trend_strength": "WEAK",
+        "period": 14
+      },
+      "stochastic": {
+        "symbol": "^TWII",
+        "date": "2026-07-08",
+        "stoch_k": 34.01,
+        "stoch_d": 39.02,
+        "signal": "NEUTRAL"
+      },
+      "atr": {
+        "symbol": "^TWII",
+        "date": "2026-07-08",
+        "atr": 1159.8314,
+        "period": 14
+      }
+    }
+  },
+  "ma_data": {
+    "AAPL": {
+      "symbol": "AAPL",
+      "current": 315.8,
+      "ma_20": 296.895,
+      "ma_50": 296.8214,
+      "ma_200": 271.7947,
+      "above_ma20": true,
+      "above_ma50": true,
+      "above_ma200": true,
+      "golden_cross": false,
+      "death_cross": false
+    },
+    "MSFT": {
+      "symbol": "MSFT",
+      "current": 383.05,
+      "ma_20": 381.0605,
+      "ma_50": 404.167,
+      "ma_200": 441.3317,
+      "above_ma20": true,
+      "above_ma50": false,
+      "above_ma200": false,
+      "golden_cross": false,
+      "death_cross": false
+    },
+    "NVDA": {
+      "symbol": "NVDA",
+      "current": 203.9899,
+      "ma_20": 201.485,
+      "ma_50": 209.2674,
+      "ma_200": 191.5312,
+      "above_ma20": true,
+      "above_ma50": false,
+      "above_ma200": true,
+      "golden_cross": false,
+      "death_cross": false
+    },
+    "GOOGL": {
+      "symbol": "GOOGL",
+      "current": 358.17,
+      "ma_20": 357.8085,
+      "ma_50": 372.4551,
+      "ma_200": 318.0496,
+      "above_ma20": true,
+      "above_ma50": false,
+      "above_ma200": true,
+      "golden_cross": false,
+      "death_cross": false
+    },
+    "AMZN": {
+      "symbol": "AMZN",
+      "current": 245.86,
+      "ma_20": 239.7655,
+      "ma_50": 254.2982,
+      "ma_200": 233.2388,
+      "above_ma20": true,
+      "above_ma50": false,
+      "above_ma200": true,
+      "golden_cross": false,
+      "death_cross": false
+    },
+    "META": {
+      "symbol": "META",
+      "current": 627.75,
+      "ma_20": 579.429,
+      "ma_50": 600.0405,
+      "ma_200": 642.1243,
+      "above_ma20": true,
+      "above_ma50": true,
+      "above_ma200": false,
+      "golden_cross": false,
+      "death_cross": false
+    },
+    "TSLA": {
+      "symbol": "TSLA",
+      "current": 404.645,
+      "ma_20": 399.4717,
+      "ma_50": 408.5235,
+      "ma_200": 418.2626,
+      "above_ma20": true,
+      "above_ma50": false,
+      "above_ma200": false,
+      "golden_cross": false,
+      "death_cross": false
+    },
+    "JPM": {
+      "symbol": "JPM",
+      "current": 334.74,
+      "ma_20": 327.9933,
+      "ma_50": 313.2747,
+      "ma_200": 305.9801,
+      "above_ma20": true,
+      "above_ma50": true,
+      "above_ma200": true,
+      "golden_cross": false,
+      "death_cross": false
+    },
+    "V": {
+      "symbol": "V",
+      "current": 347.21,
+      "ma_20": 336.758,
+      "ma_50": 329.1354,
+      "ma_200": 328.0795,
+      "above_ma20": true,
+      "above_ma50": true,
+      "above_ma200": true,
+      "golden_cross": false,
+      "death_cross": false
+    },
+    "UNH": {
+      "symbol": "UNH",
+      "current": 430.33,
+      "ma_20": 414.4191,
+      "ma_50": 394.6989,
+      "ma_200": 335.275,
+      "above_ma20": true,
+      "above_ma50": true,
+      "above_ma200": true,
+      "golden_cross": false,
+      "death_cross": false
+    },
+    "^GSPC": {
+      "symbol": "^GSPC",
+      "current": 7540.02,
+      "ma_20": 7447.8661,
+      "ma_50": 7424.3192,
+      "ma_200": 6960.7119,
+      "above_ma20": true,
+      "above_ma50": true,
+      "above_ma200": true,
+      "golden_cross": false,
+      "death_cross": false
+    },
+    "^IXIC": {
+      "symbol": "^IXIC",
+      "current": 26201.9141,
+      "ma_20": 25913.6671,
+      "ma_50": 26016.035,
+      "ma_200": 23774.1674,
+      "above_ma20": true,
+      "above_ma50": true,
+      "above_ma200": true,
+      "golden_cross": false,
+      "death_cross": false
+    },
+    "^DJI": {
+      "symbol": "^DJI",
+      "current": 52423.1602,
+      "ma_20": 51909.1391,
+      "ma_50": 50826.7066,
+      "ma_200": 48575.329,
+      "above_ma20": true,
+      "above_ma50": true,
+      "above_ma200": true,
+      "golden_cross": false,
+      "death_cross": false
+    },
+    "^RUT": {
+      "symbol": "^RUT",
+      "current": 2996.3477,
+      "ma_20": 2973.7614,
+      "ma_50": 2899.9398,
+      "ma_200": 2636.2618,
+      "above_ma20": true,
+      "above_ma50": true,
+      "above_ma200": true,
+      "golden_cross": false,
+      "death_cross": false
+    },
+    "^N225": {
+      "symbol": "^N225",
+      "current": 66819.0469,
+      "ma_20": 69375.2979,
+      "ma_50": 65732.7773,
+      "ma_200": 55329.9934,
+      "above_ma20": false,
+      "above_ma50": true,
+      "above_ma200": true,
+      "golden_cross": false,
+      "death_cross": false
+    },
+    "^HSI": {
+      "symbol": "^HSI",
+      "current": 24199.4609,
+      "ma_20": 23770.3009,
+      "ma_50": 24975.5231,
+      "ma_200": 25867.6368,
+      "above_ma20": true,
+      "above_ma50": false,
+      "above_ma200": false,
+      "golden_cross": false,
+      "death_cross": false
+    },
+    "000001.SS": {
+      "symbol": "000001.SS",
+      "current": NaN,
+      "ma_20": NaN,
+      "ma_50": NaN,
+      "ma_200": NaN,
+      "above_ma20": false,
+      "above_ma50": false,
+      "above_ma200": false,
+      "golden_cross": false,
+      "death_cross": false
+    },
+    "^NSEI": {
+      "symbol": "^NSEI",
+      "current": 23882.0508,
+      "ma_20": 23954.4724,
+      "ma_50": 23828.0269,
+      "ma_200": 24858.1096,
+      "above_ma20": false,
+      "above_ma50": true,
+      "above_ma200": false,
+      "golden_cross": false,
+      "death_cross": false
+    },
+    "^BSESN": {
+      "symbol": "^BSESN",
+      "current": 76503.6016,
+      "ma_20": 76676.8254,
+      "ma_50": 76085.2092,
+      "ma_200": 80490.7703,
+      "above_ma20": false,
+      "above_ma50": true,
+      "above_ma200": false,
+      "golden_cross": false,
+      "death_cross": false
+    },
+    "^KS11": {
+      "symbol": "^KS11",
+      "current": 7246.79,
+      "ma_20": 8356.8485,
+      "ma_50": 7931.0328,
+      "ma_200": 5473.2675,
+      "above_ma20": false,
+      "above_ma50": false,
+      "above_ma200": true,
+      "golden_cross": false,
+      "death_cross": false
+    },
+    "^AXJO": {
+      "symbol": "^AXJO",
+      "current": 8785.0996,
+      "ma_20": 8810.6651,
+      "ma_50": 8728.992,
+      "ma_200": 8781.294,
+      "above_ma20": false,
+      "above_ma50": true,
+      "above_ma200": true,
+      "golden_cross": false,
+      "death_cross": false
+    },
+    "^TWII": {
+      "symbol": "^TWII",
+      "current": 45734.4102,
+      "ma_20": 45762.2541,
+      "ma_50": 43759.3054,
+      "ma_200": 33571.2439,
+      "above_ma20": false,
+      "above_ma50": true,
+      "above_ma200": true,
+      "golden_cross": false,
+      "death_cross": false
+    }
+  }
+}

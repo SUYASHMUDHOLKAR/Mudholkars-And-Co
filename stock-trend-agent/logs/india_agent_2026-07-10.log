@@ -1,0 +1,14 @@
+2026-07-10 01:14:39,712 | INFO     | IndiaAgent | ============================================================
+2026-07-10 01:14:39,712 | INFO     | IndiaAgent | India Market Analyst Agent Started
+2026-07-10 01:14:39,712 | INFO     | IndiaAgent | ============================================================
+2026-07-10 01:14:39,713 | INFO     | IndiaAgent | Loaded Scout report: snapshot_1hour_20260710_011006.json
+2026-07-10 01:14:39,713 | INFO     | india_agent.india_tracker | Fetching India market snapshot...
+2026-07-10 01:14:42,460 | ERROR    | yfinance | HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: NIFTY50.SI"}}}
+2026-07-10 01:14:43,177 | ERROR    | yfinance | $NIFTY50.SI: possibly delisted; no price data found  (period=1d) (Yahoo error = "No data found, symbol may be delisted")
+2026-07-10 01:14:47,281 | INFO     | india_agent.analyst | Running India market deep analysis...
+2026-07-10 01:14:47,281 | INFO     | india_agent.analyst | Triggered 0 impact rules
+2026-07-10 01:14:47,281 | INFO     | IndiaAgent | India analysis saved: reports/india_analysis/india_analysis_20260710_011447.json
+2026-07-10 01:14:47,282 | INFO     | IndiaAgent | Text report saved: reports/india_analysis/india_analysis_20260710_011447.txt
+2026-07-10 01:14:47,282 | INFO     | IndiaAgent | ============================================================
+2026-07-10 01:14:47,282 | INFO     | IndiaAgent | India Market Analyst Agent Complete
+2026-07-10 01:14:47,282 | INFO     | IndiaAgent | ============================================================

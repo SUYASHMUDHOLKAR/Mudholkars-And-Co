@@ -1,0 +1,114 @@
+{
+  "timestamp": "2026-07-09T19:44:47.281257Z",
+  "sentiment": {
+    "score": 0.0,
+    "label": "NEUTRAL",
+    "factors": []
+  },
+  "risk_level": "MEDIUM",
+  "opening_signal": {
+    "sgx_signal": "UNKNOWN",
+    "sgx_premium_pct": 0.0,
+    "rule_bias_pct": 0.0,
+    "estimated_gap_pct": 0.0,
+    "opening_type": "FLAT_OPEN",
+    "estimated_open": 23981.9
+  },
+  "triggered_rules": [],
+  "sector_outlook": {},
+  "key_events": [],
+  "watchlist": {
+    "buy_watchlist": [],
+    "avoid_watchlist": []
+  },
+  "india_snapshot": {
+    "timestamp": "2026-07-09T19:44:39.713830Z",
+    "indices": {
+      "timestamp": "2026-07-09T19:44:41.237756Z",
+      "nifty50": {
+        "current": 23981.9,
+        "prev_close": 24398.7,
+        "change_pct": -1.71,
+        "day_high": 24133.35,
+        "day_low": 23926.6
+      },
+      "sensex": {
+        "current": 76741.82,
+        "prev_close": 78180.72,
+        "change_pct": -1.84,
+        "day_high": 77322.07,
+        "day_low": 76576.14
+      }
+    },
+    "india_vix": {
+      "current": 14.68,
+      "prev_close": 11.65,
+      "change_pct": 26.01,
+      "fear_level": "LOW"
+    },
+    "sgx_nifty": null,
+    "usdinr": {
+      "usdinr": 95.378,
+      "prev_close": 95.5934,
+      "change_pct": -0.23,
+      "inr_trend": "STRENGTHENING"
+    },
+    "nifty50_movers": {
+      "top_gainers": [
+        {
+          "symbol": "RELIANCE.NS",
+          "price": NaN,
+          "change_pct": NaN
+        },
+        {
+          "symbol": "TCS.NS",
+          "price": NaN,
+          "change_pct": NaN
+        },
+        {
+          "symbol": "HDFCBANK.NS",
+          "price": NaN,
+          "change_pct": NaN
+        },
+        {
+          "symbol": "INFY.NS",
+          "price": NaN,
+          "change_pct": NaN
+        },
+        {
+          "symbol": "ICICIBANK.NS",
+          "price": NaN,
+          "change_pct": NaN
+        }
+      ],
+      "top_losers": [
+        {
+          "symbol": "SUNPHARMA.NS",
+          "price": NaN,
+          "change_pct": NaN
+        },
+        {
+          "symbol": "TITAN.NS",
+          "price": NaN,
+          "change_pct": NaN
+        },
+        {
+          "symbol": "ULTRACEMCO.NS",
+          "price": NaN,
+          "change_pct": NaN
+        },
+        {
+          "symbol": "WIPRO.NS",
+          "price": NaN,
+          "change_pct": NaN
+        },
+        {
+          "symbol": "HCLTECH.NS",
+          "price": NaN,
+          "change_pct": NaN
+        }
+      ]
+    }
+  },
+  "summary": "=================================================================\n  INDIA MARKET DEEP ANALYSIS\n  Generated: 10 Jul 2026  01:14 IST\n=================================================================\n\nMARKET SENTIMENT : NEUTRAL  (Score: +0.0 / 10)\nRISK LEVEL       : MEDIUM\nNIFTY OPENING    : FLAT_OPEN  (~+0.00%)\nESTIMATED OPEN   : 23982\nINDIA VIX        : 14.7  [LOW]\nUSD/INR          : 95.38  (-0.23%)  \u2192 INR STRENGTHENING\n\nSECTOR OUTLOOK\n----------------------------------------\n\nSENTIMENT FACTORS\n----------------------------------------\n\n================================================================="
+}

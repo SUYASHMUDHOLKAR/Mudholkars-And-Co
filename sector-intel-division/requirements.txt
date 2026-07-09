@@ -1,0 +1,7 @@
+# Sector Intelligence Division
+# pip3 install -r requirements.txt
+
+yfinance==1.2.0
+pandas==2.3.3
+requests==2.32.3
+tzdata==2026.2

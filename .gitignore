@@ -1,0 +1,25 @@
+# Secrets — NEVER commit these
+.env
+*.key
+*.pem
+secrets/
+config/groww_credentials.json
+
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+.venv/
+venv/
+
+# OS
+.DS_Store
+
+# Logs and reports (regenerated every run)
+logs/*.log
+reports/*.json
+reports/*.txt
+!reports/.gitkeep
+
+# State files (contain portfolio data)
+reports/portfolio_state.json

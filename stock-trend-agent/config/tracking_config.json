@@ -1,0 +1,125 @@
+{
+  "agent": {
+    "name": "StockTrendAgent",
+    "version": "1.0.0",
+    "description": "Tracks global stock market trends, alerts on unusual events, generates reports"
+  },
+
+  "schedule": {
+    "intraday_interval_minutes": 15,
+    "hourly_summary": true,
+    "end_of_day_report": true,
+    "eod_report_time": "18:00",
+    "timezone": "Asia/Kolkata",
+    "trading_days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+  },
+
+  "data_sources": {
+    "price_data": "yfinance",
+    "technical_indicators": "pandas-ta (local, no API key)"
+  },
+
+  "tickers": {
+    "us_indices": [
+      {"symbol": "^GSPC",  "name": "S&P 500",           "exchange": "NYSE"},
+      {"symbol": "^IXIC",  "name": "NASDAQ Composite",   "exchange": "NASDAQ"},
+      {"symbol": "^DJI",   "name": "Dow Jones (DJIA)",   "exchange": "NYSE"},
+      {"symbol": "^RUT",   "name": "Russell 2000",       "exchange": "NYSE"}
+    ],
+    "volatility": [
+      {"symbol": "^VIX",   "name": "CBOE Volatility Index (Fear Index)", "exchange": "CBOE"}
+    ],
+    "asia_pacific_indices": [
+      {"symbol": "^N225",  "name": "Nikkei 225",         "exchange": "TSE"},
+      {"symbol": "^HSI",   "name": "Hang Seng Index",    "exchange": "HKEX"},
+      {"symbol": "000001.SS", "name": "SSE Composite",   "exchange": "SSE"},
+      {"symbol": "^NSEI",  "name": "Nifty 50",           "exchange": "NSE"},
+      {"symbol": "^BSESN", "name": "BSE Sensex",         "exchange": "BSE"},
+      {"symbol": "^KS11",  "name": "KOSPI",              "exchange": "KRX"},
+      {"symbol": "^AXJO",  "name": "ASX 200",            "exchange": "ASX"},
+      {"symbol": "^TWII",  "name": "Taiwan Weighted",    "exchange": "TWSE"}
+    ],
+    "europe_indices": [
+      {"symbol": "^FTSE",  "name": "FTSE 100",           "exchange": "LSE"},
+      {"symbol": "^GDAXI", "name": "DAX 40",             "exchange": "FSE"},
+      {"symbol": "^FCHI",  "name": "CAC 40",             "exchange": "EURONEXT"},
+      {"symbol": "^STOXX50E", "name": "Euro Stoxx 50",   "exchange": "EURONEXT"},
+      {"symbol": "^SSMI",  "name": "Swiss SMI",          "exchange": "SIX"}
+    ],
+    "commodities": [
+      {"symbol": "GC=F",   "name": "Gold Futures",       "exchange": "COMEX"},
+      {"symbol": "CL=F",   "name": "Crude Oil WTI",      "exchange": "NYMEX"},
+      {"symbol": "SI=F",   "name": "Silver Futures",     "exchange": "COMEX"},
+      {"symbol": "NG=F",   "name": "Natural Gas",        "exchange": "NYMEX"}
+    ],
+    "currencies_forex": [
+      {"symbol": "EURUSD=X", "name": "EUR/USD",          "exchange": "FOREX"},
+      {"symbol": "GBPUSD=X", "name": "GBP/USD",          "exchange": "FOREX"},
+      {"symbol": "USDJPY=X", "name": "USD/JPY",          "exchange": "FOREX"},
+      {"symbol": "USDINR=X", "name": "USD/INR",          "exchange": "FOREX"}
+    ],
+    "crypto": [
+      {"symbol": "BTC-USD",  "name": "Bitcoin",          "exchange": "CRYPTO"},
+      {"symbol": "ETH-USD",  "name": "Ethereum",         "exchange": "CRYPTO"}
+    ],
+    "top_us_stocks": [
+      {"symbol": "AAPL",  "name": "Apple"},
+      {"symbol": "MSFT",  "name": "Microsoft"},
+      {"symbol": "NVDA",  "name": "NVIDIA"},
+      {"symbol": "GOOGL", "name": "Alphabet"},
+      {"symbol": "AMZN",  "name": "Amazon"},
+      {"symbol": "META",  "name": "Meta"},
+      {"symbol": "TSLA",  "name": "Tesla"},
+      {"symbol": "JPM",   "name": "JPMorgan Chase"},
+      {"symbol": "V",     "name": "Visa"},
+      {"symbol": "UNH",   "name": "UnitedHealth"}
+    ]
+  },
+
+  "alert_thresholds": {
+    "price_change": {
+      "warning_pct": 1.5,
+      "critical_pct": 3.0,
+      "extreme_pct": 5.0
+    },
+    "volume": {
+      "spike_multiplier": 2.0,
+      "extreme_spike_multiplier": 3.5
+    },
+    "vix": {
+      "elevated": 20,
+      "high_fear": 30,
+      "extreme_fear": 40
+    },
+    "rsi": {
+      "overbought": 70,
+      "oversold": 30,
+      "extreme_overbought": 80,
+      "extreme_oversold": 20
+    },
+    "moving_averages": {
+      "golden_cross_short": 50,
+      "golden_cross_long": 200,
+      "short_term": 20,
+      "medium_term": 50,
+      "long_term": 200
+    },
+    "gap": {
+      "gap_up_pct": 1.5,
+      "gap_down_pct": -1.5
+    },
+    "week_52": {
+      "near_high_pct": 2.0,
+      "near_low_pct": 2.0
+    }
+  },
+
+  "reporting": {
+    "save_to_file": true,
+    "reports_dir": "reports",
+    "logs_dir": "logs",
+    "log_level": "INFO",
+    "console_output": true,
+    "report_formats": ["json", "txt"]
+  }
+}

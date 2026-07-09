@@ -1,0 +1,64 @@
+name: Mudholkars & Co — Agent Army
+
+on:
+  schedule:
+    # Market hours IST 9:30-15:30 = UTC 4:00-10:00
+    - cron: '0 4 * * 1-5'    # 9:30 AM IST - Morning scan
+    - cron: '30 6 * * 1-5'   # 12:00 PM IST - Mid-day
+    - cron: '45 9 * * 1-5'   # 3:15 PM IST - Before close
+    - cron: '30 10 * * 1-5'  # 4:00 PM IST - EOD full report
+
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'Run mode'
+        required: true
+        default: 'full'
+        type: choice
+        options:
+          - full
+          - quick
+          - portfolio-status
+
+env:
+  GROWW_API_KEY: ${{ secrets.GROWW_API_KEY }}
+  GROWW_API_SECRET: ${{ secrets.GROWW_API_SECRET }}
+  TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+  TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+  INITIAL_CAPITAL: '5000'
+
+jobs:
+  run-agents:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run Full Pipeline
+        run: python full_pipeline.py --quick
+
+      - name: Upload reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: reports-${{ github.run_number }}
+          path: reports/
+          retention-days: 30
+
+      - name: Commit reports (if any)
+        run: |
+          git config user.name "Mudholkars Bot"
+          git config user.email "bot@mudholkars.co"
+          git add reports/daily_calls_latest.json reports/portfolio_state.json 2>/dev/null || true
+          git diff --staged --quiet || git commit -m "📊 Daily report $(date +%Y-%m-%d)"
+          git push || true

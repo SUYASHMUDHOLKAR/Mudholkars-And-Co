@@ -1,0 +1,94 @@
+=================================================================
+  🇮🇳  INDIA INTELLIGENCE REPORT — Mudholkars and Co
+  10 Jul 2026 01:05 IST
+=================================================================
+
+ARTICLES ANALYSED  : 96
+Severity           : CRITICAL=21  HIGH=13  MEDIUM=50
+
+⚠  CRITICAL INDIA ALERTS (21)
+---------------------------------------------
+  ▼ [INDIA_GEOPOLITICS        ] BJP's Bankipur Candidate Files Papers; NDA Leaders Present
+      → Geopolitical event → defence stocks gain; risk-off for broad market
+      → Nifty Impact: -3% to -1%  |  Urgency: IMMEDIATE
+      → Stocks Watch: HAL, BEL, BHEL
+  ▼ [INDIA_GEOPOLITICS        ] Thackeray Sena hits out at Sharad Pawar for holding NCP-SP mee
+      → Geopolitical event → defence stocks gain; risk-off for broad market
+      → Nifty Impact: -3% to -1%  |  Urgency: IMMEDIATE
+      → Stocks Watch: HAL, BEL, BHEL
+  ◆ [NIFTY_SENSEX_TECHNICAL   ] Goldman Sachs bans staff from most prediction market trading -
+      → Index technical move → trend confirmation, support/resistance
+      → Nifty Impact: ±1.5%  |  Urgency: IMMEDIATE
+  ▼ [INDIA_POLITICS           ] BJP hails BrahMos deal during PM Modi's tour; Congress talks L
+      → Political event → policy uncertainty, sector rotation
+      → Nifty Impact: ±1.5%  |  Urgency: IMMEDIATE
+  ◆ [NIFTY_SENSEX_TECHNICAL   ] Calcutta HC allows TMC conditional access to ₹440 cr in banks
+      → Index technical move → trend confirmation, support/resistance
+      → Nifty Impact: ±1.5%  |  Urgency: IMMEDIATE
+      → Stocks Watch: ACC
+  ◆ [NIFTY_SENSEX_TECHNICAL   ] Hiring Hoax: 93% Of Indian Job Seekers Encounter Fake Recruite
+      → Index technical move → trend confirmation, support/resistance
+      → Nifty Impact: ±1.5%  |  Urgency: IMMEDIATE
+
+TOP 10 EVENTS BY MARKET IMPACT
+---------------------------------------------
+   1. [CRITICAL] ◆  Score= 97  [CORPORATE_EARNINGS       ]
+      HDFC Bank Q1 results date: Private lender to announce June quarter earni
+      Nifty: ±3% on stock          Stocks: LT
+   2. [CRITICAL] ◆  Score= 97  [SEBI_REGULATIONS         ]
+      Russia's largest private lender Alfa Bank tests crypto trading, plans su
+      Nifty: ±1.5%                 Stocks: 
+   3. [CRITICAL] ▲  Score= 97  [STARTUPS_IPO             ]
+      SBI Funds launches biggest IPO of 2026, price band set at  ₹545-574 per 
+      Nifty: ±1.5%                 Stocks: 
+   4. [CRITICAL] ▼  Score= 85  [INDIA_GEOPOLITICS        ]
+      BJP's Bankipur Candidate Files Papers; NDA Leaders Present
+      Nifty: -3% to -1%            Stocks: HAL, BEL, BHEL
+   5. [CRITICAL] ▼  Score= 85  [INDIA_GEOPOLITICS        ]
+      Thackeray Sena hits out at Sharad Pawar for holding NCP-SP meeting in Ek
+      Nifty: -3% to -1%            Stocks: HAL, BEL, BHEL
+   6. [CRITICAL] ◆  Score= 85  [NIFTY_SENSEX_TECHNICAL   ]
+      Goldman Sachs bans staff from most prediction market trading - Bloomberg
+      Nifty: ±1.5%                 Stocks: 
+   7. [CRITICAL] ▼  Score= 85  [INDIA_POLITICS           ]
+      BJP hails BrahMos deal during PM Modi's tour; Congress talks LAC
+      Nifty: ±1.5%                 Stocks: 
+   8. [CRITICAL] ◆  Score= 85  [NIFTY_SENSEX_TECHNICAL   ]
+      Calcutta HC allows TMC conditional access to ₹440 cr in banks
+      Nifty: ±1.5%                 Stocks: ACC
+   9. [CRITICAL] ◆  Score= 85  [NIFTY_SENSEX_TECHNICAL   ]
+      Hiring Hoax: 93% Of Indian Job Seekers Encounter Fake Recruiters, Indeed
+      Nifty: ±1.5%                 Stocks: 
+  10. [CRITICAL] ▼  Score= 85  [INDIA_GEOPOLITICS        ]
+      Rajasthan woman delivers quadruplets at Jhalawar government hospital
+      Nifty: -3% to -1%            Stocks: HAL, UPL
+
+NSE SECTOR OUTLOOK (from India news today)
+---------------------------------------------
+  ▲ COMPANY_SPECIFIC      : STRONGLY_BULLISH   (+4.2)  ← HDFC Bank Q1 results date: Private lender to 
+  ▲ BROAD_MARKET          : BULLISH            (+0.8)  ← Russia's largest private lender Alfa Bank tes
+  ◆ IT                    : NEUTRAL            (+0.0)  ← TCS Says It's Still Hiring Freshers — But The
+  ◆ OIL_GAS               : NEUTRAL            (+0.0)  ← Groww responds to Nithin Kamath tweet: Direct
+  ◆ BANKING               : NEUTRAL            (+0.0)  ← Iswarya Fertility Center raises  ₹350 crore f
+  ◆ PHARMA                : NEUTRAL            (+0.0)  ← Dr Reddy's delays semaglutide supplies due to
+  ▼ INFRA                 : STRONGLY_BEARISH   (-2.5)  ← CBI files first chargesheet in Reliance Home 
+  ▼ DEFENCE               : STRONGLY_BEARISH   (-7.7)  ← BJP's Bankipur Candidate Files Papers; NDA Le
+
+EVENTS BY CATEGORY
+---------------------------------------------
+  NIFTY_SENSEX_TECHNICAL        : 49
+  INDIA_GEOPOLITICS             : 11
+  CORPORATE_EARNINGS            : 8
+  INDIA_POLITICS                : 7
+  CRUDE_OIL_INDIA               : 4
+  INDIA_DEFENCE                 : 3
+  SEBI_REGULATIONS              : 3
+  STARTUPS_IPO                  : 3
+  RBI_MONETARY_POLICY           : 2
+  INFRASTRUCTURE_CAPEX          : 2
+  IT_SECTOR_INDIA               : 1
+  INDIA_GDP_GROWTH              : 1
+  UNION_BUDGET_TAXATION         : 1
+  PHARMA_HEALTHCARE             : 1
+
+=================================================================

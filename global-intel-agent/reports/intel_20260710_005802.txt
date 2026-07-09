@@ -1,0 +1,106 @@
+=================================================================
+  GLOBAL INTELLIGENCE REPORT — Mudholkars and Co
+  10 Jul 2026 00:58 IST
+=================================================================
+
+ARTICLES ANALYSED  : 143
+India Relevant     : 22
+Severity Breakdown : CRITICAL=20  HIGH=14  MEDIUM=55
+
+⚠ CRITICAL ALERTS (20)
+----------------------------------------
+  [CENTRAL_BANK          ] Kevin Warsh names members of his Federal Reserve task forces, includin
+    → Central bank action → rate-sensitive sectors (Banking, NBFC, Realty) react
+    → Urgency: IMMEDIATE  |  Source: CNBC World
+  [CENTRAL_BANK          ] Warsh’s Fed unveils heavy-hitter task forces to overhaul monetary poli
+    → Central bank action → rate-sensitive sectors (Banking, NBFC, Realty) react
+    → Urgency: IMMEDIATE  |  Source: Investing.com News
+  [GEOPOLITICAL          ] Earnings call transcript: Richelieu Hardware Q2 2026 misses estimates 
+    → Geopolitical tension → risk-off, FII outflows, defensive stocks
+    → Urgency: IMMEDIATE  |  Source: Investing.com News
+  [CENTRAL_BANK          ] Fed’s Warsh taps broad group of central bank outsiders to oversee revi
+    → Central bank action → rate-sensitive sectors (Banking, NBFC, Realty) react
+    → Urgency: IMMEDIATE  |  Source: Investing.com News
+  [GEOPOLITICAL          ] Iran, US Are Communicating With Violence Says Harding
+    → Geopolitical tension → risk-off, FII outflows, defensive stocks
+    → Urgency: IMMEDIATE  |  Source: Bloomberg Markets
+
+TOP 10 EVENTS BY MARKET IMPACT
+----------------------------------------
+   1. [CRITICAL] [GEOPOLITICAL          ] Score=100  ▼ 🇮🇳
+      Iran, US Are Communicating With Violence Says Harding
+      Sectors: IT(BEAR), METALS(BEAR), DEFENCE(BULL)
+   2. [CRITICAL] [GOVERNMENT_POLICY     ] Score=100  ▼ 🇮🇳
+      MPs urge Labour to ditch £330m Palantir software contract with NHS
+   3. [CRITICAL] [CENTRAL_BANK          ] Score= 88  ◆
+      UPS, FedEx Shares Fall on Growing Threat From Amazon Shipping
+      Sectors: BANKING(MIXE), NBFC(BEAR), REALTY(BEAR)
+   4. [CRITICAL] [CENTRAL_BANK          ] Score= 80  ◆
+      Kevin Warsh names members of his Federal Reserve task forces, including Mar
+      Sectors: BANKING(MIXE), NBFC(BEAR), REALTY(BEAR)
+   5. [CRITICAL] [CENTRAL_BANK          ] Score= 80  ◆
+      Warsh’s Fed unveils heavy-hitter task forces to overhaul monetary policy
+      Sectors: BANKING(MIXE), NBFC(BEAR), REALTY(BEAR)
+   6. [CRITICAL] [GEOPOLITICAL          ] Score= 80  ▼
+      Earnings call transcript: Richelieu Hardware Q2 2026 misses estimates as sh
+      Sectors: IT(BEAR), METALS(BEAR), DEFENCE(BULL)
+   7. [CRITICAL] [CENTRAL_BANK          ] Score= 80  ▼
+      Fed’s Warsh taps broad group of central bank outsiders to oversee review
+      Sectors: BANKING(MIXE), NBFC(BEAR), REALTY(BEAR)
+   8. [CRITICAL] [AVIATION_TRAVEL       ] Score= 80  ◆
+      US expands Iran strikes Iran hitting  fishing piers near nuclear plant
+      Sectors: AVIATION(MIXE), OIL_GAS(MIXE), FMCG(NEUT)
+   9. [CRITICAL] [GEOPOLITICAL          ] Score= 80  ▼
+      Pakistan, Qatar Step In To Mediate As Fresh US-Iran Clashes Spark War Fears
+      Sectors: IT(BEAR), METALS(BEAR), DEFENCE(BULL)
+  10. [CRITICAL] [PANDEMIC_HEALTH       ] Score= 80  ▼
+      Risky leveraged ETFs are booming in 2026. Some worry they could be making t
+      Sectors: PHARMA(BULL), FMCG(BULL), AVIATION(BEAR)
+
+INDIAN SECTOR OUTLOOK (from global news)
+----------------------------------------
+  ▲ DEFENCE           : BULLISH        (score +29.3)  |  HAL, BEL, BHEL
+  ▲ TELECOM           : BULLISH        (score +13.9)  |  BHARTIARTL, IDEA
+  ▲ GREEN_ENERGY      : BULLISH        (score +7.5)  |  ADANIGREEN, TATAPOWER, GREENKO
+  ▲ BANKING           : BULLISH        (score +6.3)  |  HDFCBANK, ICICIBANK, KOTAKBANK
+  ▲ PHARMA            : BULLISH        (score +5.8)  |  SUNPHARMA, DRREDDY, CIPLA
+  ▲ OIL_GAS           : BULLISH        (score +5.7)  |  RELIANCE, ONGC, IOC
+  ▲ INFRA             : BULLISH        (score +2.8)  |  LT, KNR, NCC
+  ▲ CEMENT            : BULLISH        (score +2.6)  |  ULTRACEMCO, SHREECEM, AMBUJACEMENT
+  ▲ POWER             : BULLISH        (score +2.2)  |  NTPC, POWERGRID, TATAPOWER
+  ◆ AGRI              : NEUTRAL        (score +0.0)  |  UPL, PIIND, COROMANDEL
+  ▼ INSURANCE         : BEARISH        (score -1.6)  |  HDFCLIFE, SBILIFE, ICICIGI
+  ▼ FMCG              : BEARISH        (score -3.2)  |  HINDUNILVR, ITC, NESTLEIND
+  ▼ PAINTS            : BEARISH        (score -7.3)  |  ASIANPAINT, BERGER, INDIGO
+  ▼ AVIATION          : BEARISH        (score -13.3)  |  INDIGO, SPICEJET
+  ▼ NBFC              : BEARISH        (score -16.4)  |  BAJFINANCE, BAJAJFINSV, CHOLAFIN
+  ▼ REALTY            : BEARISH        (score -22.0)  |  DLF, GODREJPROP, OBEROIRLTY
+  ▼ AUTO              : BEARISH        (score -24.9)  |  MARUTI, TATAMOTORS, M&M
+  ▼ METALS            : BEARISH        (score -27.9)  |  TATASTEEL, JSWSTEEL, HINDALCO
+  ▼ IT                : BEARISH        (score -37.9)  |  TCS, INFY, WIPRO
+
+EVENTS BY CATEGORY
+----------------------------------------
+  TECHNOLOGY_DISRUPTION       : 43 articles
+  GEOPOLITICAL                : 32 articles
+  CENTRAL_BANK                : 10 articles
+  GOVERNMENT_POLICY           : 8 articles
+  ENERGY_COMMODITIES          : 8 articles
+  PANDEMIC_HEALTH             : 6 articles
+  TRADE_ECONOMICS             : 6 articles
+  AUTOMOBILE_EV               : 5 articles
+  SUPPLY_CHAIN                : 4 articles
+  BANKING_FINANCE             : 4 articles
+  CORPORATE_EVENTS            : 3 articles
+  ELECTION_POLITICS           : 3 articles
+  CURRENCY_DEBT               : 2 articles
+  LABOR_SOCIAL                : 2 articles
+  CLIMATE_ESG                 : 1 articles
+  LEGAL_REGULATION            : 1 articles
+  AVIATION_TRAVEL             : 1 articles
+  AGRICULTURE_FOOD            : 1 articles
+  INFRASTRUCTURE              : 1 articles
+  REAL_ESTATE                 : 1 articles
+  NATURAL_DISASTER            : 1 articles
+
+=================================================================

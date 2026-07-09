@@ -1,0 +1,219 @@
+{
+  "agent": {
+    "name": "GlobalIntelAgent",
+    "version": "1.0.0",
+    "company": "Mudholkars and Co",
+    "description": "Monitors 25 global non-market factors that impact stock markets"
+  },
+
+  "schedule": {
+    "interval_minutes": 30,
+    "full_report_times": ["08:00", "12:00", "16:00", "20:00"],
+    "timezone": "Asia/Kolkata"
+  },
+
+  "news_sources": {
+    "rss_feeds": [
+      {"name": "Reuters Top News",        "url": "https://feeds.reuters.com/reuters/topNews",               "priority": "critical"},
+      {"name": "Reuters Business",        "url": "https://feeds.reuters.com/reuters/businessNews",          "priority": "critical"},
+      {"name": "BBC World News",          "url": "http://feeds.bbci.co.uk/news/world/rss.xml",              "priority": "high"},
+      {"name": "BBC Business",            "url": "http://feeds.bbci.co.uk/news/business/rss.xml",           "priority": "high"},
+      {"name": "Al Jazeera",              "url": "https://www.aljazeera.com/xml/rss/all.xml",               "priority": "high"},
+      {"name": "Economic Times Markets",  "url": "https://economictimes.indiatimes.com/markets/rssfeeds/1977021501.cms", "priority": "critical"},
+      {"name": "Economic Times Economy",  "url": "https://economictimes.indiatimes.com/news/economy/rssfeeds/20604788.cms", "priority": "high"},
+      {"name": "Mint Markets",            "url": "https://www.livemint.com/rss/markets",                    "priority": "high"},
+      {"name": "Business Standard",       "url": "https://www.business-standard.com/rss/home_page_top_stories.rss", "priority": "high"},
+      {"name": "Financial Express",       "url": "https://www.financialexpress.com/feed/",                  "priority": "medium"},
+      {"name": "NDTV Business",           "url": "https://feeds.feedburner.com/ndtvprofit-latest",          "priority": "medium"},
+      {"name": "Investing.com News",      "url": "https://www.investing.com/rss/news.rss",                  "priority": "high"},
+      {"name": "MarketWatch",             "url": "https://feeds.content.dowjones.io/public/rss/mw_topstories", "priority": "high"},
+      {"name": "CNBC World",              "url": "https://www.cnbc.com/id/100003114/device/rss/rss.html",   "priority": "high"},
+      {"name": "Bloomberg Markets",       "url": "https://feeds.bloomberg.com/markets/news.rss",            "priority": "critical"},
+      {"name": "The Guardian Business",   "url": "https://www.theguardian.com/business/rss",                "priority": "medium"},
+      {"name": "NYT Business",            "url": "https://rss.nytimes.com/services/xml/rss/nyt/Business.xml","priority": "medium"},
+      {"name": "FT World",                "url": "https://www.ft.com/?format=rss",                          "priority": "high"},
+      {"name": "Geopolitical Monitor",    "url": "https://www.geopoliticalmonitor.com/feed/",               "priority": "medium"},
+      {"name": "Energy Monitor",          "url": "https://www.energymonitor.ai/feed",                       "priority": "medium"},
+      {"name": "Tech Crunch",             "url": "https://techcrunch.com/feed/",                            "priority": "medium"},
+      {"name": "Ars Technica",            "url": "http://feeds.arstechnica.com/arstechnica/index",          "priority": "low"},
+      {"name": "WHO News",                "url": "https://www.who.int/rss-feeds/news-english.xml",          "priority": "medium"},
+      {"name": "NASA News",               "url": "https://www.nasa.gov/news-release/feed/",                 "priority": "low"},
+      {"name": "IMF News",                "url": "https://www.imf.org/en/News/RSS",                         "priority": "medium"}
+    ]
+  },
+
+  "categories": {
+    "GEOPOLITICAL": {
+      "id": 1,
+      "keywords": ["war", "conflict", "sanctions", "military", "invasion", "ceasefire", "nato", "tension", "troops", "missile", "attack", "airstrike", "coup", "protest", "uprising", "revolution", "terrorism"],
+      "severity_boost": 1.5,
+      "market_relevance": "CRITICAL"
+    },
+    "GOVERNMENT_POLICY": {
+      "id": 2,
+      "keywords": ["policy", "regulation", "law", "legislation", "parliament", "congress", "budget", "fiscal", "tax", "tariff", "subsidy", "government", "minister", "president", "reform", "ban", "mandate"],
+      "severity_boost": 1.3,
+      "market_relevance": "HIGH"
+    },
+    "CENTRAL_BANK": {
+      "id": 3,
+      "keywords": ["fed", "federal reserve", "rbi", "ecb", "boj", "rate hike", "rate cut", "interest rate", "monetary policy", "inflation", "cpi", "quantitative easing", "tapering", "powell", "shaktikanta"],
+      "severity_boost": 2.0,
+      "market_relevance": "CRITICAL"
+    },
+    "NATURAL_DISASTER": {
+      "id": 4,
+      "keywords": ["earthquake", "tsunami", "hurricane", "cyclone", "flood", "drought", "wildfire", "volcano", "tornado", "landslide", "disaster", "calamity", "storm", "typhoon"],
+      "severity_boost": 1.2,
+      "market_relevance": "MEDIUM"
+    },
+    "ENERGY_COMMODITIES": {
+      "id": 5,
+      "keywords": ["opec", "oil", "crude", "gas", "pipeline", "energy", "coal", "uranium", "lithium", "refinery", "production cut", "barrel", "brent", "wti", "lng", "solar", "wind power"],
+      "severity_boost": 1.8,
+      "market_relevance": "CRITICAL"
+    },
+    "PANDEMIC_HEALTH": {
+      "id": 6,
+      "keywords": ["covid", "pandemic", "virus", "outbreak", "vaccine", "lockdown", "who", "epidemic", "disease", "pathogen", "variant", "mutation", "pharma approval", "fda approval", "drug trial"],
+      "severity_boost": 2.0,
+      "market_relevance": "CRITICAL"
+    },
+    "TECHNOLOGY_DISRUPTION": {
+      "id": 7,
+      "keywords": ["ai", "artificial intelligence", "chip", "semiconductor", "tsmc", "nvidia", "chatgpt", "openai", "quantum", "5g", "6g", "cybersecurity", "hack", "ransomware", "tech layoffs", "robot"],
+      "severity_boost": 1.4,
+      "market_relevance": "HIGH"
+    },
+    "AUTOMOBILE_EV": {
+      "id": 8,
+      "keywords": ["electric vehicle", "ev", "tesla", "battery", "charging", "autonomous", "self-driving", "toyota", "volkswagen", "bmw", "ford", "gm", "maruti", "tata motors", "auto sales", "recall"],
+      "severity_boost": 1.2,
+      "market_relevance": "HIGH"
+    },
+    "AVIATION_TRAVEL": {
+      "id": 9,
+      "keywords": ["airline", "aviation", "aircraft", "boeing", "airbus", "indigo", "airport", "flight", "jet fuel", "atf", "travel ban", "visa", "tourism", "cruise", "hotel", "strike"],
+      "severity_boost": 1.1,
+      "market_relevance": "MEDIUM"
+    },
+    "CLIMATE_ESG": {
+      "id": 10,
+      "keywords": ["climate", "carbon", "esg", "green", "renewable", "paris agreement", "cop", "emission", "net zero", "solar", "wind", "sustainability", "environment", "carbon tax", "clean energy"],
+      "severity_boost": 1.0,
+      "market_relevance": "MEDIUM"
+    },
+    "SUPPLY_CHAIN": {
+      "id": 11,
+      "keywords": ["supply chain", "suez", "shipping", "container", "port", "logistics", "freight", "semiconductor shortage", "factory", "manufacturing", "inventory", "bottleneck", "delay"],
+      "severity_boost": 1.3,
+      "market_relevance": "HIGH"
+    },
+    "AGRICULTURE_FOOD": {
+      "id": 12,
+      "keywords": ["wheat", "rice", "corn", "soybean", "fertilizer", "crop", "harvest", "food price", "agriculture", "drought", "food security", "export ban", "grain", "livestock", "bird flu", "famine"],
+      "severity_boost": 1.2,
+      "market_relevance": "MEDIUM"
+    },
+    "REAL_ESTATE": {
+      "id": 13,
+      "keywords": ["real estate", "property", "housing", "mortgage", "evergrande", "reit", "commercial property", "rent", "construction", "developer", "bubble", "default", "foreclosure"],
+      "severity_boost": 1.2,
+      "market_relevance": "MEDIUM"
+    },
+    "LABOR_SOCIAL": {
+      "id": 14,
+      "keywords": ["strike", "union", "layoff", "unemployment", "wage", "protest", "riot", "social unrest", "minimum wage", "workers", "immigration", "demographic", "pension", "retirement"],
+      "severity_boost": 1.1,
+      "market_relevance": "MEDIUM"
+    },
+    "CURRENCY_DEBT": {
+      "id": 15,
+      "keywords": ["currency", "forex", "dollar", "rupee", "yuan", "euro", "devaluation", "debt default", "sovereign debt", "imf", "bailout", "capital control", "inflation", "hyperinflation", "currency crisis"],
+      "severity_boost": 1.5,
+      "market_relevance": "HIGH"
+    },
+    "CORPORATE_EVENTS": {
+      "id": 16,
+      "keywords": ["merger", "acquisition", "ipo", "bankruptcy", "ceo resign", "layoffs", "earnings", "recall", "scandal", "fraud", "lawsuit", "settlement", "dividend", "buyback", "spinoff"],
+      "severity_boost": 1.3,
+      "market_relevance": "HIGH"
+    },
+    "BANKING_FINANCE": {
+      "id": 17,
+      "keywords": ["bank failure", "credit rating", "downgrade", "npa", "npl", "bad loan", "banking crisis", "svb", "hedge fund", "ponzi", "ftx", "crypto crash", "liquidity", "bailout", "fdic"],
+      "severity_boost": 1.8,
+      "market_relevance": "CRITICAL"
+    },
+    "DEFENSE_SPACE": {
+      "id": 18,
+      "keywords": ["defense", "military contract", "spacex", "nasa", "rocket", "satellite", "isro", "hypersonic", "nuclear", "weapons", "arms deal", "drone", "warfare", "space mission"],
+      "severity_boost": 1.1,
+      "market_relevance": "MEDIUM"
+    },
+    "WATER_RESOURCES": {
+      "id": 19,
+      "keywords": ["water shortage", "drought", "dam", "reservoir", "mining", "rare earth", "lithium", "cobalt", "resource", "scarcity", "depletion", "groundwater"],
+      "severity_boost": 1.0,
+      "market_relevance": "LOW"
+    },
+    "LEGAL_REGULATION": {
+      "id": 20,
+      "keywords": ["antitrust", "lawsuit", "court", "fine", "penalty", "gdpr", "sec", "sebi", "rbi action", "regulation", "compliance", "investigation", "probe", "ban", "judgement"],
+      "severity_boost": 1.3,
+      "market_relevance": "HIGH"
+    },
+    "INFRASTRUCTURE": {
+      "id": 21,
+      "keywords": ["infrastructure", "bridge", "highway", "railway", "power grid", "blackout", "5g rollout", "broadband", "airport expansion", "port", "smart city", "capex"],
+      "severity_boost": 1.0,
+      "market_relevance": "MEDIUM"
+    },
+    "TRADE_ECONOMICS": {
+      "id": 22,
+      "keywords": ["trade war", "tariff", "export", "import", "wto", "free trade", "fta", "gdp", "recession", "growth", "pmi", "unemployment rate", "jobs report", "economic data", "census"],
+      "severity_boost": 1.6,
+      "market_relevance": "CRITICAL"
+    },
+    "SCIENCE_INNOVATION": {
+      "id": 23,
+      "keywords": ["breakthrough", "discovery", "fusion", "gene therapy", "crispr", "quantum computing", "superconductor", "battery technology", "research", "patent", "innovation", "Nobel prize"],
+      "severity_boost": 0.8,
+      "market_relevance": "MEDIUM"
+    },
+    "ELECTION_POLITICS": {
+      "id": 24,
+      "keywords": ["election", "vote", "poll", "president", "prime minister", "modi", "trump", "biden", "parliament", "referendum", "political", "government change", "democracy", "autocracy"],
+      "severity_boost": 1.4,
+      "market_relevance": "HIGH"
+    },
+    "BLACK_SWAN": {
+      "id": 25,
+      "keywords": ["unprecedented", "historic", "black swan", "market crash", "circuit breaker", "trading halt", "systemic risk", "contagion", "collapse", "meltdown", "catastrophe", "emergency"],
+      "severity_boost": 3.0,
+      "market_relevance": "CRITICAL"
+    }
+  },
+
+  "severity_keywords": {
+    "CRITICAL": ["collapse", "crash", "war", "invasion", "nuclear", "pandemic", "circuit breaker", "emergency", "catastrophe", "meltdown", "default", "bankrupt"],
+    "HIGH":     ["surge", "spike", "crisis", "ban", "sanction", "cut", "hike", "halt", "strike", "shortage", "recall", "fraud", "layoff"],
+    "MEDIUM":   ["concern", "warning", "decline", "drop", "rise", "increase", "tension", "dispute", "slowdown", "uncertainty"],
+    "LOW":      ["report", "study", "survey", "announce", "plan", "consider", "review", "monitor", "observe"]
+  },
+
+  "india_relevance_keywords": [
+    "india", "indian", "nse", "bse", "nifty", "sensex", "rupee", "inr",
+    "rbi", "sebi", "modi", "budget", "mumbai", "delhi", "reliance",
+    "tcs", "infosys", "hdfc", "icici", "adani", "tata", "wipro",
+    "bajaj", "maruti", "ongc", "sbi", "bharti", "airtel", "itc"
+  ],
+
+  "reporting": {
+    "reports_dir": "reports",
+    "logs_dir": "logs",
+    "max_articles_per_source": 10,
+    "max_age_hours": 24,
+    "top_events_in_report": 10
+  }
+}

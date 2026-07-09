@@ -1,0 +1,2290 @@
+{
+  "agent": "IndiaIntelAgent",
+  "company": "Mudholkars and Co",
+  "timestamp": "2026-07-09T19:35:57.432987Z",
+  "generated_ist": "10 Jul 2026 01:05 IST",
+  "stats": {
+    "total": 96,
+    "by_category": {
+      "NIFTY_SENSEX_TECHNICAL": 49,
+      "INDIA_GEOPOLITICS": 11,
+      "CORPORATE_EARNINGS": 8,
+      "INDIA_POLITICS": 7,
+      "CRUDE_OIL_INDIA": 4,
+      "INDIA_DEFENCE": 3,
+      "SEBI_REGULATIONS": 3,
+      "STARTUPS_IPO": 3,
+      "RBI_MONETARY_POLICY": 2,
+      "INFRASTRUCTURE_CAPEX": 2,
+      "IT_SECTOR_INDIA": 1,
+      "INDIA_GDP_GROWTH": 1,
+      "UNION_BUDGET_TAXATION": 1,
+      "PHARMA_HEALTHCARE": 1
+    },
+    "by_severity": {
+      "CRITICAL": 21,
+      "HIGH": 13,
+      "MEDIUM": 50,
+      "LOW": 12
+    }
+  },
+  "top_10_events": [
+    {
+      "title": "HDFC Bank Q1 results date: Private lender to announce June quarter earnings on 18 July",
+      "source": "Mint Markets",
+      "published": "2026-07-09 11:51 IST",
+      "category": "CORPORATE_EARNINGS",
+      "severity": "CRITICAL",
+      "direction": "MIXED",
+      "urgency": "IMMEDIATE",
+      "impact_score": 97,
+      "nifty_impact": "\u00b13% on stock",
+      "primary_sector": "COMPANY_SPECIFIC",
+      "affected_stocks": [
+        "LT"
+      ],
+      "summary_line": "Corporate results \u2192 individual stock + sector sentiment",
+      "url": "https://www.livemint.com/market/stock-market-news/hdfc-bank-q1-results-date-private-lender-to-announce-june-quarter-earnings-on-july-16-11783617006411.html"
+    },
+    {
+      "title": "Russia's largest private lender Alfa Bank tests crypto trading, plans suite of crypto services ahead of govt legislation",
+      "source": "Mint Markets",
+      "published": "2026-07-09 11:17 IST",
+      "category": "SEBI_REGULATIONS",
+      "severity": "CRITICAL",
+      "direction": "MIXED",
+      "urgency": "IMMEDIATE",
+      "impact_score": 97,
+      "nifty_impact": "\u00b11.5%",
+      "primary_sector": "BROAD_MARKET",
+      "affected_stocks": [],
+      "summary_line": "SEBI circular/rule \u2192 market structure, F&O, FPI flow impact",
+      "url": "https://www.livemint.com/market/cryptocurrency/russia-largest-private-lender-alfa-bank-test-crypto-trading-plan-crypto-services-duma-govt-legislation-central-bank-rule-11783612684130.html"
+    },
+    {
+      "title": "SBI Funds launches biggest IPO of 2026, price band set at  \u20b9545-574 per share",
+      "source": "Mint Markets",
+      "published": "2026-07-09 07:55 IST",
+      "category": "STARTUPS_IPO",
+      "severity": "CRITICAL",
+      "direction": "BULLISH",
+      "urgency": "IMMEDIATE",
+      "impact_score": 97,
+      "nifty_impact": "\u00b11.5%",
+      "primary_sector": "BROAD_MARKET",
+      "affected_stocks": [],
+      "summary_line": "IPO/startup \u2192 listing day volatility, sector sentiment",
+      "url": "https://www.livemint.com/market/ipo/sbi-funds-launches-biggest-ipo-of-2026-price-band-set-at-545-574-per-share-11783578057891.html"
+    },
+    {
+      "title": "BJP's Bankipur Candidate Files Papers; NDA Leaders Present",
+      "source": "Economic Times Politics",
+      "published": "2026-07-09 13:48 IST",
+      "category": "INDIA_GEOPOLITICS",
+      "severity": "CRITICAL",
+      "direction": "BEARISH",
+      "urgency": "IMMEDIATE",
+      "impact_score": 85,
+      "nifty_impact": "-3% to -1%",
+      "primary_sector": "DEFENCE",
+      "affected_stocks": [
+        "HAL",
+        "BEL",
+        "BHEL"
+      ],
+      "summary_line": "Geopolitical event \u2192 defence stocks gain; risk-off for broad market",
+      "url": "https://economictimes.indiatimes.com/news/politics-and-nation/bjps-bankipur-candidate-files-papers-nda-leaders-present/articleshow/132297356.cms"
+    },
+    {
+      "title": "Thackeray Sena hits out at Sharad Pawar for holding NCP-SP meeting in Eknath Shinde's office",
+      "source": "Economic Times Politics",
+      "published": "2026-07-09 13:36 IST",
+      "category": "INDIA_GEOPOLITICS",
+      "severity": "CRITICAL",
+      "direction": "BEARISH",
+      "urgency": "IMMEDIATE",
+      "impact_score": 85,
+      "nifty_impact": "-3% to -1%",
+      "primary_sector": "DEFENCE",
+      "affected_stocks": [
+        "HAL",
+        "BEL",
+        "BHEL"
+      ],
+      "summary_line": "Geopolitical event \u2192 defence stocks gain; risk-off for broad market",
+      "url": "https://economictimes.indiatimes.com/news/politics-and-nation/thackeray-sena-hits-out-at-sharad-pawar-for-holding-ncp-sp-meeting-in-eknath-shindes-office/articleshow/132296753.cms"
+    },
+    {
+      "title": "Goldman Sachs bans staff from most prediction market trading - Bloomberg",
+      "source": "Investing.com India",
+      "published": "2026-07-09 13:22 IST",
+      "category": "NIFTY_SENSEX_TECHNICAL",
+      "severity": "CRITICAL",
+      "direction": "MIXED",
+      "urgency": "IMMEDIATE",
+      "impact_score": 85,
+      "nifty_impact": "\u00b11.5%",
+      "primary_sector": "BROAD_MARKET",
+      "affected_stocks": [],
+      "summary_line": "Index technical move \u2192 trend confirmation, support/resistance",
+      "url": "https://in.investing.com/news/stock-market-news/goldman-sachs-bans-staff-from-most-prediction-market-trading--bloomberg-93CH-5490138"
+    },
+    {
+      "title": "BJP hails BrahMos deal during PM Modi's tour; Congress talks LAC",
+      "source": "Economic Times Politics",
+      "published": "2026-07-09 13:22 IST",
+      "category": "INDIA_POLITICS",
+      "severity": "CRITICAL",
+      "direction": "BEARISH",
+      "urgency": "IMMEDIATE",
+      "impact_score": 85,
+      "nifty_impact": "\u00b11.5%",
+      "primary_sector": "BROAD_MARKET",
+      "affected_stocks": [],
+      "summary_line": "Political event \u2192 policy uncertainty, sector rotation",
+      "url": "https://economictimes.indiatimes.com/news/politics-and-nation/bjp-hails-brahmos-deal-during-pm-modis-tour-congress-talks-lac/articleshow/132296922.cms"
+    },
+    {
+      "title": "Calcutta HC allows TMC conditional access to \u20b9440 cr in banks",
+      "source": "Economic Times Politics",
+      "published": "2026-07-09 13:18 IST",
+      "category": "NIFTY_SENSEX_TECHNICAL",
+      "severity": "CRITICAL",
+      "direction": "MIXED",
+      "urgency": "IMMEDIATE",
+      "impact_score": 85,
+      "nifty_impact": "\u00b11.5%",
+      "primary_sector": "BROAD_MARKET",
+      "affected_stocks": [
+        "ACC"
+      ],
+      "summary_line": "Index technical move \u2192 trend confirmation, support/resistance",
+      "url": "https://economictimes.indiatimes.com/news/politics-and-nation/calcutta-hc-allows-tmc-conditional-access-to-440-cr-in-banks/articleshow/132296901.cms"
+    },
+    {
+      "title": "Hiring Hoax: 93% Of Indian Job Seekers Encounter Fake Recruiters, Indeed Survey Finds",
+      "source": "NDTV Profit",
+      "published": "2026-07-09 13:17 IST",
+      "category": "NIFTY_SENSEX_TECHNICAL",
+      "severity": "CRITICAL",
+      "direction": "MIXED",
+      "urgency": "IMMEDIATE",
+      "impact_score": 85,
+      "nifty_impact": "\u00b11.5%",
+      "primary_sector": "BROAD_MARKET",
+      "affected_stocks": [],
+      "summary_line": "Index technical move \u2192 trend confirmation, support/resistance",
+      "url": "https://www.ndtvprofit.com/business/hiring-hoax-93-of-india-job-seekers-encounter-fake-recruiters-indeed-survey-finds-11750638#publisher=newsstand"
+    },
+    {
+      "title": "Rajasthan woman delivers quadruplets at Jhalawar government hospital",
+      "source": "India Today Business",
+      "published": "2026-07-09 12:57 IST",
+      "category": "INDIA_GEOPOLITICS",
+      "severity": "CRITICAL",
+      "direction": "BEARISH",
+      "urgency": "IMMEDIATE",
+      "impact_score": 85,
+      "nifty_impact": "-3% to -1%",
+      "primary_sector": "DEFENCE",
+      "affected_stocks": [
+        "HAL",
+        "UPL"
+      ],
+      "summary_line": "Geopolitical event \u2192 defence stocks gain; risk-off for broad market",
+      "url": "https://www.indiatoday.in/india/story/rajasthan-jhalawar-woman-delivers-quadruplets-at-government-hospital-ptag-2944290-2026-07-09?utm_source=rss"
+    }
+  ],
+  "critical_events": [
+    {
+      "title": "BJP's Bankipur Candidate Files Papers; NDA Leaders Present",
+      "source": "Economic Times Politics",
+      "published": "2026-07-09 13:48 IST",
+      "category": "INDIA_GEOPOLITICS",
+      "severity": "CRITICAL",
+      "direction": "BEARISH",
+      "urgency": "IMMEDIATE",
+      "impact_score": 85,
+      "nifty_impact": "-3% to -1%",
+      "primary_sector": "DEFENCE",
+      "affected_stocks": [
+        "HAL",
+        "BEL",
+        "BHEL"
+      ],
+      "summary_line": "Geopolitical event \u2192 defence stocks gain; risk-off for broad market",
+      "url": "https://economictimes.indiatimes.com/news/politics-and-nation/bjps-bankipur-candidate-files-papers-nda-leaders-present/articleshow/132297356.cms"
+    },
+    {
+      "title": "Thackeray Sena hits out at Sharad Pawar for holding NCP-SP meeting in Eknath Shinde's office",
+      "source": "Economic Times Politics",
+      "published": "2026-07-09 13:36 IST",
+      "category": "INDIA_GEOPOLITICS",
+      "severity": "CRITICAL",
+      "direction": "BEARISH",
+      "urgency": "IMMEDIATE",
+      "impact_score": 85,
+      "nifty_impact": "-3% to -1%",
+      "primary_sector": "DEFENCE",
+      "affected_stocks": [
+        "HAL",
+        "BEL",
+        "BHEL"
+      ],
+      "summary_line": "Geopolitical event \u2192 defence stocks gain; risk-off for broad market",
+      "url": "https://economictimes.indiatimes.com/news/politics-and-nation/thackeray-sena-hits-out-at-sharad-pawar-for-holding-ncp-sp-meeting-in-eknath-shindes-office/articleshow/132296753.cms"
+    },
+    {
+      "title": "Goldman Sachs bans staff from most prediction market trading - Bloomberg",
+      "source": "Investing.com India",
+      "published": "2026-07-09 13:22 IST",
+      "category": "NIFTY_SENSEX_TECHNICAL",
+      "severity": "CRITICAL",
+      "direction": "MIXED",
+      "urgency": "IMMEDIATE",
+      "impact_score": 85,
+      "nifty_impact": "\u00b11.5%",
+      "primary_sector": "BROAD_MARKET",
+      "affected_stocks": [],
+      "summary_line": "Index technical move \u2192 trend confirmation, support/resistance",
+      "url": "https://in.investing.com/news/stock-market-news/goldman-sachs-bans-staff-from-most-prediction-market-trading--bloomberg-93CH-5490138"
+    },
+    {
+      "title": "BJP hails BrahMos deal during PM Modi's tour; Congress talks LAC",
+      "source": "Economic Times Politics",
+      "published": "2026-07-09 13:22 IST",
+      "category": "INDIA_POLITICS",
+      "severity": "CRITICAL",
+      "direction": "BEARISH",
+      "urgency": "IMMEDIATE",
+      "impact_score": 85,
+      "nifty_impact": "\u00b11.5%",
+      "primary_sector": "BROAD_MARKET",
+      "affected_stocks": [],
+      "summary_line": "Political event \u2192 policy uncertainty, sector rotation",
+      "url": "https://economictimes.indiatimes.com/news/politics-and-nation/bjp-hails-brahmos-deal-during-pm-modis-tour-congress-talks-lac/articleshow/132296922.cms"
+    },
+    {
+      "title": "Calcutta HC allows TMC conditional access to \u20b9440 cr in banks",
+      "source": "Economic Times Politics",
+      "published": "2026-07-09 13:18 IST",
+      "category": "NIFTY_SENSEX_TECHNICAL",
+      "severity": "CRITICAL",
+      "direction": "MIXED",
+      "urgency": "IMMEDIATE",
+      "impact_score": 85,
+      "nifty_impact": "\u00b11.5%",
+      "primary_sector": "BROAD_MARKET",
+      "affected_stocks": [
+        "ACC"
+      ],
+      "summary_line": "Index technical move \u2192 trend confirmation, support/resistance",
+      "url": "https://economictimes.indiatimes.com/news/politics-and-nation/calcutta-hc-allows-tmc-conditional-access-to-440-cr-in-banks/articleshow/132296901.cms"
+    },
+    {
+      "title": "Hiring Hoax: 93% Of Indian Job Seekers Encounter Fake Recruiters, Indeed Survey Finds",
+      "source": "NDTV Profit",
+      "published": "2026-07-09 13:17 IST",
+      "category": "NIFTY_SENSEX_TECHNICAL",
+      "severity": "CRITICAL",
+      "direction": "MIXED",
+      "urgency": "IMMEDIATE",
+      "impact_score": 85,
+      "nifty_impact": "\u00b11.5%",
+      "primary_sector": "BROAD_MARKET",
+      "affected_stocks": [],
+      "summary_line": "Index technical move \u2192 trend confirmation, support/resistance",
+      "url": "https://www.ndtvprofit.com/business/hiring-hoax-93-of-india-job-seekers-encounter-fake-recruiters-indeed-survey-finds-11750638#publisher=newsstand"
+    },
+    {
+      "title": "Rajasthan woman delivers quadruplets at Jhalawar government hospital",
+      "source": "India Today Business",
+      "published": "2026-07-09 12:57 IST",
+      "category": "INDIA_GEOPOLITICS",
+      "severity": "CRITICAL",
+      "direction": "BEARISH",
+      "urgency": "IMMEDIATE",
+      "impact_score": 85,
+      "nifty_impact": "-3% to -1%",
+      "primary_sector": "DEFENCE",
+      "affected_stocks": [
+        "HAL",
+        "UPL"
+      ],
+      "summary_line": "Geopolitical event \u2192 defence stocks gain; risk-off for broad market",
+      "url": "https://www.indiatoday.in/india/story/rajasthan-jhalawar-woman-delivers-quadruplets-at-government-hospital-ptag-2944290-2026-07-09?utm_source=rss"
+    },
+    {
+      "title": "India, Russia condemn Pahalgam and Red Fort attacks, deepen terror cooperation",
+      "source": "India Today Business",
+      "published": "2026-07-09 12:49 IST",
+      "category": "INDIA_DEFENCE",
+      "severity": "CRITICAL",
+      "direction": "BULLISH",
+      "urgency": "IMMEDIATE",
+      "impact_score": 85,
+      "nifty_impact": "\u00b11.5%",
+      "primary_sector": "DEFENCE",
+      "affected_stocks": [
+        "HAL"
+      ],
+      "summary_line": "Defence \u2192 HAL, BEL, BHEL, DRDO-linked stocks",
+      "url": "https://www.indiatoday.in/india/story/india-russia-condemn-pahalgam-red-fort-attacks-deepen-counter-terror-cooperation-ptag-2944279-2026-07-09?utm_source=rss"
+    },
+    {
+      "title": "Cancer Crisis: India Among 6 Hardest-Hit Nations Leaving Children Without Mothers, Says WHO",
+      "source": "NDTV Profit",
+      "published": "2026-07-09 12:40 IST",
+      "category": "NIFTY_SENSEX_TECHNICAL",
+      "severity": "CRITICAL",
+      "direction": "MIXED",
+      "urgency": "IMMEDIATE",
+      "impact_score": 85,
+      "nifty_impact": "\u00b11.5%",
+      "primary_sector": "BROAD_MARKET",
+      "affected_stocks": [],
+      "summary_line": "Index technical move \u2192 trend confirmation, support/resistance",
+      "url": "https://www.ndtvprofit.com/science/cancer-crisis-india-among-6-hardest-hit-nations-leaving-children-without-mothers-says-who-11750983#publisher=newsstand"
+    },
+    {
+      "title": "Pakistan, Qatar Step In To Mediate As Fresh US-Iran Clashes Spark War Fears",
+      "source": "NDTV Profit",
+      "published": "2026-07-09 12:35 IST",
+      "category": "INDIA_GEOPOLITICS",
+      "severity": "CRITICAL",
+      "direction": "BEARISH",
+      "urgency": "IMMEDIATE",
+      "impact_score": 85,
+      "nifty_impact": "-3% to -1%",
+      "primary_sector": "DEFENCE",
+      "affected_stocks": [
+        "HAL",
+        "BEL",
+        "BHEL"
+      ],
+      "summary_line": "Geopolitical event \u2192 defence stocks gain; risk-off for broad market",
+      "url": "https://www.ndtvprofit.com/world/pakistan-qatar-step-in-to-mediate-as-fresh-us-iran-clashes-spark-war-fears-11751058#publisher=newsstand"
+    },
+    {
+      "title": "Dr. Reddy\u2019s halts semaglutide supplies on quality concerns, shares plunge, Torrent recalls product",
+      "source": "The Hindu Business",
+      "published": "2026-07-09 12:32 IST",
+      "category": "INDIA_DEFENCE",
+      "severity": "CRITICAL",
+      "direction": "BULLISH",
+      "urgency": "IMMEDIATE",
+      "impact_score": 85,
+      "nifty_impact": "\u00b11.5%",
+      "primary_sector": "DEFENCE",
+      "affected_stocks": [
+        "LT",
+        "HAL"
+      ],
+      "summary_line": "Defence \u2192 HAL, BEL, BHEL, DRDO-linked stocks",
+      "url": "https://www.thehindu.com/business/dr-reddys-halts-semaglutide-supplies-on-quality-concerns-shares-plunge-torrent-recalls-product/article71203206.ece"
+    },
+    {
+      "title": "US-Iran War News Highlights: Pakistan And Qatar Working To Bring US, Iran Back To Negotiating Table",
+      "source": "NDTV Profit",
+      "published": "2026-07-09 12:21 IST",
+      "category": "INDIA_GEOPOLITICS",
+      "severity": "CRITICAL",
+      "direction": "BEARISH",
+      "urgency": "IMMEDIATE",
+      "impact_score": 85,
+      "nifty_impact": "-3% to -1%",
+      "primary_sector": "DEFENCE",
+      "affected_stocks": [
+        "HAL",
+        "BEL",
+        "BHEL"
+      ],
+      "summary_line": "Geopolitical event \u2192 defence stocks gain; risk-off for broad market",
+      "url": "https://www.ndtvprofit.com/world/us-iran-war-news-live-updates-trump-attacks-iran-retaliatory-strikes-on-kuwait-bahrain-is-iran-war-starting-again-gulf-news-11746743#publisher=newsstand"
+    },
+    {
+      "title": "HDFC Bank Q1 results date: Private lender to announce June quarter earnings on 18 July",
+      "source": "Mint Markets",
+      "published": "2026-07-09 11:51 IST",
+      "category": "CORPORATE_EARNINGS",
+      "severity": "CRITICAL",
+      "direction": "MIXED",
+      "urgency": "IMMEDIATE",
+      "impact_score": 97,
+      "nifty_impact": "\u00b13% on stock",
+      "primary_sector": "COMPANY_SPECIFIC",
+      "affected_stocks": [
+        "LT"
+      ],
+      "summary_line": "Corporate results \u2192 individual stock + sector sentiment",
+      "url": "https://www.livemint.com/market/stock-market-news/hdfc-bank-q1-results-date-private-lender-to-announce-june-quarter-earnings-on-july-16-11783617006411.html"
+    },
+    {
+      "title": "Russia's largest private lender Alfa Bank tests crypto trading, plans suite of crypto services ahead of govt legislation",
+      "source": "Mint Markets",
+      "published": "2026-07-09 11:17 IST",
+      "category": "SEBI_REGULATIONS",
+      "severity": "CRITICAL",
+      "direction": "MIXED",
+      "urgency": "IMMEDIATE",
+      "impact_score": 97,
+      "nifty_impact": "\u00b11.5%",
+      "primary_sector": "BROAD_MARKET",
+      "affected_stocks": [],
+      "summary_line": "SEBI circular/rule \u2192 market structure, F&O, FPI flow impact",
+      "url": "https://www.livemint.com/market/cryptocurrency/russia-largest-private-lender-alfa-bank-test-crypto-trading-plan-crypto-services-duma-govt-legislation-central-bank-rule-11783612684130.html"
+    },
+    {
+      "title": "\"State Of Instability\": Congress Stirs Pot After Sharad Pawar-E Shinde Meet",
+      "source": "NDTV India",
+      "published": "2026-07-09 11:17 IST",
+      "category": "INDIA_GEOPOLITICS",
+      "severity": "CRITICAL",
+      "direction": "BEARISH",
+      "urgency": "IMMEDIATE",
+      "impact_score": 85,
+      "nifty_impact": "-3% to -1%",
+      "primary_sector": "DEFENCE",
+      "affected_stocks": [
+        "HAL",
+        "BEL",
+        "BHEL"
+      ],
+      "summary_line": "Geopolitical event \u2192 defence stocks gain; risk-off for broad market",
+      "url": "https://www.ndtv.com/india-news/state-of-instability-congress-stirs-pot-after-sharad-pawar-e-shinde-meet-11750621#publisher=newsstand"
+    },
+    {
+      "title": "Sony Pictures Networks India partners with Google Gemini for KBC",
+      "source": "Economic Times Industry",
+      "published": "2026-07-09 10:58 IST",
+      "category": "NIFTY_SENSEX_TECHNICAL",
+      "severity": "CRITICAL",
+      "direction": "MIXED",
+      "urgency": "IMMEDIATE",
+      "impact_score": 85,
+      "nifty_impact": "\u00b11.5%",
+      "primary_sector": "BROAD_MARKET",
+      "affected_stocks": [
+        "ACC"
+      ],
+      "summary_line": "Index technical move \u2192 trend confirmation, support/resistance",
+      "url": "https://economictimes.indiatimes.com/industry/media/entertainment/sony-pictures-networks-india-partners-with-google-gemini-for-kbc/articleshow/132293683.cms"
+    },
+    {
+      "title": "CBI files first chargesheet in Reliance Home Finance Limited case; cites \u20b93,526 crore loss",
+      "source": "The Hindu Business",
+      "published": "2026-07-09 10:45 IST",
+      "category": "INFRASTRUCTURE_CAPEX",
+      "severity": "CRITICAL",
+      "direction": "BEARISH",
+      "urgency": "IMMEDIATE",
+      "impact_score": 85,
+      "nifty_impact": "+1% to +2%",
+      "primary_sector": "INFRA",
+      "affected_stocks": [
+        "RELIANCE"
+      ],
+      "summary_line": "Infra/PLI \u2192 L&T, Cement, Steel, Capital goods sector",
+      "url": "https://www.thehindu.com/news/national/cbi-files-first-chargesheet-in-reliance-home-finance-limited-case-cites-3526-crore-loss/article71202925.ece"
+    },
+    {
+      "title": "'If you want to understand India, get on a train': Australian PM Anthony Albanese",
+      "source": "Economic Times Politics",
+      "published": "2026-07-09 10:35 IST",
+      "category": "NIFTY_SENSEX_TECHNICAL",
+      "severity": "CRITICAL",
+      "direction": "MIXED",
+      "urgency": "IMMEDIATE",
+      "impact_score": 85,
+      "nifty_impact": "\u00b11.5%",
+      "primary_sector": "BROAD_MARKET",
+      "affected_stocks": [],
+      "summary_line": "Index technical move \u2192 trend confirmation, support/resistance",
+      "url": "https://economictimes.indiatimes.com/news/politics-and-nation/if-you-want-to-understand-india-get-on-a-train-australian-pm-anthony-albanese/videoshow/132293128.cms"
+    },
+    {
+      "title": "Iswarya Fertility Center raises  \u20b9350 crore from Orbimed Asia",
+      "source": "Mint Companies",
+      "published": "2026-07-09 10:33 IST",
+      "category": "RBI_MONETARY_POLICY",
+      "severity": "CRITICAL",
+      "direction": "MIXED",
+      "urgency": "IMMEDIATE",
+      "impact_score": 85,
+      "nifty_impact": "-2% to +2%",
+      "primary_sector": "BANKING",
+      "affected_stocks": [
+        "HDFCBANK",
+        "ICICIBANK",
+        "KOTAKBANK"
+      ],
+      "summary_line": "RBI action \u2192 Banking, NBFC, Realty, rate-sensitive sectors react",
+      "url": "https://www.livemint.com/companies/news/iswarya-fertility-center-raises-350-crore-from-orbimed-asia-11783605487610.html"
+    },
+    {
+      "title": "Ritabrata Banerjee faction to move Supreme Court over TMC funds",
+      "source": "Economic Times Politics",
+      "published": "2026-07-09 10:29 IST",
+      "category": "INDIA_POLITICS",
+      "severity": "CRITICAL",
+      "direction": "MIXED",
+      "urgency": "IMMEDIATE",
+      "impact_score": 85,
+      "nifty_impact": "\u00b11.5%",
+      "primary_sector": "BROAD_MARKET",
+      "affected_stocks": [
+        "ACC"
+      ],
+      "summary_line": "Political event \u2192 policy uncertainty, sector rotation",
+      "url": "https://economictimes.indiatimes.com/news/politics-and-nation/ritabrata-banerjee-faction-to-move-supreme-court-over-tmc-funds/articleshow/132292614.cms"
+    },
+    {
+      "title": "SBI Funds launches biggest IPO of 2026, price band set at  \u20b9545-574 per share",
+      "source": "Mint Markets",
+      "published": "2026-07-09 07:55 IST",
+      "category": "STARTUPS_IPO",
+      "severity": "CRITICAL",
+      "direction": "BULLISH",
+      "urgency": "IMMEDIATE",
+      "impact_score": 97,
+      "nifty_impact": "\u00b11.5%",
+      "primary_sector": "BROAD_MARKET",
+      "affected_stocks": [],
+      "summary_line": "IPO/startup \u2192 listing day volatility, sector sentiment",
+      "url": "https://www.livemint.com/market/ipo/sbi-funds-launches-biggest-ipo-of-2026-price-band-set-at-545-574-per-share-11783578057891.html"
+    }
+  ],
+  "sector_view": {
+    "COMPANY_SPECIFIC": {
+      "score": 4.16,
+      "events": [
+        {
+          "title": "HDFC Bank Q1 results date: Private lender to announce June quarter ear",
+          "category": "CORPORATE_EARNINGS",
+          "severity": "CRITICAL",
+          "impact": 97
+        },
+        {
+          "title": "Anand Rathi Wealth Q1 Results: Net profit rises 24%; AUM tops  \u20b91 lakh",
+          "category": "CORPORATE_EARNINGS",
+          "severity": "HIGH",
+          "impact": 69
+        },
+        {
+          "title": "SBI MF confident of IPO despite volatilities; aims to double foreign b",
+          "category": "CORPORATE_EARNINGS",
+          "severity": "HIGH",
+          "impact": 69
+        }
+      ],
+      "direction": "STRONGLY_BULLISH"
+    },
+    "BROAD_MARKET": {
+      "score": 0.76,
+      "events": [
+        {
+          "title": "Russia's largest private lender Alfa Bank tests crypto trading, plans ",
+          "category": "SEBI_REGULATIONS",
+          "severity": "CRITICAL",
+          "impact": 97
+        },
+        {
+          "title": "SBI Funds launches biggest IPO of 2026, price band set at  \u20b9545-574 pe",
+          "category": "STARTUPS_IPO",
+          "severity": "CRITICAL",
+          "impact": 97
+        },
+        {
+          "title": "Goldman Sachs bans staff from most prediction market trading - Bloombe",
+          "category": "NIFTY_SENSEX_TECHNICAL",
+          "severity": "CRITICAL",
+          "impact": 85
+        }
+      ],
+      "direction": "BULLISH"
+    },
+    "IT": {
+      "score": 0.0,
+      "events": [
+        {
+          "title": "TCS Says It's Still Hiring Freshers \u2014 But There's A Catch",
+          "category": "IT_SECTOR_INDIA",
+          "severity": "LOW",
+          "impact": 12
+        }
+      ],
+      "direction": "NEUTRAL"
+    },
+    "OIL_GAS": {
+      "score": 0.0,
+      "events": [
+        {
+          "title": "Groww responds to Nithin Kamath tweet: Direct mutual funds remain free",
+          "category": "CRUDE_OIL_INDIA",
+          "severity": "HIGH",
+          "impact": 69
+        },
+        {
+          "title": "Zerodha will keep direct mutual fund plans for free, says Nithin Kamat",
+          "category": "CRUDE_OIL_INDIA",
+          "severity": "HIGH",
+          "impact": 69
+        },
+        {
+          "title": "Costco shares fall over 4% as investors look past strong June sales",
+          "category": "CRUDE_OIL_INDIA",
+          "severity": "MEDIUM",
+          "impact": 40
+        }
+      ],
+      "direction": "NEUTRAL"
+    },
+    "BANKING": {
+      "score": 0.0,
+      "events": [
+        {
+          "title": "Iswarya Fertility Center raises  \u20b9350 crore from Orbimed Asia",
+          "category": "RBI_MONETARY_POLICY",
+          "severity": "CRITICAL",
+          "impact": 85
+        },
+        {
+          "title": "US markets brace for renewed funding pressure as leverage rises",
+          "category": "RBI_MONETARY_POLICY",
+          "severity": "MEDIUM",
+          "impact": 40
+        }
+      ],
+      "direction": "NEUTRAL"
+    },
+    "PHARMA": {
+      "score": 0.0,
+      "events": [
+        {
+          "title": "Dr Reddy's delays semaglutide supplies due to API issue",
+          "category": "PHARMA_HEALTHCARE",
+          "severity": "MEDIUM",
+          "impact": 35
+        }
+      ],
+      "direction": "NEUTRAL"
+    },
+    "INFRA": {
+      "score": -2.5,
+      "events": [
+        {
+          "title": "CBI files first chargesheet in Reliance Home Finance Limited case; cit",
+          "category": "INFRASTRUCTURE_CAPEX",
+          "severity": "CRITICAL",
+          "impact": 85
+        },
+        {
+          "title": "AI selloff drives quant funds' worst performance since August",
+          "category": "INFRASTRUCTURE_CAPEX",
+          "severity": "MEDIUM",
+          "impact": 40
+        }
+      ],
+      "direction": "STRONGLY_BEARISH"
+    },
+    "DEFENCE": {
+      "score": -7.74,
+      "events": [
+        {
+          "title": "BJP's Bankipur Candidate Files Papers; NDA Leaders Present",
+          "category": "INDIA_GEOPOLITICS",
+          "severity": "CRITICAL",
+          "impact": 85
+        },
+        {
+          "title": "Thackeray Sena hits out at Sharad Pawar for holding NCP-SP meeting in ",
+          "category": "INDIA_GEOPOLITICS",
+          "severity": "CRITICAL",
+          "impact": 85
+        },
+        {
+          "title": "Rajasthan woman delivers quadruplets at Jhalawar government hospital",
+          "category": "INDIA_GEOPOLITICS",
+          "severity": "CRITICAL",
+          "impact": 85
+        }
+      ],
+      "direction": "STRONGLY_BEARISH"
+    }
+  },
+  "all_articles": [
+    {
+      "title": "BJP's Bankipur Candidate Files Papers; NDA Leaders Present",
+      "source": "Economic Times Politics",
+      "published": "2026-07-09 13:48 IST",
+      "category": "INDIA_GEOPOLITICS",
+      "severity": "CRITICAL",
+      "direction": "BEARISH",
+      "urgency": "IMMEDIATE",
+      "impact_score": 85,
+      "nifty_impact": "-3% to -1%",
+      "primary_sector": "DEFENCE",
+      "affected_stocks": [
+        "HAL",
+        "BEL",
+        "BHEL"
+      ],
+      "summary_line": "Geopolitical event \u2192 defence stocks gain; risk-off for broad market",
+      "url": "https://economictimes.indiatimes.com/news/politics-and-nation/bjps-bankipur-candidate-files-papers-nda-leaders-present/articleshow/132297356.cms"
+    },
+    {
+      "title": "As students' meets put off, guessing game in Congress on Rahul Gandhi's schedule",
+      "source": "Economic Times Politics",
+      "published": "2026-07-09 13:46 IST",
+      "category": "INDIA_GEOPOLITICS",
+      "severity": "MEDIUM",
+      "direction": "BEARISH",
+      "urgency": "THIS_WEEK",
+      "impact_score": 35,
+      "nifty_impact": "-0.5% to Flat",
+      "primary_sector": "DEFENCE",
+      "affected_stocks": [
+        "LT",
+        "ACC"
+      ],
+      "summary_line": "Geopolitical event \u2192 defence stocks gain; risk-off for broad market",
+      "url": "https://economictimes.indiatimes.com/news/politics-and-nation/as-students-meets-put-off-guessing-game-in-congress-on-rahul-gandhis-schedule/articleshow/132297393.cms"
+    },
+    {
+      "title": "Air India fourth most punctual airline in the world",
+      "source": "Economic Times Industry",
+      "published": "2026-07-09 13:43 IST",
+      "category": "INDIA_GEOPOLITICS",
+      "severity": "MEDIUM",
+      "direction": "BULLISH",
+      "urgency": "THIS_WEEK",
+      "impact_score": 35,
+      "nifty_impact": "-0.5% to Flat",
+      "primary_sector": "DEFENCE",
+      "affected_stocks": [
+        "HAL",
+        "BEL",
+        "BHEL"
+      ],
+      "summary_line": "Geopolitical event \u2192 defence stocks gain; risk-off for broad market",
+      "url": "https://economictimes.indiatimes.com/industry/transportation/airlines-/-aviation/air-india-fourth-most-punctual-airline-in-the-world/articleshow/132297344.cms"
+    },
+    {
+      "title": "Govt to plug regulatory gaps in drug deals",
+      "source": "Economic Times Industry",
+      "published": "2026-07-09 13:39 IST",
+      "category": "NIFTY_SENSEX_TECHNICAL",
+      "severity": "HIGH",
+      "direction": "MIXED",
+      "urgency": "TODAY",
+      "impact_score": 60,
+      "nifty_impact": "\u00b10.8%",
+      "primary_sector": "BROAD_MARKET",
+      "affected_stocks": [],
+      "summary_line": "Index technical move \u2192 trend confirmation, support/resistance",
+      "url": "https://economictimes.indiatimes.com/industry/healthcare/biotech/healthcare/govt-to-plug-regulatory-gaps-in-drug-deals/articleshow/132297275.cms"
+    },
+    {
+      "title": "Penske Automotive Group stock hits all-time high at 189.66 USD",
+      "source": "Investing.com India",
+      "published": "2026-07-09 13:38 IST",
+      "category": "NIFTY_SENSEX_TECHNICAL",
+      "severity": "MEDIUM",
+      "direction": "MIXED",
+      "urgency": "THIS_WEEK",
+      "impact_score": 35,
+      "nifty_impact": "\u00b10.3%",
+      "primary_sector": "BROAD_MARKET",
+      "affected_stocks": [],
+      "summary_line": "Index technical move \u2192 trend confirmation, support/resistance",
+      "url": "https://in.investing.com/news/stock-market-news/penske-automotive-group-stock-hits-alltime-high-at-18966-usd-93CH-5490146"
+    },
+    {
+      "title": "Phillips 66 stock hits all-time high at 190.65 USD",
+      "source": "Investing.com India",
+      "published": "2026-07-09 13:38 IST",
+      "category": "NIFTY_SENSEX_TECHNICAL",
+      "severity": "MEDIUM",
+      "direction": "MIXED",
+      "urgency": "THIS_WEEK",
+      "impact_score": 35,
+      "nifty_impact": "\u00b10.3%",
+      "primary_sector": "BROAD_MARKET",
+      "affected_stocks": [],
+      "summary_line": "Index technical move \u2192 trend confirmation, support/resistance",
+      "url": "https://in.investing.com/news/stock-market-news/phillips-66-stock-hits-alltime-high-at-19065-usd-93CH-5490145"
+    },
+    {
+      "title": "Thackeray Sena hits out at Sharad Pawar for holding NCP-SP meeting in Eknath Shinde's office",
+      "source": "Economic Times Politics",
+      "published": "2026-07-09 13:36 IST",
+      "category": "INDIA_GEOPOLITICS",
+      "severity": "CRITICAL",
+      "direction": "BEARISH",
+      "urgency": "IMMEDIATE",
+      "impact_score": 85,
+      "nifty_impact": "-3% to -1%",
+      "primary_sector": "DEFENCE",
+      "affected_stocks": [
+        "HAL",
+        "BEL",
+        "BHEL"
+      ],
+      "summary_line": "Geopolitical event \u2192 defence stocks gain; risk-off for broad market",
+      "url": "https://economictimes.indiatimes.com/news/politics-and-nation/thackeray-sena-hits-out-at-sharad-pawar-for-holding-ncp-sp-meeting-in-eknath-shindes-office/articleshow/132296753.cms"
+    },
+    {
+      "title": "Form 4 DXP Enterprises Inc For: 9 July",
+      "source": "Investing.com India",
+      "published": "2026-07-09 13:34 IST",
+      "category": "NIFTY_SENSEX_TECHNICAL",
+      "severity": "MEDIUM",
+      "direction": "MIXED",
+      "urgency": "THIS_WEEK",
+      "impact_score": 35,
+      "nifty_impact": "\u00b10.3%",
+      "primary_sector": "BROAD_MARKET",
+      "affected_stocks": [],
+      "summary_line": "Index technical move \u2192 trend confirmation, support/resistance",
+      "url": "https://in.investing.com/news/stock-market-news/form-4-dxp-enterprises-inc-for-9-july-93CH-5490143"
+    },
+    {
+      "title": "Govt extends BIS certification deadline for large solar inverters to December 31",
+      "source": "Economic Times Industry",
+      "published": "2026-07-09 13:32 IST",
+      "category": "NIFTY_SENSEX_TECHNICAL",
+      "severity": "MEDIUM",
+      "direction": "MIXED",
+      "urgency": "THIS_WEEK",
+      "impact_score": 35,
+      "nifty_impact": "\u00b10.3%",
+      "primary_sector": "BROAD_MARKET",
+      "affected_stocks": [
+        "LT"
+      ],
+      "summary_line": "Index technical move \u2192 trend confirmation, support/resistance",
+      "url": "https://economictimes.indiatimes.com/industry/renewables/govt-extends-bis-certification-deadline-for-large-solar-inverters-to-december-31/articleshow/132297025.cms"
+    },
+    {
+      "title": "Electronic Arts stock hits all-time high at 206.01 USD",
+      "source": "Investing.com India",
+      "published": "2026-07-09 13:32 IST",
+      "category": "NIFTY_SENSEX_TECHNICAL",
+      "severity": "MEDIUM",
+      "direction": "MIXED",
+      "urgency": "THIS_WEEK",
+      "impact_score": 35,
+      "nifty_impact": "\u00b10.3%",
+      "primary_sector": "BROAD_MARKET",
+      "affected_stocks": [],
+      "summary_line": "Index technical move \u2192 trend confirmation, support/resistance",
+      "url": "https://in.investing.com/news/stock-market-news/electronic-arts-stock-hits-alltime-high-at-20601-usd-93CH-5490141"
+    },
+    {
+      "title": "GA-Renova &amp; CCA in race to buy American oncology: Siemens Healthineers looking to exit non-core business for Rs 1,500 crore",
+      "source": "Economic Times Industry",
+      "published": "2026-07-09 13:31 IST",
+      "category": "NIFTY_SENSEX_TECHNICAL",
+      "severity": "MEDIUM",
+      "direction": "MIXED",
+      "urgency": "THIS_WEEK",
+      "impact_score": 35,
+      "nifty_impact": "\u00b10.3%",
+      "primary_sector": "BROAD_MARKET",
+      "affected_stocks": [
+        "LT"
+      ],
+      "summary_line": "Index technical move \u2192 trend confirmation, support/resistance",
+      "url": "https://economictimes.indiatimes.com/industry/healthcare/biotech/healthcare/ga-renova-cca-in-race-to-buy-american-oncology-siemens-healthineers-looking-to-exit-non-core-business-for-rs-1500-crore/articleshow/132297041.cms"
+    },
+    {
+      "title": "CISF recovers 428 metric tonnes of illegal coal in West Bengal, Jharkhand",
+      "source": "Economic Times Industry",
+      "published": "2026-07-09 13:29 IST",
+      "category": "NIFTY_SENSEX_TECHNICAL",
+      "severity": "MEDIUM",
+      "direction": "MIXED",
+      "urgency": "THIS_WEEK",
+      "impact_score": 35,
+      "nifty_impact": "\u00b10.3%",
+      "primary_sector": "BROAD_MARKET",
+      "affected_stocks": [
+        "LT"
+      ],
+      "summary_line": "Index technical move \u2192 trend confirmation, support/resistance",
+      "url": "https://economictimes.indiatimes.com/industry/energy/cisf-recovers-428-metric-tonnes-of-illegal-coal-in-west-bengal-jharkhand/articleshow/132296988.cms"
+    },
+    {
+      "title": "Septerna Inc stock hits all-time high at 38.01 USD",
+      "source": "Investing.com India",
+      "published": "2026-07-09 13:28 IST",
+      "category": "NIFTY_SENSEX_TECHNICAL",
+      "severity": "MEDIUM",
+      "direction": "MIXED",
+      "urgency": "THIS_WEEK",
+      "impact_score": 35,
+      "nifty_impact": "\u00b10.3%",
+      "primary_sector": "BROAD_MARKET",
+      "affected_stocks": [],
+      "summary_line": "Index technical move \u2192 trend confirmation, support/resistance",
+      "url": "https://in.investing.com/news/stock-market-news/septerna-inc-stock-hits-alltime-high-at-3801-usd-93CH-5490140"
+    },
+    {
+      "title": "Samsung in rejig mode to boost India play: Company to remove overlapping functions across TV &amp; home appliances units",
+      "source": "Economic Times Industry",
+      "published": "2026-07-09 13:24 IST",
+      "category": "CORPORATE_EARNINGS",
+      "severity": "MEDIUM",
+      "direction": "MIXED",
+      "urgency": "THIS_WEEK",
+      "impact_score": 35,
+      "nifty_impact": "\u00b10.5% on stock",
+      "primary_sector": "COMPANY_SPECIFIC",
+      "affected_stocks": [
+        "ACC"
+      ],
+      "summary_line": "Corporate results \u2192 individual stock + sector sentiment",
+      "url": "https://economictimes.indiatimes.com/industry/cons-products/electronics/samsung-in-rejig-mode-to-boost-india-play-company-to-remove-overlapping-functions-across-tv-home-appliances-units/articleshow/132296910.cms"
+    },
+    {
+      "title": "Wisdomtree stock hits 52-week high at 19.86 USD",
+      "source": "Investing.com India",
+      "published": "2026-07-09 13:24 IST",
+      "category": "NIFTY_SENSEX_TECHNICAL",
+      "severity": "MEDIUM",
+      "direction": "MIXED",
+      "urgency": "THIS_WEEK",
+      "impact_score": 35,
+      "nifty_impact": "\u00b10.3%",
+      "primary_sector": "BROAD_MARKET",
+      "affected_stocks": [],
+      "summary_line": "Index technical move \u2192 trend confirmation, support/resistance",
+      "url": "https://in.investing.com/news/stock-market-news/wisdomtree-stock-hits-52week-high-at-1986-usd-93CH-5490139"
+    },
+    {
+      "title": "Goldman Sachs bans staff from most prediction market trading - Bloomberg",
+      "source": "Investing.com India",
+      "published": "2026-07-09 13:22 IST",
+      "category": "NIFTY_SENSEX_TECHNICAL",
+      "severity": "CRITICAL",
+      "direction": "MIXED",
+      "urgency": "IMMEDIATE",
+      "impact_score": 85,
+      "nifty_impact": "\u00b11.5%",
+      "primary_sector": "BROAD_MARKET",
+      "affected_stocks": [],
+      "summary_line": "Index technical move \u2192 trend confirmation, support/resistance",
+      "url": "https://in.investing.com/news/stock-market-news/goldman-sachs-bans-staff-from-most-prediction-market-trading--bloomberg-93CH-5490138"
+    },
+    {
+      "title": "BJP hails BrahMos deal during PM Modi's tour; Congress talks LAC",
+      "source": "Economic Times Politics",
+      "published": "2026-07-09 13:22 IST",
+      "category": "INDIA_POLITICS",
+      "severity": "CRITICAL",
+      "direction": "BEARISH",
+      "urgency": "IMMEDIATE",
+      "impact_score": 85,
+      "nifty_impact": "\u00b11.5%",
+      "primary_sector": "BROAD_MARKET",
+      "affected_stocks": [],
+      "summary_line": "Political event \u2192 policy uncertainty, sector rotation",
+      "url": "https://economictimes.indiatimes.com/news/politics-and-nation/bjp-hails-brahmos-deal-during-pm-modis-tour-congress-talks-lac/articleshow/132296922.cms"
+    },
+    {
+      "title": "Prevent witness tampering: DMK to SC appointed Karur Panel",
+      "source": "Economic Times Politics",
+      "published": "2026-07-09 13:21 IST",
+      "category": "NIFTY_SENSEX_TECHNICAL",
+      "severity": "MEDIUM",
+      "direction": "MIXED",
+      "urgency": "THIS_WEEK",
+      "impact_score": 35,
+      "nifty_impact": "\u00b10.3%",
+      "primary_sector": "BROAD_MARKET",
+      "affected_stocks": [],
+      "summary_line": "Index technical move \u2192 trend confirmation, support/resistance",
+      "url": "https://economictimes.indiatimes.com/news/politics-and-nation/prevent-witness-tampering-dmk-to-sc-appointed-karur-panel/articleshow/132296775.cms"
+    },
+    {
+      "title": "France vs Morocco Live Streaming: Starting XI, Team News; How To Watch World Cup Match On TV, Online?",
+      "source": "NDTV Profit",
+      "published": "2026-07-09 13:21 IST",
+      "category": "NIFTY_SENSEX_TECHNICAL",
+      "severity": "MEDIUM",
+      "direction": "MIXED",
+      "urgency": "THIS_WEEK",
+      "impact_score": 35,
+      "nifty_impact": "\u00b10.3%",
+      "primary_sector": "BROAD_MARKET",
+      "affected_stocks": [],
+      "summary_line": "Index technical move \u2192 trend confirmation, support/resistance",
+      "url": "https://www.ndtvprofit.com/sports/football-fifa-world-cup-2026-france-vs-morocco-live-streaming-telecast-date-time-where-to-watch-quarter-final-match-tv-online-fra-vs-mar-kylian-mbappe-11743511#publisher=newsstand"
+    },
+    {
+      "title": "TCS Says It's Still Hiring Freshers \u2014 But There's A Catch",
+      "source": "NDTV Profit",
+      "published": "2026-07-09 13:18 IST",
+      "category": "IT_SECTOR_INDIA",
+      "severity": "LOW",
+      "direction": "MIXED",
+      "urgency": "WATCH",
+      "impact_score": 12,
+      "nifty_impact": "\u00b10.3%",
+      "primary_sector": "IT",
+      "affected_stocks": [
+        "TCS"
+      ],
+      "summary_line": "IT sector news \u2192 TCS, Infosys, Wipro direct impact",
+      "url": "https://www.ndtvprofit.com/technology/tcs-says-its-still-hiring-freshers-but-theres-a-catch-11750693#publisher=newsstand"
+    },
+    {
+      "title": "Calcutta HC allows TMC conditional access to \u20b9440 cr in banks",
+      "source": "Economic Times Politics",
+      "published": "2026-07-09 13:18 IST",
+      "category": "NIFTY_SENSEX_TECHNICAL",
+      "severity": "CRITICAL",
+      "direction": "MIXED",
+      "urgency": "IMMEDIATE",
+      "impact_score": 85,
+      "nifty_impact": "\u00b11.5%",
+      "primary_sector": "BROAD_MARKET",
+      "affected_stocks": [
+        "ACC"
+      ],
+      "summary_line": "Index technical move \u2192 trend confirmation, support/resistance",
+      "url": "https://economictimes.indiatimes.com/news/politics-and-nation/calcutta-hc-allows-tmc-conditional-access-to-440-cr-in-banks/articleshow/132296901.cms"
+    },
+    {
+      "title": "Hiring Hoax: 93% Of Indian Job Seekers Encounter Fake Recruiters, Indeed Survey Finds",
+      "source": "NDTV Profit",
+      "published": "2026-07-09 13:17 IST",
+      "category": "NIFTY_SENSEX_TECHNICAL",
+      "severity": "CRITICAL",
+      "direction": "MIXED",
+      "urgency": "IMMEDIATE",
+      "impact_score": 85,
+      "nifty_impact": "\u00b11.5%",
+      "primary_sector": "BROAD_MARKET",
+      "affected_stocks": [],
+      "summary_line": "Index technical move \u2192 trend confirmation, support/resistance",
+      "url": "https://www.ndtvprofit.com/business/hiring-hoax-93-of-india-job-seekers-encounter-fake-recruiters-indeed-survey-finds-11750638#publisher=newsstand"
+    },
+    {
+      "title": "A10 Network stock hits all-time high at 38.39 USD",
+      "source": "Investing.com India",
+      "published": "2026-07-09 13:10 IST",
+      "category": "NIFTY_SENSEX_TECHNICAL",
+      "severity": "MEDIUM",
+      "direction": "MIXED",
+      "urgency": "THIS_WEEK",
+      "impact_score": 35,
+      "nifty_impact": "\u00b10.3%",
+      "primary_sector": "BROAD_MARKET",
+      "affected_stocks": [],
+      "summary_line": "Index technical move \u2192 trend confirmation, support/resistance",
+      "url": "https://in.investing.com/news/stock-market-news/a10-network-stock-hits-alltime-high-at-3839-usd-93CH-5490137"
+    },
+    {
+      "title": "Australia's Former PM Scott Morrison Pushes For More \"Indo\" In Indo-Pacific Agenda",
+      "source": "NDTV India",
+      "published": "2026-07-09 13:07 IST",
+      "category": "INDIA_POLITICS",
+      "severity": "LOW",
+      "direction": "MIXED",
+      "urgency": "WATCH",
+      "impact_score": 12,
+      "nifty_impact": "\u00b10.3%",
+      "primary_sector": "BROAD_MARKET",
+      "affected_stocks": [],
+      "summary_line": "Political event \u2192 policy uncertainty, sector rotation",
+      "url": "https://www.ndtv.com/india-news/australias-former-pm-scott-morrison-pushes-for-more-indo-in-indo-pacific-agenda-11751144#publisher=newsstand"
+    },
+    {
+      "title": "Become An \"Expert Mother\" First, Then IAS Officer: UP Governor To Women",
+      "source": "NDTV India",
+      "published": "2026-07-09 13:07 IST",
+      "category": "NIFTY_SENSEX_TECHNICAL",
+      "severity": "MEDIUM",
+      "direction": "MIXED",
+      "urgency": "THIS_WEEK",
+      "impact_score": 35,
+      "nifty_impact": "\u00b10.3%",
+      "primary_sector": "BROAD_MARKET",
+      "affected_stocks": [
+        "LT"
+      ],
+      "summary_line": "Index technical move \u2192 trend confirmation, support/resistance",
+      "url": "https://www.ndtv.com/india-news/become-an-expert-mother-first-then-ias-officer-up-governor-anandiben-patel-to-women-11751106#publisher=newsstand"
+    },
+    {
+      "title": "Musk calls rival Anthropic the current frontrunner in AI",
+      "source": "Investing.com India",
+      "published": "2026-07-09 13:04 IST",
+      "category": "NIFTY_SENSEX_TECHNICAL",
+      "severity": "MEDIUM",
+      "direction": "MIXED",
+      "urgency": "THIS_WEEK",
+      "impact_score": 35,
+      "nifty_impact": "\u00b10.3%",
+      "primary_sector": "BROAD_MARKET",
+      "affected_stocks": [],
+      "summary_line": "Index technical move \u2192 trend confirmation, support/resistance",
+      "url": "https://in.investing.com/news/stock-market-news/musk-calls-rival-anthropic-the-current-frontrunner-in-ai-5490136"
+    },
+    {
+      "title": "Abnormal Demographic Change In Border Areas Due To Infiltration: Amit Shah",
+      "source": "NDTV India",
+      "published": "2026-07-09 13:01 IST",
+      "category": "INDIA_GEOPOLITICS",
+      "severity": "LOW",
+      "direction": "BEARISH",
+      "urgency": "WATCH",
+      "impact_score": 12,
+      "nifty_impact": "\u00b10.3%",
+      "primary_sector": "DEFENCE",
+      "affected_stocks": [
+        "LT"
+      ],
+      "summary_line": "Geopolitical event \u2192 defence stocks gain; risk-off for broad market",
+      "url": "https://www.ndtv.com/india-news/abnormal-demographic-change-in-border-areas-due-to-infiltration-amit-shah-11751129#publisher=newsstand"
+    },
+    {
+      "title": "Oracle stock shrugs off S&P downgrade to \u2019BBB-\u2019, but $160B debt shadow looms",
+      "source": "Investing.com India",
+      "published": "2026-07-09 13:00 IST",
+      "category": "NIFTY_SENSEX_TECHNICAL",
+      "severity": "MEDIUM",
+      "direction": "MIXED",
+      "urgency": "THIS_WEEK",
+      "impact_score": 35,
+      "nifty_impact": "\u00b10.3%",
+      "primary_sector": "BROAD_MARKET",
+      "affected_stocks": [],
+      "summary_line": "Index technical move \u2192 trend confirmation, support/resistance",
+      "url": "https://in.investing.com/news/stock-market-news/oracle-stock-shrugs-off-sp-downgrade-to-bbb-but-120b-debt-shadow-looms-5490135"
+    },
+    {
+      "title": "Bullying, Call For Help: CCTV Shows Moments Before Jaipur Schoolgirl's Death",
+      "source": "NDTV India",
+      "published": "2026-07-09 12:58 IST",
+      "category": "NIFTY_SENSEX_TECHNICAL",
+      "severity": "MEDIUM",
+      "direction": "MIXED",
+      "urgency": "THIS_WEEK",
+      "impact_score": 35,
+      "nifty_impact": "\u00b10.3%",
+      "primary_sector": "BROAD_MARKET",
+      "affected_stocks": [],
+      "summary_line": "Index technical move \u2192 trend confirmation, support/resistance",
+      "url": "https://www.ndtv.com/india-news/bullying-call-for-help-cctv-shows-moments-before-jaipur-schoolgirls-death-11751123#publisher=newsstand"
+    },
+    {
+      "title": "Rajasthan woman delivers quadruplets at Jhalawar government hospital",
+      "source": "India Today Business",
+      "published": "2026-07-09 12:57 IST",
+      "category": "INDIA_GEOPOLITICS",
+      "severity": "CRITICAL",
+      "direction": "BEARISH",
+      "urgency": "IMMEDIATE",
+      "impact_score": 85,
+      "nifty_impact": "-3% to -1%",
+      "primary_sector": "DEFENCE",
+      "affected_stocks": [
+        "HAL",
+        "UPL"
+      ],
+      "summary_line": "Geopolitical event \u2192 defence stocks gain; risk-off for broad market",
+      "url": "https://www.indiatoday.in/india/story/rajasthan-jhalawar-woman-delivers-quadruplets-at-government-hospital-ptag-2944290-2026-07-09?utm_source=rss"
+    },
+    {
+      "title": "Tihar Jail Food Spicy, Oily, Need Shrimp, Pasta: US Mercenary To Court",
+      "source": "NDTV India",
+      "published": "2026-07-09 12:57 IST",
+      "category": "NIFTY_SENSEX_TECHNICAL",
+      "severity": "MEDIUM",
+      "direction": "MIXED",
+      "urgency": "THIS_WEEK",
+      "impact_score": 35,
+      "nifty_impact": "\u00b10.3%",
+      "primary_sector": "BROAD_MARKET",
+      "affected_stocks": [
+        "OIL",
+        "ACC"
+      ],
+      "summary_line": "Index technical move \u2192 trend confirmation, support/resistance",
+      "url": "https://www.ndtv.com/india-news/matthew-vandyke-mizoram-tihar-jail-food-spicy-oily-need-shrimp-pasta-us-mercenary-to-court-11750864#publisher=newsstand"
+    },
+    {
+      "title": "12-year-old dies after cricket bat slips from batter's hand and hits him in UP",
+      "source": "India Today Business",
+      "published": "2026-07-09 12:55 IST",
+      "category": "NIFTY_SENSEX_TECHNICAL",
+      "severity": "MEDIUM",
+      "direction": "MIXED",
+      "urgency": "THIS_WEEK",
+      "impact_score": 35,
+      "nifty_impact": "\u00b10.3%",
+      "primary_sector": "BROAD_MARKET",
+      "affected_stocks": [],
+      "summary_line": "Index technical move \u2192 trend confirmation, support/resistance",
+      "url": "https://www.indiatoday.in/india/story/bhadohi-cricket-match-death-12-year-old-boy-dies-after-bat-slips-and-hits-head-2944493-2026-07-09?utm_source=rss"
+    },
+    {
+      "title": "Police seek review of Delhi riots accused Shahrukh Pathan's raw eggs, TV jail order",
+      "source": "India Today Business",
+      "published": "2026-07-09 12:51 IST",
+      "category": "NIFTY_SENSEX_TECHNICAL",
+      "severity": "MEDIUM",
+      "direction": "MIXED",
+      "urgency": "THIS_WEEK",
+      "impact_score": 35,
+      "nifty_impact": "\u00b10.3%",
+      "primary_sector": "BROAD_MARKET",
+      "affected_stocks": [
+        "ACC"
+      ],
+      "summary_line": "Index technical move \u2192 trend confirmation, support/resistance",
+      "url": "https://www.indiatoday.in/india/story/shahrukh-pathan-jail-order-delhi-police-seeks-review-over-raw-eggs-and-tv-ptag-2944227-2026-07-09?utm_source=rss"
+    },
+    {
+      "title": "BSNL announces satellite phone for \u20b91.34 lakh",
+      "source": "The Hindu Business",
+      "published": "2026-07-09 12:50 IST",
+      "category": "NIFTY_SENSEX_TECHNICAL",
+      "severity": "MEDIUM",
+      "direction": "MIXED",
+      "urgency": "THIS_WEEK",
+      "impact_score": 35,
+      "nifty_impact": "\u00b10.3%",
+      "primary_sector": "BROAD_MARKET",
+      "affected_stocks": [],
+      "summary_line": "Index technical move \u2192 trend confirmation, support/resistance",
+      "url": "https://www.thehindu.com/business/bsnl-announces-satellite-phone-for-134-lakh/article71203868.ece"
+    },
+    {
+      "title": "India, Russia condemn Pahalgam and Red Fort attacks, deepen terror cooperation",
+      "source": "India Today Business",
+      "published": "2026-07-09 12:49 IST",
+      "category": "INDIA_DEFENCE",
+      "severity": "CRITICAL",
+      "direction": "BULLISH",
+      "urgency": "IMMEDIATE",
+      "impact_score": 85,
+      "nifty_impact": "\u00b11.5%",
+      "primary_sector": "DEFENCE",
+      "affected_stocks": [
+        "HAL"
+      ],
+      "summary_line": "Defence \u2192 HAL, BEL, BHEL, DRDO-linked stocks",
+      "url": "https://www.indiatoday.in/india/story/india-russia-condemn-pahalgam-red-fort-attacks-deepen-counter-terror-cooperation-ptag-2944279-2026-07-09?utm_source=rss"
+    },
+    {
+      "title": "CJI Surya Kant-led bench to hear plea seeking CBI probe into temple donation row",
+      "source": "India Today Business",
+      "published": "2026-07-09 12:48 IST",
+      "category": "NIFTY_SENSEX_TECHNICAL",
+      "severity": "MEDIUM",
+      "direction": "MIXED",
+      "urgency": "THIS_WEEK",
+      "impact_score": 35,
+      "nifty_impact": "\u00b10.3%",
+      "primary_sector": "BROAD_MARKET",
+      "affected_stocks": [],
+      "summary_line": "Index technical move \u2192 trend confirmation, support/resistance",
+      "url": "https://www.indiatoday.in/india/story/ram-temple-trust-donation-probe-supreme-court-hearing-july-13-2944474-2026-07-09?utm_source=rss"
+    },
+    {
+      "title": "BJP MLA vows to stay barefoot until roads are built in Madhya Pradesh's Kalapipal",
+      "source": "India Today Business",
+      "published": "2026-07-09 12:46 IST",
+      "category": "INDIA_POLITICS",
+      "severity": "LOW",
+      "direction": "MIXED",
+      "urgency": "WATCH",
+      "impact_score": 12,
+      "nifty_impact": "\u00b10.3%",
+      "primary_sector": "BROAD_MARKET",
+      "affected_stocks": [
+        "LT"
+      ],
+      "summary_line": "Political event \u2192 policy uncertainty, sector rotation",
+      "url": "https://www.indiatoday.in/india/story/madhya-pradesh-bjp-mla-ghanshyam-chandravanshi-no-footwear-kalapipal-roads-ptag-2944361-2026-07-09?utm_source=rss"
+    },
+    {
+      "title": "Dr. Reddy\u2019s to delay semaglutide supplies due to quality issue, shares hit",
+      "source": "The Hindu Business",
+      "published": "2026-07-09 12:46 IST",
+      "category": "INDIA_GEOPOLITICS",
+      "severity": "MEDIUM",
+      "direction": "BEARISH",
+      "urgency": "THIS_WEEK",
+      "impact_score": 35,
+      "nifty_impact": "-0.5% to Flat",
+      "primary_sector": "DEFENCE",
+      "affected_stocks": [
+        "HAL",
+        "BEL",
+        "BHEL"
+      ],
+      "summary_line": "Geopolitical event \u2192 defence stocks gain; risk-off for broad market",
+      "url": "https://www.thehindu.com/business/Industry/dr-reddys-to-delay-semaglutide-supplies-due-to-quality-isssue-shares-hit/article71201291.ece"
+    },
+    {
+      "title": "Andhra man dies of Covid after four days of failed antibiotic treatment",
+      "source": "India Today Business",
+      "published": "2026-07-09 12:46 IST",
+      "category": "NIFTY_SENSEX_TECHNICAL",
+      "severity": "MEDIUM",
+      "direction": "MIXED",
+      "urgency": "THIS_WEEK",
+      "impact_score": 35,
+      "nifty_impact": "\u00b10.3%",
+      "primary_sector": "BROAD_MARKET",
+      "affected_stocks": [],
+      "summary_line": "Index technical move \u2192 trend confirmation, support/resistance",
+      "url": "https://www.indiatoday.in/india/andhra-pradesh/story/covid-19-death-kadapa-masapeta-man-dies-after-antibiotics-fail-2944489-2026-07-09?utm_source=rss"
+    },
+    {
+      "title": "Tamil Nadu outperforms national averages across key school education indicators",
+      "source": "India Today Business",
+      "published": "2026-07-09 12:45 IST",
+      "category": "NIFTY_SENSEX_TECHNICAL",
+      "severity": "MEDIUM",
+      "direction": "MIXED",
+      "urgency": "THIS_WEEK",
+      "impact_score": 35,
+      "nifty_impact": "\u00b10.3%",
+      "primary_sector": "BROAD_MARKET",
+      "affected_stocks": [],
+      "summary_line": "Index technical move \u2192 trend confirmation, support/resistance",
+      "url": "https://www.indiatoday.in/india/story/tamil-nadu-school-education-indicators-surpass-national-average-udise-report-ptag-2944035-2026-07-09?utm_source=rss"
+    },
+    {
+      "title": "First become an expert mother, then go for IAS: UP governor's convocation message",
+      "source": "India Today Business",
+      "published": "2026-07-09 12:42 IST",
+      "category": "NIFTY_SENSEX_TECHNICAL",
+      "severity": "MEDIUM",
+      "direction": "MIXED",
+      "urgency": "THIS_WEEK",
+      "impact_score": 35,
+      "nifty_impact": "\u00b10.3%",
+      "primary_sector": "BROAD_MARKET",
+      "affected_stocks": [],
+      "summary_line": "Index technical move \u2192 trend confirmation, support/resistance",
+      "url": "https://www.indiatoday.in/india/story/anandiben-patel-expert-mothers-remark-kanpur-convocation-digilocker-degrees-ptag-2944387-2026-07-09?utm_source=rss"
+    },
+    {
+      "title": "Chhattisgarh teen dies by suicide after mart owner accuses her of theft",
+      "source": "India Today Business",
+      "published": "2026-07-09 12:41 IST",
+      "category": "NIFTY_SENSEX_TECHNICAL",
+      "severity": "MEDIUM",
+      "direction": "MIXED",
+      "urgency": "THIS_WEEK",
+      "impact_score": 35,
+      "nifty_impact": "\u00b10.3%",
+      "primary_sector": "BROAD_MARKET",
+      "affected_stocks": [
+        "ACC"
+      ],
+      "summary_line": "Index technical move \u2192 trend confirmation, support/resistance",
+      "url": "https://www.indiatoday.in/india/story/chhattisgarh-koriya-teen-suicide-theft-accusation-scooter-seizure-ic-mart-ptag-2944464-2026-07-09?utm_source=rss"
+    },
+    {
+      "title": "Cancer Crisis: India Among 6 Hardest-Hit Nations Leaving Children Without Mothers, Says WHO",
+      "source": "NDTV Profit",
+      "published": "2026-07-09 12:40 IST",
+      "category": "NIFTY_SENSEX_TECHNICAL",
+      "severity": "CRITICAL",
+      "direction": "MIXED",
+      "urgency": "IMMEDIATE",
+      "impact_score": 85,
+      "nifty_impact": "\u00b11.5%",
+      "primary_sector": "BROAD_MARKET",
+      "affected_stocks": [],
+      "summary_line": "Index technical move \u2192 trend confirmation, support/resistance",
+      "url": "https://www.ndtvprofit.com/science/cancer-crisis-india-among-6-hardest-hit-nations-leaving-children-without-mothers-says-who-11750983#publisher=newsstand"
+    },
+    {
+      "title": "TCS Q1 Highlights: Wage Hikes Impacted Margins By 170 Basis Points; BSFI Segment Led Growth",
+      "source": "NDTV Profit",
+      "published": "2026-07-09 12:39 IST",
+      "category": "SEBI_REGULATIONS",
+      "severity": "HIGH",
+      "direction": "MIXED",
+      "urgency": "TODAY",
+      "impact_score": 60,
+      "nifty_impact": "\u00b10.8%",
+      "primary_sector": "BROAD_MARKET",
+      "affected_stocks": [
+        "TCS",
+        "BEL"
+      ],
+      "summary_line": "SEBI circular/rule \u2192 market structure, F&O, FPI flow impact",
+      "url": "https://www.ndtvprofit.com/markets/tcs-q1-results-live-updates-share-price-dividend-q1fy27-update-11747057#publisher=newsstand"
+    },
+    {
+      "title": "Pakistan, Qatar Step In To Mediate As Fresh US-Iran Clashes Spark War Fears",
+      "source": "NDTV Profit",
+      "published": "2026-07-09 12:35 IST",
+      "category": "INDIA_GEOPOLITICS",
+      "severity": "CRITICAL",
+      "direction": "BEARISH",
+      "urgency": "IMMEDIATE",
+      "impact_score": 85,
+      "nifty_impact": "-3% to -1%",
+      "primary_sector": "DEFENCE",
+      "affected_stocks": [
+        "HAL",
+        "BEL",
+        "BHEL"
+      ],
+      "summary_line": "Geopolitical event \u2192 defence stocks gain; risk-off for broad market",
+      "url": "https://www.ndtvprofit.com/world/pakistan-qatar-step-in-to-mediate-as-fresh-us-iran-clashes-spark-war-fears-11751058#publisher=newsstand"
+    },
+    {
+      "title": "BJP Inducts 3 Ex-Trinamool MPs, Fields Them For Rajya Sabha Polls",
+      "source": "NDTV India",
+      "published": "2026-07-09 12:33 IST",
+      "category": "INDIA_POLITICS",
+      "severity": "LOW",
+      "direction": "MIXED",
+      "urgency": "WATCH",
+      "impact_score": 12,
+      "nifty_impact": "\u00b10.3%",
+      "primary_sector": "BROAD_MARKET",
+      "affected_stocks": [
+        "ACC"
+      ],
+      "summary_line": "Political event \u2192 policy uncertainty, sector rotation",
+      "url": "https://www.ndtv.com/india-news/shubhendu-shekhar-roy-sushmita-dev-and-prakash-chik-baraik-hours-after-joining-bjp-3-ex-trinamool-leaders-get-rajya-sabha-nominations-11750955#publisher=newsstand"
+    },
+    {
+      "title": "Dhanush's Om Adds Naseeruddin Shah; Veteran Actor Returns To Tamil Cinema After 26 Years",
+      "source": "NDTV Profit",
+      "published": "2026-07-09 12:32 IST",
+      "category": "NIFTY_SENSEX_TECHNICAL",
+      "severity": "MEDIUM",
+      "direction": "MIXED",
+      "urgency": "THIS_WEEK",
+      "impact_score": 35,
+      "nifty_impact": "\u00b10.3%",
+      "primary_sector": "BROAD_MARKET",
+      "affected_stocks": [],
+      "summary_line": "Index technical move \u2192 trend confirmation, support/resistance",
+      "url": "https://www.ndtvprofit.com/lifestyle/dhanushs-om-adds-naseeruddin-shah-veteran-actor-returns-to-tamil-cinema-after-26-years-11750976#publisher=newsstand"
+    },
+    {
+      "title": "Dr. Reddy\u2019s halts semaglutide supplies on quality concerns, shares plunge, Torrent recalls product",
+      "source": "The Hindu Business",
+      "published": "2026-07-09 12:32 IST",
+      "category": "INDIA_DEFENCE",
+      "severity": "CRITICAL",
+      "direction": "BULLISH",
+      "urgency": "IMMEDIATE",
+      "impact_score": 85,
+      "nifty_impact": "\u00b11.5%",
+      "primary_sector": "DEFENCE",
+      "affected_stocks": [
+        "LT",
+        "HAL"
+      ],
+      "summary_line": "Defence \u2192 HAL, BEL, BHEL, DRDO-linked stocks",
+      "url": "https://www.thehindu.com/business/dr-reddys-halts-semaglutide-supplies-on-quality-concerns-shares-plunge-torrent-recalls-product/article71203206.ece"
+    },
+    {
+      "title": "Gadkari Says Govt Conducting Trials For Hydrogen As Fuel Across 10 Routes",
+      "source": "NDTV Profit",
+      "published": "2026-07-09 12:29 IST",
+      "category": "NIFTY_SENSEX_TECHNICAL",
+      "severity": "MEDIUM",
+      "direction": "MIXED",
+      "urgency": "THIS_WEEK",
+      "impact_score": 35,
+      "nifty_impact": "\u00b10.3%",
+      "primary_sector": "BROAD_MARKET",
+      "affected_stocks": [],
+      "summary_line": "Index technical move \u2192 trend confirmation, support/resistance",
+      "url": "https://www.ndtvprofit.com/india/gadkari-says-govt-conducting-trials-for-hydrogen-as-fuel-across-10-routes-11751040#publisher=newsstand"
+    },
+    {
+      "title": "Tom Hardy Returns In MobLand Season 2 Trailer: Release Date, Cast, Plot And What To Expect",
+      "source": "NDTV Profit",
+      "published": "2026-07-09 12:27 IST",
+      "category": "NIFTY_SENSEX_TECHNICAL",
+      "severity": "MEDIUM",
+      "direction": "MIXED",
+      "urgency": "THIS_WEEK",
+      "impact_score": 35,
+      "nifty_impact": "\u00b10.3%",
+      "primary_sector": "BROAD_MARKET",
+      "affected_stocks": [],
+      "summary_line": "Index technical move \u2192 trend confirmation, support/resistance",
+      "url": "https://www.ndtvprofit.com/lifestyle/mobland-season-2-trailer-released-tom-hardy-returns-release-date-cast-plot-and-what-to-expect-11750853#publisher=newsstand"
+    },
+    {
+      "title": "US-Iran War News Highlights: Pakistan And Qatar Working To Bring US, Iran Back To Negotiating Table",
+      "source": "NDTV Profit",
+      "published": "2026-07-09 12:21 IST",
+      "category": "INDIA_GEOPOLITICS",
+      "severity": "CRITICAL",
+      "direction": "BEARISH",
+      "urgency": "IMMEDIATE",
+      "impact_score": 85,
+      "nifty_impact": "-3% to -1%",
+      "primary_sector": "DEFENCE",
+      "affected_stocks": [
+        "HAL",
+        "BEL",
+        "BHEL"
+      ],
+      "summary_line": "Geopolitical event \u2192 defence stocks gain; risk-off for broad market",
+      "url": "https://www.ndtvprofit.com/world/us-iran-war-news-live-updates-trump-attacks-iran-retaliatory-strikes-on-kuwait-bahrain-is-iran-war-starting-again-gulf-news-11746743#publisher=newsstand"
+    },
+    {
+      "title": "6 Arrested As Wildlife Trafficking Racket Busted, 53 Animals Rescued",
+      "source": "NDTV India",
+      "published": "2026-07-09 11:59 IST",
+      "category": "INDIA_GEOPOLITICS",
+      "severity": "LOW",
+      "direction": "BEARISH",
+      "urgency": "WATCH",
+      "impact_score": 12,
+      "nifty_impact": "\u00b10.3%",
+      "primary_sector": "DEFENCE",
+      "affected_stocks": [
+        "LT"
+      ],
+      "summary_line": "Geopolitical event \u2192 defence stocks gain; risk-off for broad market",
+      "url": "https://www.ndtv.com/india-news/6-arrested-as-wildlife-trafficking-racket-busted-53-animals-rescued-11750933#publisher=newsstand"
+    },
+    {
+      "title": "India's JK Tyre plans additional 5%-6% price hikes by September-end",
+      "source": "Economic Times Industry",
+      "published": "2026-07-09 11:55 IST",
+      "category": "NIFTY_SENSEX_TECHNICAL",
+      "severity": "HIGH",
+      "direction": "MIXED",
+      "urgency": "TODAY",
+      "impact_score": 60,
+      "nifty_impact": "\u00b10.8%",
+      "primary_sector": "BROAD_MARKET",
+      "affected_stocks": [],
+      "summary_line": "Index technical move \u2192 trend confirmation, support/resistance",
+      "url": "https://economictimes.indiatimes.com/industry/auto/tyres/indias-jk-tyre-plans-additional-5-6-price-hikes-by-september-end/articleshow/132294536.cms"
+    },
+    {
+      "title": "18 months on, Dixon gets govt nod for JV with China's Vivo",
+      "source": "Mint Companies",
+      "published": "2026-07-09 11:52 IST",
+      "category": "NIFTY_SENSEX_TECHNICAL",
+      "severity": "MEDIUM",
+      "direction": "MIXED",
+      "urgency": "THIS_WEEK",
+      "impact_score": 35,
+      "nifty_impact": "\u00b10.3%",
+      "primary_sector": "BROAD_MARKET",
+      "affected_stocks": [],
+      "summary_line": "Index technical move \u2192 trend confirmation, support/resistance",
+      "url": "https://www.livemint.com/companies/dixon-vivo-jv-china-dipp-approval-smartphone-11783614833050.html"
+    },
+    {
+      "title": "HDFC Bank Q1 results date: Private lender to announce June quarter earnings on 18 July",
+      "source": "Mint Markets",
+      "published": "2026-07-09 11:51 IST",
+      "category": "CORPORATE_EARNINGS",
+      "severity": "CRITICAL",
+      "direction": "MIXED",
+      "urgency": "IMMEDIATE",
+      "impact_score": 97,
+      "nifty_impact": "\u00b13% on stock",
+      "primary_sector": "COMPANY_SPECIFIC",
+      "affected_stocks": [
+        "LT"
+      ],
+      "summary_line": "Corporate results \u2192 individual stock + sector sentiment",
+      "url": "https://www.livemint.com/market/stock-market-news/hdfc-bank-q1-results-date-private-lender-to-announce-june-quarter-earnings-on-july-16-11783617006411.html"
+    },
+    {
+      "title": "TCS flags no let-up in client caution after tepid Q1",
+      "source": "Mint Companies",
+      "published": "2026-07-09 11:42 IST",
+      "category": "CORPORATE_EARNINGS",
+      "severity": "MEDIUM",
+      "direction": "MIXED",
+      "urgency": "THIS_WEEK",
+      "impact_score": 35,
+      "nifty_impact": "\u00b10.5% on stock",
+      "primary_sector": "COMPANY_SPECIFIC",
+      "affected_stocks": [
+        "TCS"
+      ],
+      "summary_line": "Corporate results \u2192 individual stock + sector sentiment",
+      "url": "https://www.livemint.com/companies/tcs-q1-results-flat-growth-ai-demand-it-spending-11783608950194.html"
+    },
+    {
+      "title": "West Bengal: BJP fields three ex-Trinamool leaders for RS bypolls hours after joining party, TMC leadership fumes",
+      "source": "Economic Times Politics",
+      "published": "2026-07-09 11:41 IST",
+      "category": "INDIA_POLITICS",
+      "severity": "LOW",
+      "direction": "MIXED",
+      "urgency": "WATCH",
+      "impact_score": 12,
+      "nifty_impact": "\u00b10.3%",
+      "primary_sector": "BROAD_MARKET",
+      "affected_stocks": [],
+      "summary_line": "Political event \u2192 policy uncertainty, sector rotation",
+      "url": "https://economictimes.indiatimes.com/news/politics-and-nation/west-bengal-bjp-fields-three-ex-trinamool-leaders-for-rs-bypolls-hours-after-joining-party-tmc-leadership-fumes/articleshow/132294500.cms"
+    },
+    {
+      "title": "Groww responds to Nithin Kamath tweet: Direct mutual funds remain free for DIY investors",
+      "source": "Economic Times Markets",
+      "published": "2026-07-09 11:32 IST",
+      "category": "CRUDE_OIL_INDIA",
+      "severity": "HIGH",
+      "direction": "MIXED",
+      "urgency": "TODAY",
+      "impact_score": 69,
+      "nifty_impact": "-1% to Flat",
+      "primary_sector": "OIL_GAS",
+      "affected_stocks": [
+        "RELIANCE",
+        "ONGC",
+        "IOC"
+      ],
+      "summary_line": "Crude price \u2192 Aviation, Paints, Tyres hurt; Oil PSUs gain",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/groww-responds-to-nithin-kamath-tweet-direct-mutual-funds-remain-free-for-diy-investors/articleshow/132294144.cms"
+    },
+    {
+      "title": "Sebi cancels registration of 12 research analysts over unpaid renewal fees",
+      "source": "Economic Times Markets",
+      "published": "2026-07-09 11:19 IST",
+      "category": "SEBI_REGULATIONS",
+      "severity": "MEDIUM",
+      "direction": "MIXED",
+      "urgency": "THIS_WEEK",
+      "impact_score": 40,
+      "nifty_impact": "\u00b10.3%",
+      "primary_sector": "BROAD_MARKET",
+      "affected_stocks": [],
+      "summary_line": "SEBI circular/rule \u2192 market structure, F&O, FPI flow impact",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/sebi-cancels-registration-of-12-research-analysts-over-unpaid-renewal-fees/articleshow/132293957.cms"
+    },
+    {
+      "title": "10 Stations, 7 Lines: Delhi Metro Begins 12-km Expansion Work",
+      "source": "NDTV India",
+      "published": "2026-07-09 11:18 IST",
+      "category": "INDIA_GDP_GROWTH",
+      "severity": "LOW",
+      "direction": "MIXED",
+      "urgency": "WATCH",
+      "impact_score": 12,
+      "nifty_impact": "\u00b10.3%",
+      "primary_sector": "BROAD_MARKET",
+      "affected_stocks": [],
+      "summary_line": "GDP data \u2192 economic cycle, capex, credit growth outlook",
+      "url": "https://www.ndtv.com/india-news/10-stations-7-lines-fewer-changes-delhi-metro-begins-12-km-expansion-work-11750570#publisher=newsstand"
+    },
+    {
+      "title": "Russia's largest private lender Alfa Bank tests crypto trading, plans suite of crypto services ahead of govt legislation",
+      "source": "Mint Markets",
+      "published": "2026-07-09 11:17 IST",
+      "category": "SEBI_REGULATIONS",
+      "severity": "CRITICAL",
+      "direction": "MIXED",
+      "urgency": "IMMEDIATE",
+      "impact_score": 97,
+      "nifty_impact": "\u00b11.5%",
+      "primary_sector": "BROAD_MARKET",
+      "affected_stocks": [],
+      "summary_line": "SEBI circular/rule \u2192 market structure, F&O, FPI flow impact",
+      "url": "https://www.livemint.com/market/cryptocurrency/russia-largest-private-lender-alfa-bank-test-crypto-trading-plan-crypto-services-duma-govt-legislation-central-bank-rule-11783612684130.html"
+    },
+    {
+      "title": "\"State Of Instability\": Congress Stirs Pot After Sharad Pawar-E Shinde Meet",
+      "source": "NDTV India",
+      "published": "2026-07-09 11:17 IST",
+      "category": "INDIA_GEOPOLITICS",
+      "severity": "CRITICAL",
+      "direction": "BEARISH",
+      "urgency": "IMMEDIATE",
+      "impact_score": 85,
+      "nifty_impact": "-3% to -1%",
+      "primary_sector": "DEFENCE",
+      "affected_stocks": [
+        "HAL",
+        "BEL",
+        "BHEL"
+      ],
+      "summary_line": "Geopolitical event \u2192 defence stocks gain; risk-off for broad market",
+      "url": "https://www.ndtv.com/india-news/state-of-instability-congress-stirs-pot-after-sharad-pawar-e-shinde-meet-11750621#publisher=newsstand"
+    },
+    {
+      "title": "British insurer Aviva to get full ownership of Life JV in India",
+      "source": "The Hindu Business",
+      "published": "2026-07-09 11:02 IST",
+      "category": "NIFTY_SENSEX_TECHNICAL",
+      "severity": "MEDIUM",
+      "direction": "MIXED",
+      "urgency": "THIS_WEEK",
+      "impact_score": 35,
+      "nifty_impact": "\u00b10.3%",
+      "primary_sector": "BROAD_MARKET",
+      "affected_stocks": [],
+      "summary_line": "Index technical move \u2192 trend confirmation, support/resistance",
+      "url": "https://www.thehindu.com/business/british-insurer-aviva-to-get-full-ownership-of-life-jv-in-india/article71203438.ece"
+    },
+    {
+      "title": "Costco shares fall over 4% as investors look past strong June sales",
+      "source": "Economic Times Markets",
+      "published": "2026-07-09 11:01 IST",
+      "category": "CRUDE_OIL_INDIA",
+      "severity": "MEDIUM",
+      "direction": "MIXED",
+      "urgency": "THIS_WEEK",
+      "impact_score": 40,
+      "nifty_impact": "Flat",
+      "primary_sector": "OIL_GAS",
+      "affected_stocks": [
+        "RELIANCE",
+        "ONGC",
+        "IOC"
+      ],
+      "summary_line": "Crude price \u2192 Aviation, Paints, Tyres hurt; Oil PSUs gain",
+      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/costco-shares-fall-over-4-as-investors-look-past-strong-june-sales/articleshow/132293680.cms"
+    },
+    {
+      "title": "Multibagger defence stock Apollo Micro Systems to be in focus on Friday; here's why",
+      "source": "Mint Markets",
+      "published": "2026-07-09 10:58 IST",
+      "category": "NIFTY_SENSEX_TECHNICAL",
+      "severity": "HIGH",
+      "direction": "MIXED",
+      "urgency": "TODAY",
+      "impact_score": 69,
+      "nifty_impact": "\u00b10.8%",
+      "primary_sector": "BROAD_MARKET",
+      "affected_stocks": [
+        "LT"
+      ],
+      "summary_line": "Index technical move \u2192 trend confirmation, support/resistance",
+      "url": "https://www.livemint.com/market/multibagger-defence-stock-apollo-micro-systems-to-be-in-focus-on-friday-heres-why-11783610760155.html"
+    },
+    {
+      "title": "Sony Pictures Networks India partners with Google Gemini for KBC",
+      "source": "Economic Times Industry",
+      "published": "2026-07-09 10:58 IST",
+      "category": "NIFTY_SENSEX_TECHNICAL",
+      "severity": "CRITICAL",
+      "direction": "MIXED",
+      "urgency": "IMMEDIATE",
+      "impact_score": 85,
+      "nifty_impact": "\u00b11.5%",
+      "primary_sector": "BROAD_MARKET",
+      "affected_stocks": [
+        "ACC"
+      ],
+      "summary_line": "Index technical move \u2192 trend confirmation, support/resistance",
+      "url": "https://economictimes.indiatimes.com/industry/media/entertainment/sony-pictures-networks-india-partners-with-google-gemini-for-kbc/articleshow/132293683.cms"
+    },
+    {
+      "title": "Life insurers new business premium rises over 13% in June to \u20b946,490 crore",
+      "source": "The Hindu Business",
+      "published": "2026-07-09 10:56 IST",
+      "category": "NIFTY_SENSEX_TECHNICAL",
+      "severity": "MEDIUM",
+      "direction": "MIXED",
+      "urgency": "THIS_WEEK",
+      "impact_score": 35,
+      "nifty_impact": "\u00b10.3%",
+      "primary_sector": "BROAD_MARKET",
+      "affected_stocks": [],
+      "summary_line": "Index technical move \u2192 trend confirmation, support/resistance",
+      "url": "https://www.thehindu.com/business/life-insurers-new-business-premium-rises-over-13-in-june-to-46490-crore/article71203562.ece"
+    },
+    {
+      "title": "Google appeals Indian ruling over its ads platform, citing consumer harm",
+      "source": "The Hindu Business",
+      "published": "2026-07-09 10:54 IST",
+      "category": "CRUDE_OIL_INDIA",
+      "severity": "MEDIUM",
+      "direction": "MIXED",
+      "urgency": "THIS_WEEK",
+      "impact_score": 35,
+      "nifty_impact": "Flat",
+      "primary_sector": "OIL_GAS",
+      "affected_stocks": [
+        "RELIANCE",
+        "ONGC",
+        "IOC"
+      ],
+      "summary_line": "Crude price \u2192 Aviation, Paints, Tyres hurt; Oil PSUs gain",
+      "url": "https://www.thehindu.com/business/google-appeals-indian-ruling-over-its-ads-platform-citing-consumer-harm/article71203594.ece"
+    },
+    {
+      "title": "Govt waives basic customs duty on key inputs for electronics manufacturing",
+      "source": "The Hindu Business",
+      "published": "2026-07-09 10:48 IST",
+      "category": "UNION_BUDGET_TAXATION",
+      "severity": "MEDIUM",
+      "direction": "MIXED",
+      "urgency": "THIS_WEEK",
+      "impact_score": 35,
+      "nifty_impact": "-0.5% to +1%",
+      "primary_sector": "BROAD_MARKET",
+      "affected_stocks": [],
+      "summary_line": "Budget/tax event \u2192 broad market and sector-specific impact",
+      "url": "https://www.thehindu.com/business/govt-waives-basic-customs-duty-on-key-inputs-for-electronics-manufacturing/article71203589.ece"
+    },
+    {
+      "title": "US markets brace for renewed funding pressure as leverage rises",
+      "source": "Economic Times Markets",
+      "published": "2026-07-09 10:47 IST",
+      "category": "RBI_MONETARY_POLICY",
+      "severity": "MEDIUM",
+      "direction": "MIXED",
+      "urgency": "THIS_WEEK",
+      "impact_score": 40,
+      "nifty_impact": "-0.5% to +0.5%",
+      "primary_sector": "BANKING",
+      "affected_stocks": [
+        "HDFCBANK",
+        "ICICIBANK",
+        "KOTAKBANK"
+      ],
+      "summary_line": "RBI action \u2192 Banking, NBFC, Realty, rate-sensitive sectors react",
+      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/us-markets-brace-for-renewed-funding-pressure-as-leverage-rises/articleshow/132293482.cms"
+    },
+    {
+      "title": "CBI files first chargesheet in Reliance Home Finance Limited case; cites \u20b93,526 crore loss",
+      "source": "The Hindu Business",
+      "published": "2026-07-09 10:45 IST",
+      "category": "INFRASTRUCTURE_CAPEX",
+      "severity": "CRITICAL",
+      "direction": "BEARISH",
+      "urgency": "IMMEDIATE",
+      "impact_score": 85,
+      "nifty_impact": "+1% to +2%",
+      "primary_sector": "INFRA",
+      "affected_stocks": [
+        "RELIANCE"
+      ],
+      "summary_line": "Infra/PLI \u2192 L&T, Cement, Steel, Capital goods sector",
+      "url": "https://www.thehindu.com/news/national/cbi-files-first-chargesheet-in-reliance-home-finance-limited-case-cites-3526-crore-loss/article71202925.ece"
+    },
+    {
+      "title": "NDTV Investigation: Why Did 8 New Mothers Suddenly Fall Ill At A Jodhpur Hospital?",
+      "source": "NDTV India",
+      "published": "2026-07-09 10:40 IST",
+      "category": "NIFTY_SENSEX_TECHNICAL",
+      "severity": "MEDIUM",
+      "direction": "MIXED",
+      "urgency": "THIS_WEEK",
+      "impact_score": 35,
+      "nifty_impact": "\u00b10.3%",
+      "primary_sector": "BROAD_MARKET",
+      "affected_stocks": [],
+      "summary_line": "Index technical move \u2192 trend confirmation, support/resistance",
+      "url": "https://www.ndtv.com/india-news/ndtv-investigation-why-did-8-new-mothers-suddenly-fall-ill-at-a-jodhpur-hospital-11750559#publisher=newsstand"
+    },
+    {
+      "title": "BSNL launches new satellite phone at  \u20b91.34 lakh in India, says 'ideal for remote ops': All you need to know",
+      "source": "Mint Companies",
+      "published": "2026-07-09 10:39 IST",
+      "category": "NIFTY_SENSEX_TECHNICAL",
+      "severity": "HIGH",
+      "direction": "MIXED",
+      "urgency": "TODAY",
+      "impact_score": 60,
+      "nifty_impact": "\u00b10.8%",
+      "primary_sector": "BROAD_MARKET",
+      "affected_stocks": [
+        "IDEA"
+      ],
+      "summary_line": "Index technical move \u2192 trend confirmation, support/resistance",
+      "url": "https://www.livemint.com/companies/news/bsnl-launches-new-satellite-phone-at-rs-1-34-lakh-in-india-says-ideal-for-remote-ops-all-you-need-to-know-11783604699477.html"
+    },
+    {
+      "title": "TCS Q1 net profit rises 4.6% to \u20b914,349 crore, board declares interim dividend of \u20b912 per share",
+      "source": "The Hindu Business",
+      "published": "2026-07-09 10:39 IST",
+      "category": "CORPORATE_EARNINGS",
+      "severity": "MEDIUM",
+      "direction": "BULLISH",
+      "urgency": "THIS_WEEK",
+      "impact_score": 35,
+      "nifty_impact": "\u00b10.5% on stock",
+      "primary_sector": "COMPANY_SPECIFIC",
+      "affected_stocks": [
+        "TCS"
+      ],
+      "summary_line": "Corporate results \u2192 individual stock + sector sentiment",
+      "url": "https://www.thehindu.com/business/tcs-q1-net-profit-rises-46-to-14349-crore-board-declares-interim-dividend-of-12-per-share/article71202672.ece"
+    },
+    {
+      "title": "Vivo receives govt's nod to form JV with Dixon Technologies to manufacture smartphones",
+      "source": "Economic Times Industry",
+      "published": "2026-07-09 10:37 IST",
+      "category": "NIFTY_SENSEX_TECHNICAL",
+      "severity": "HIGH",
+      "direction": "MIXED",
+      "urgency": "TODAY",
+      "impact_score": 60,
+      "nifty_impact": "\u00b10.8%",
+      "primary_sector": "BROAD_MARKET",
+      "affected_stocks": [],
+      "summary_line": "Index technical move \u2192 trend confirmation, support/resistance",
+      "url": "https://economictimes.indiatimes.com/industry/cons-products/electronics/vivo-receives-govts-nod-to-form-jv-with-dixon-technologies-to-manufacture-smartphones/articleshow/132293120.cms"
+    },
+    {
+      "title": "SBI AMC is as competitive as any private firm,  says Joint CEO DP Singh",
+      "source": "The Hindu Business",
+      "published": "2026-07-09 10:36 IST",
+      "category": "NIFTY_SENSEX_TECHNICAL",
+      "severity": "MEDIUM",
+      "direction": "MIXED",
+      "urgency": "THIS_WEEK",
+      "impact_score": 35,
+      "nifty_impact": "\u00b10.3%",
+      "primary_sector": "BROAD_MARKET",
+      "affected_stocks": [],
+      "summary_line": "Index technical move \u2192 trend confirmation, support/resistance",
+      "url": "https://www.thehindu.com/business/sbi-amc-is-as-competitive-as-any-private-firm-says-joint-ceo-dp-singh/article71202719.ece"
+    },
+    {
+      "title": "'If you want to understand India, get on a train': Australian PM Anthony Albanese",
+      "source": "Economic Times Politics",
+      "published": "2026-07-09 10:35 IST",
+      "category": "NIFTY_SENSEX_TECHNICAL",
+      "severity": "CRITICAL",
+      "direction": "MIXED",
+      "urgency": "IMMEDIATE",
+      "impact_score": 85,
+      "nifty_impact": "\u00b11.5%",
+      "primary_sector": "BROAD_MARKET",
+      "affected_stocks": [],
+      "summary_line": "Index technical move \u2192 trend confirmation, support/resistance",
+      "url": "https://economictimes.indiatimes.com/news/politics-and-nation/if-you-want-to-understand-india-get-on-a-train-australian-pm-anthony-albanese/videoshow/132293128.cms"
+    },
+    {
+      "title": "Iswarya Fertility Center raises  \u20b9350 crore from Orbimed Asia",
+      "source": "Mint Companies",
+      "published": "2026-07-09 10:33 IST",
+      "category": "RBI_MONETARY_POLICY",
+      "severity": "CRITICAL",
+      "direction": "MIXED",
+      "urgency": "IMMEDIATE",
+      "impact_score": 85,
+      "nifty_impact": "-2% to +2%",
+      "primary_sector": "BANKING",
+      "affected_stocks": [
+        "HDFCBANK",
+        "ICICIBANK",
+        "KOTAKBANK"
+      ],
+      "summary_line": "RBI action \u2192 Banking, NBFC, Realty, rate-sensitive sectors react",
+      "url": "https://www.livemint.com/companies/news/iswarya-fertility-center-raises-350-crore-from-orbimed-asia-11783605487610.html"
+    },
+    {
+      "title": "Zerodha will keep direct mutual fund plans for free, says Nithin Kamath",
+      "source": "Economic Times Markets",
+      "published": "2026-07-09 10:32 IST",
+      "category": "CRUDE_OIL_INDIA",
+      "severity": "HIGH",
+      "direction": "MIXED",
+      "urgency": "TODAY",
+      "impact_score": 69,
+      "nifty_impact": "-1% to Flat",
+      "primary_sector": "OIL_GAS",
+      "affected_stocks": [
+        "RELIANCE",
+        "ONGC",
+        "IOC"
+      ],
+      "summary_line": "Crude price \u2192 Aviation, Paints, Tyres hurt; Oil PSUs gain",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/zerodha-will-keep-direct-mutual-fund-plans-for-free-says-nithin-kamath/articleshow/132292800.cms"
+    },
+    {
+      "title": "Centre aims to turn ITADCs into one-stop textile hubs",
+      "source": "Economic Times Industry",
+      "published": "2026-07-09 10:30 IST",
+      "category": "NIFTY_SENSEX_TECHNICAL",
+      "severity": "MEDIUM",
+      "direction": "MIXED",
+      "urgency": "THIS_WEEK",
+      "impact_score": 35,
+      "nifty_impact": "\u00b10.3%",
+      "primary_sector": "BROAD_MARKET",
+      "affected_stocks": [],
+      "summary_line": "Index technical move \u2192 trend confirmation, support/resistance",
+      "url": "https://economictimes.indiatimes.com/industry/cons-products/garments-/-textiles/centre-aims-to-turn-itadcs-into-one-stop-textile-hubs/articleshow/132292053.cms"
+    },
+    {
+      "title": "Ritabrata Banerjee faction to move Supreme Court over TMC funds",
+      "source": "Economic Times Politics",
+      "published": "2026-07-09 10:29 IST",
+      "category": "INDIA_POLITICS",
+      "severity": "CRITICAL",
+      "direction": "MIXED",
+      "urgency": "IMMEDIATE",
+      "impact_score": 85,
+      "nifty_impact": "\u00b11.5%",
+      "primary_sector": "BROAD_MARKET",
+      "affected_stocks": [
+        "ACC"
+      ],
+      "summary_line": "Political event \u2192 policy uncertainty, sector rotation",
+      "url": "https://economictimes.indiatimes.com/news/politics-and-nation/ritabrata-banerjee-faction-to-move-supreme-court-over-tmc-funds/articleshow/132292614.cms"
+    },
+    {
+      "title": "Ahead of Market: 10 things that will decide stock market action on Friday",
+      "source": "Economic Times Markets",
+      "published": "2026-07-09 10:20 IST",
+      "category": "NIFTY_SENSEX_TECHNICAL",
+      "severity": "MEDIUM",
+      "direction": "MIXED",
+      "urgency": "THIS_WEEK",
+      "impact_score": 40,
+      "nifty_impact": "\u00b10.3%",
+      "primary_sector": "BROAD_MARKET",
+      "affected_stocks": [],
+      "summary_line": "Index technical move \u2192 trend confirmation, support/resistance",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/ahead-of-market-10-things-that-will-decide-stock-market-action-on-friday/articleshow/132292024.cms"
+    },
+    {
+      "title": "Dr Reddy's delays semaglutide supplies due to API issue",
+      "source": "Mint Companies",
+      "published": "2026-07-09 09:48 IST",
+      "category": "PHARMA_HEALTHCARE",
+      "severity": "MEDIUM",
+      "direction": "MIXED",
+      "urgency": "THIS_WEEK",
+      "impact_score": 35,
+      "nifty_impact": "\u00b10.3%",
+      "primary_sector": "PHARMA",
+      "affected_stocks": [
+        "HAL"
+      ],
+      "summary_line": "Pharma USFDA/policy \u2192 Sun Pharma, Dr Reddy's, Cipla",
+      "url": "https://www.livemint.com/companies/news/dr-reddys-delays-semaglutide-supplies-due-to-api-issue-11783604019071.html"
+    },
+    {
+      "title": "Micron boosts US investment plan again, commits $250 billion through 2035",
+      "source": "Mint Companies",
+      "published": "2026-07-09 09:48 IST",
+      "category": "NIFTY_SENSEX_TECHNICAL",
+      "severity": "HIGH",
+      "direction": "MIXED",
+      "urgency": "TODAY",
+      "impact_score": 60,
+      "nifty_impact": "\u00b10.8%",
+      "primary_sector": "BROAD_MARKET",
+      "affected_stocks": [],
+      "summary_line": "Index technical move \u2192 trend confirmation, support/resistance",
+      "url": "https://www.livemint.com/companies/micron-boosts-us-investment-plan-again-commits-250-billion-through-2035-11783609943320.html"
+    },
+    {
+      "title": "Attempt to save big fish: Congress questions PM's silence on Ram temple 'embezzlement'",
+      "source": "Economic Times Politics",
+      "published": "2026-07-09 09:45 IST",
+      "category": "INDIA_POLITICS",
+      "severity": "LOW",
+      "direction": "MIXED",
+      "urgency": "WATCH",
+      "impact_score": 12,
+      "nifty_impact": "\u00b10.3%",
+      "primary_sector": "BROAD_MARKET",
+      "affected_stocks": [],
+      "summary_line": "Political event \u2192 policy uncertainty, sector rotation",
+      "url": "https://economictimes.indiatimes.com/news/politics-and-nation/attempt-to-save-big-fish-congress-questions-pms-silence-on-ram-temple-embezzlement/articleshow/132290689.cms"
+    },
+    {
+      "title": "Anand Rathi Wealth Q1 Results: Net profit rises 24%; AUM tops  \u20b91 lakh crore",
+      "source": "Mint Markets",
+      "published": "2026-07-09 09:45 IST",
+      "category": "CORPORATE_EARNINGS",
+      "severity": "HIGH",
+      "direction": "BULLISH",
+      "urgency": "TODAY",
+      "impact_score": 69,
+      "nifty_impact": "\u00b11.5% on stock",
+      "primary_sector": "COMPANY_SPECIFIC",
+      "affected_stocks": [
+        "LT"
+      ],
+      "summary_line": "Corporate results \u2192 individual stock + sector sentiment",
+      "url": "https://www.livemint.com/market/stock-market-news/anand-rathi-wealth-q1-results-net-profit-rises-24-aum-tops-rs-1-lakh-crore-11783609585341.html"
+    },
+    {
+      "title": "Google challenges Delhi HC order on use of trademarks as ad keywords",
+      "source": "Mint Companies",
+      "published": "2026-07-09 09:42 IST",
+      "category": "INDIA_DEFENCE",
+      "severity": "LOW",
+      "direction": "BULLISH",
+      "urgency": "WATCH",
+      "impact_score": 12,
+      "nifty_impact": "\u00b10.3%",
+      "primary_sector": "DEFENCE",
+      "affected_stocks": [
+        "HAL"
+      ],
+      "summary_line": "Defence \u2192 HAL, BEL, BHEL, DRDO-linked stocks",
+      "url": "https://www.livemint.com/companies/news/google-challenges-delhi-hc-order-on-use-of-trademarks-as-ad-keywords-11783604494469.html"
+    },
+    {
+      "title": "Donald Trump's son bet big on Bitcoin, lost $600 million from family fortune",
+      "source": "Economic Times Markets",
+      "published": "2026-07-09 09:26 IST",
+      "category": "STARTUPS_IPO",
+      "severity": "LOW",
+      "direction": "BULLISH",
+      "urgency": "WATCH",
+      "impact_score": 13,
+      "nifty_impact": "\u00b10.3%",
+      "primary_sector": "BROAD_MARKET",
+      "affected_stocks": [
+        "ITC",
+        "ACC"
+      ],
+      "summary_line": "IPO/startup \u2192 listing day volatility, sector sentiment",
+      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/donald-trumps-son-bet-big-on-bitcoin-lost-600-million-from-family-fortune/articleshow/132289636.cms"
+    },
+    {
+      "title": "SBI MF confident of IPO despite volatilities; aims to double foreign book in 3 years",
+      "source": "Economic Times Markets",
+      "published": "2026-07-09 09:13 IST",
+      "category": "CORPORATE_EARNINGS",
+      "severity": "HIGH",
+      "direction": "MIXED",
+      "urgency": "TODAY",
+      "impact_score": 69,
+      "nifty_impact": "\u00b11.5% on stock",
+      "primary_sector": "COMPANY_SPECIFIC",
+      "affected_stocks": [
+        "LT"
+      ],
+      "summary_line": "Corporate results \u2192 individual stock + sector sentiment",
+      "url": "https://economictimes.indiatimes.com/markets/ipos/fpos/sbi-mf-confident-of-ipo-despite-volatilities-aims-to-double-foreign-book-in-3-years/articleshow/132289618.cms"
+    },
+    {
+      "title": "AI selloff drives quant funds' worst performance since August",
+      "source": "Economic Times Markets",
+      "published": "2026-07-09 08:37 IST",
+      "category": "INFRASTRUCTURE_CAPEX",
+      "severity": "MEDIUM",
+      "direction": "BEARISH",
+      "urgency": "THIS_WEEK",
+      "impact_score": 40,
+      "nifty_impact": "+0.2% to +0.5%",
+      "primary_sector": "INFRA",
+      "affected_stocks": [
+        "LT",
+        "KNR",
+        "NCC"
+      ],
+      "summary_line": "Infra/PLI \u2192 L&T, Cement, Steel, Capital goods sector",
+      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/ai-selloff-drives-quant-funds-worst-performance-since-august/articleshow/132288844.cms"
+    },
+    {
+      "title": "Marico's acquired brands generate  \u20b92,375 crore in FY26",
+      "source": "Mint Companies",
+      "published": "2026-07-09 08:33 IST",
+      "category": "CORPORATE_EARNINGS",
+      "severity": "MEDIUM",
+      "direction": "BULLISH",
+      "urgency": "THIS_WEEK",
+      "impact_score": 35,
+      "nifty_impact": "\u00b10.5% on stock",
+      "primary_sector": "COMPANY_SPECIFIC",
+      "affected_stocks": [
+        "MARICO"
+      ],
+      "summary_line": "Corporate results \u2192 individual stock + sector sentiment",
+      "url": "https://www.livemint.com/companies/news/marico-premium-brands-revenue-plix-cosmix-beardo-growth-fy26-11783599492431.html"
+    },
+    {
+      "title": "Korea\u2019s NH Investment picks up stake worth  \u20b9900 cr in Choice Equity Broking",
+      "source": "Mint Companies",
+      "published": "2026-07-09 08:26 IST",
+      "category": "NIFTY_SENSEX_TECHNICAL",
+      "severity": "MEDIUM",
+      "direction": "MIXED",
+      "urgency": "THIS_WEEK",
+      "impact_score": 35,
+      "nifty_impact": "\u00b10.3%",
+      "primary_sector": "BROAD_MARKET",
+      "affected_stocks": [
+        "LT",
+        "ACC"
+      ],
+      "summary_line": "Index technical move \u2192 trend confirmation, support/resistance",
+      "url": "https://www.livemint.com/companies/news/south-korea-nh-investment-stake-buy-choice-equity-broking-financial-services-11783602541508.html"
+    },
+    {
+      "title": "Newly listed textile stock Aastha Spintex eyes capacity expansion through Falcon Yarns acquisition",
+      "source": "Mint Markets",
+      "published": "2026-07-09 08:20 IST",
+      "category": "CORPORATE_EARNINGS",
+      "severity": "HIGH",
+      "direction": "BULLISH",
+      "urgency": "TODAY",
+      "impact_score": 69,
+      "nifty_impact": "\u00b11.5% on stock",
+      "primary_sector": "COMPANY_SPECIFIC",
+      "affected_stocks": [],
+      "summary_line": "Corporate results \u2192 individual stock + sector sentiment",
+      "url": "https://www.livemint.com/market/stock-market-news/newly-listed-textile-stock-aastha-spintex-eyes-capacity-expansion-through-falcon-yarns-acquisition-11783600980389.html"
+    },
+    {
+      "title": "Laser Power &amp; Infra IPO: Issue receives tepid response on Day 01, subscribed 0.17x; GMP signals healthy listing",
+      "source": "Mint Markets",
+      "published": "2026-07-09 08:20 IST",
+      "category": "STARTUPS_IPO",
+      "severity": "LOW",
+      "direction": "BULLISH",
+      "urgency": "WATCH",
+      "impact_score": 13,
+      "nifty_impact": "\u00b10.3%",
+      "primary_sector": "BROAD_MARKET",
+      "affected_stocks": [
+        "LT"
+      ],
+      "summary_line": "IPO/startup \u2192 listing day volatility, sector sentiment",
+      "url": "https://www.livemint.com/market/stock-market-news/laser-power-infra-ipo-issue-receives-tepid-response-on-day-01-subscribed-0-17x-gmp-signals-healthy-listing-11783602860868.html"
+    },
+    {
+      "title": "US stocks today: S&amp;P 500, Nasdaq rises as chip stocks' gains offset Middle East jitters",
+      "source": "Economic Times Markets",
+      "published": "2026-07-09 08:09 IST",
+      "category": "NIFTY_SENSEX_TECHNICAL",
+      "severity": "HIGH",
+      "direction": "MIXED",
+      "urgency": "TODAY",
+      "impact_score": 69,
+      "nifty_impact": "\u00b10.8%",
+      "primary_sector": "BROAD_MARKET",
+      "affected_stocks": [],
+      "summary_line": "Index technical move \u2192 trend confirmation, support/resistance",
+      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/us-stocks-today-sp-500-nasdaq-rises-as-chip-stocks-gains-offset-middle-east-jitters/articleshow/132288232.cms"
+    },
+    {
+      "title": "SBI Funds launches biggest IPO of 2026, price band set at  \u20b9545-574 per share",
+      "source": "Mint Markets",
+      "published": "2026-07-09 07:55 IST",
+      "category": "STARTUPS_IPO",
+      "severity": "CRITICAL",
+      "direction": "BULLISH",
+      "urgency": "IMMEDIATE",
+      "impact_score": 97,
+      "nifty_impact": "\u00b11.5%",
+      "primary_sector": "BROAD_MARKET",
+      "affected_stocks": [],
+      "summary_line": "IPO/startup \u2192 listing day volatility, sector sentiment",
+      "url": "https://www.livemint.com/market/ipo/sbi-funds-launches-biggest-ipo-of-2026-price-band-set-at-545-574-per-share-11783578057891.html"
+    }
+  ]
+}

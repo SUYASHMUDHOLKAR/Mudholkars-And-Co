@@ -1,0 +1,19 @@
+=================================================================
+  INDIA MARKET DEEP ANALYSIS
+  Generated: 10 Jul 2026  01:14 IST
+=================================================================
+
+MARKET SENTIMENT : NEUTRAL  (Score: +0.0 / 10)
+RISK LEVEL       : MEDIUM
+NIFTY OPENING    : FLAT_OPEN  (~+0.00%)
+ESTIMATED OPEN   : 23982
+INDIA VIX        : 14.7  [LOW]
+USD/INR          : 95.38  (-0.23%)  → INR STRENGTHENING
+
+SECTOR OUTLOOK
+----------------------------------------
+
+SENTIMENT FACTORS
+----------------------------------------
+
+=================================================================

@@ -1,0 +1,340 @@
+{
+  "agent": "IndiaSocialMediaAgent",
+  "company": "Mudholkars and Co",
+  "timestamp": "2026-07-09T20:01:56.686027Z",
+  "generated_ist": "10 Jul 2026 01:31 IST",
+  "posts_analyzed": 130,
+  "overall_sentiment": {
+    "compound": 0.2453,
+    "label": "BULLISH",
+    "strength": "MODERATE",
+    "total": 130,
+    "bullish_count": 74,
+    "bearish_count": 30,
+    "neutral_count": 26,
+    "bullish_pct": 56.9,
+    "bearish_pct": 23.1,
+    "hype_pct": 7.7,
+    "fud_pct": 1.5
+  },
+  "trending_tickers": [
+    {
+      "rank": 1,
+      "ticker": "TCS",
+      "name": "TCS",
+      "mentions": 8
+    },
+    {
+      "rank": 2,
+      "ticker": "SENSEX",
+      "name": "BSE Sensex",
+      "mentions": 7
+    },
+    {
+      "rank": 3,
+      "ticker": "NIFTY",
+      "name": "Nifty 50",
+      "mentions": 6
+    },
+    {
+      "rank": 4,
+      "ticker": "SBIN",
+      "name": "SBI",
+      "mentions": 4
+    },
+    {
+      "rank": 5,
+      "ticker": "GOOGL",
+      "name": "Alphabet",
+      "mentions": 4
+    },
+    {
+      "rank": 6,
+      "ticker": "TATAMOTORS",
+      "name": "Tata Motors",
+      "mentions": 3
+    },
+    {
+      "rank": 7,
+      "ticker": "COIN",
+      "name": "Coinbase",
+      "mentions": 2
+    },
+    {
+      "rank": 8,
+      "ticker": "VIX",
+      "name": "Volatility Index",
+      "mentions": 2
+    },
+    {
+      "rank": 9,
+      "ticker": "BTC",
+      "name": "Bitcoin",
+      "mentions": 2
+    },
+    {
+      "rank": 10,
+      "ticker": "META",
+      "name": "Meta",
+      "mentions": 2
+    },
+    {
+      "rank": 11,
+      "ticker": "TITAN",
+      "name": "Titan",
+      "mentions": 2
+    },
+    {
+      "rank": 12,
+      "ticker": "RELIANCE",
+      "name": "Reliance Industries",
+      "mentions": 2
+    },
+    {
+      "rank": 13,
+      "ticker": "HDFCBANK",
+      "name": "HDFC Bank",
+      "mentions": 1
+    },
+    {
+      "rank": 14,
+      "ticker": "ADANIENT",
+      "name": "Adani Ent",
+      "mentions": 1
+    }
+  ],
+  "ticker_sentiment": {
+    "TCS": {
+      "compound": 0.6138,
+      "label": "BULLISH",
+      "strength": "STRONG",
+      "total": 8,
+      "bullish_count": 7,
+      "bearish_count": 1,
+      "neutral_count": 0,
+      "bullish_pct": 87.5,
+      "bearish_pct": 12.5,
+      "hype_pct": 0.0,
+      "fud_pct": 0.0,
+      "ticker": "TCS",
+      "name": "TCS",
+      "mentions": 8
+    },
+    "SENSEX": {
+      "compound": 0.617,
+      "label": "BULLISH",
+      "strength": "STRONG",
+      "total": 7,
+      "bullish_count": 7,
+      "bearish_count": 0,
+      "neutral_count": 0,
+      "bullish_pct": 100.0,
+      "bearish_pct": 0.0,
+      "hype_pct": 0.0,
+      "fud_pct": 0.0,
+      "ticker": "SENSEX",
+      "name": "BSE Sensex",
+      "mentions": 7
+    },
+    "NIFTY": {
+      "compound": 0.678,
+      "label": "BULLISH",
+      "strength": "STRONG",
+      "total": 6,
+      "bullish_count": 6,
+      "bearish_count": 0,
+      "neutral_count": 0,
+      "bullish_pct": 100.0,
+      "bearish_pct": 0.0,
+      "hype_pct": 0.0,
+      "fud_pct": 0.0,
+      "ticker": "NIFTY",
+      "name": "Nifty 50",
+      "mentions": 6
+    },
+    "SBIN": {
+      "compound": 0.2165,
+      "label": "BULLISH",
+      "strength": "MODERATE",
+      "total": 4,
+      "bullish_count": 3,
+      "bearish_count": 1,
+      "neutral_count": 0,
+      "bullish_pct": 75.0,
+      "bearish_pct": 25.0,
+      "hype_pct": 0.0,
+      "fud_pct": 0.0,
+      "ticker": "SBIN",
+      "name": "SBI",
+      "mentions": 4
+    },
+    "GOOGL": {
+      "compound": 0.1461,
+      "label": "BULLISH",
+      "strength": "WEAK",
+      "total": 4,
+      "bullish_count": 2,
+      "bearish_count": 1,
+      "neutral_count": 1,
+      "bullish_pct": 50.0,
+      "bearish_pct": 25.0,
+      "hype_pct": 0.0,
+      "fud_pct": 0.0,
+      "ticker": "GOOGL",
+      "name": "Alphabet",
+      "mentions": 4
+    },
+    "TATAMOTORS": {
+      "compound": 0.7231,
+      "label": "BULLISH",
+      "strength": "STRONG",
+      "total": 3,
+      "bullish_count": 3,
+      "bearish_count": 0,
+      "neutral_count": 0,
+      "bullish_pct": 100.0,
+      "bearish_pct": 0.0,
+      "hype_pct": 0.0,
+      "fud_pct": 0.0,
+      "ticker": "TATAMOTORS",
+      "name": "Tata Motors",
+      "mentions": 3
+    },
+    "COIN": {
+      "compound": 0.9081,
+      "label": "BULLISH",
+      "strength": "STRONG",
+      "total": 2,
+      "bullish_count": 2,
+      "bearish_count": 0,
+      "neutral_count": 0,
+      "bullish_pct": 100.0,
+      "bearish_pct": 0.0,
+      "hype_pct": 100.0,
+      "fud_pct": 0.0,
+      "ticker": "COIN",
+      "name": "Coinbase",
+      "mentions": 2
+    },
+    "VIX": {
+      "compound": 0.4939,
+      "label": "BULLISH",
+      "strength": "MODERATE",
+      "total": 2,
+      "bullish_count": 2,
+      "bearish_count": 0,
+      "neutral_count": 0,
+      "bullish_pct": 100.0,
+      "bearish_pct": 0.0,
+      "hype_pct": 0.0,
+      "fud_pct": 0.0,
+      "ticker": "VIX",
+      "name": "Volatility Index",
+      "mentions": 2
+    },
+    "BTC": {
+      "compound": -0.1123,
+      "label": "BEARISH",
+      "strength": "WEAK",
+      "total": 2,
+      "bullish_count": 1,
+      "bearish_count": 1,
+      "neutral_count": 0,
+      "bullish_pct": 50.0,
+      "bearish_pct": 50.0,
+      "hype_pct": 0.0,
+      "fud_pct": 0.0,
+      "ticker": "BTC",
+      "name": "Bitcoin",
+      "mentions": 2
+    },
+    "META": {
+      "compound": 0.4063,
+      "label": "BULLISH",
+      "strength": "MODERATE",
+      "total": 2,
+      "bullish_count": 1,
+      "bearish_count": 0,
+      "neutral_count": 1,
+      "bullish_pct": 50.0,
+      "bearish_pct": 0.0,
+      "hype_pct": 0.0,
+      "fud_pct": 0.0,
+      "ticker": "META",
+      "name": "Meta",
+      "mentions": 2
+    },
+    "TITAN": {
+      "compound": 0.7579,
+      "label": "BULLISH",
+      "strength": "STRONG",
+      "total": 2,
+      "bullish_count": 2,
+      "bearish_count": 0,
+      "neutral_count": 0,
+      "bullish_pct": 100.0,
+      "bearish_pct": 0.0,
+      "hype_pct": 0.0,
+      "fud_pct": 0.0,
+      "ticker": "TITAN",
+      "name": "Titan",
+      "mentions": 2
+    },
+    "RELIANCE": {
+      "compound": -0.2659,
+      "label": "BEARISH",
+      "strength": "MODERATE",
+      "total": 2,
+      "bullish_count": 1,
+      "bearish_count": 1,
+      "neutral_count": 0,
+      "bullish_pct": 50.0,
+      "bearish_pct": 50.0,
+      "hype_pct": 0.0,
+      "fud_pct": 0.0,
+      "ticker": "RELIANCE",
+      "name": "Reliance Industries",
+      "mentions": 2
+    },
+    "HDFCBANK": {
+      "compound": 0.0,
+      "label": "NEUTRAL",
+      "strength": "WEAK",
+      "total": 1,
+      "bullish_count": 0,
+      "bearish_count": 0,
+      "neutral_count": 1,
+      "bullish_pct": 0.0,
+      "bearish_pct": 0.0,
+      "hype_pct": 0.0,
+      "fud_pct": 0.0,
+      "ticker": "HDFCBANK",
+      "name": "HDFC Bank",
+      "mentions": 1
+    },
+    "ADANIENT": {
+      "compound": 0.0,
+      "label": "NEUTRAL",
+      "strength": "WEAK",
+      "total": 1,
+      "bullish_count": 0,
+      "bearish_count": 0,
+      "neutral_count": 1,
+      "bullish_pct": 0.0,
+      "bearish_pct": 0.0,
+      "hype_pct": 0.0,
+      "fud_pct": 0.0,
+      "ticker": "ADANIENT",
+      "name": "Adani Ent",
+      "mentions": 1
+    }
+  },
+  "google_trends": {
+    "Nifty 50": 6,
+    "Sensex today": 0,
+    "Indian stock market": 0,
+    "NSE shares": 0,
+    "Zerodha": 0
+  },
+  "trending_searches": []
+}

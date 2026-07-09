@@ -1,0 +1,202 @@
+{
+  "agent": "GlobalSocialMediaAgent",
+  "company": "Mudholkars and Co",
+  "timestamp": "2026-07-09T20:00:56.743261Z",
+  "generated_ist": "10 Jul 2026 01:30 IST",
+  "posts_analyzed": 162,
+  "overall_sentiment": {
+    "compound": 0.0258,
+    "label": "NEUTRAL",
+    "strength": "WEAK",
+    "total": 162,
+    "bullish_count": 75,
+    "bearish_count": 60,
+    "neutral_count": 27,
+    "bullish_pct": 46.3,
+    "bearish_pct": 37.0,
+    "hype_pct": 6.2,
+    "fud_pct": 1.9
+  },
+  "trending_tickers": [
+    {
+      "rank": 1,
+      "ticker": "META",
+      "name": "Meta",
+      "mentions": 9
+    },
+    {
+      "rank": 2,
+      "ticker": "GOOGL",
+      "name": "Alphabet",
+      "mentions": 3
+    },
+    {
+      "rank": 3,
+      "ticker": "AMZN",
+      "name": "Amazon",
+      "mentions": 2
+    },
+    {
+      "rank": 4,
+      "ticker": "QQQ",
+      "name": "NASDAQ ETF",
+      "mentions": 2
+    },
+    {
+      "rank": 5,
+      "ticker": "BTC",
+      "name": "Bitcoin",
+      "mentions": 2
+    },
+    {
+      "rank": 6,
+      "ticker": "NVDA",
+      "name": "NVIDIA",
+      "mentions": 2
+    },
+    {
+      "rank": 7,
+      "ticker": "TSLA",
+      "name": "Tesla",
+      "mentions": 1
+    },
+    {
+      "rank": 8,
+      "ticker": "AAPL",
+      "name": "Apple",
+      "mentions": 1
+    }
+  ],
+  "ticker_sentiment": {
+    "META": {
+      "compound": 0.1731,
+      "label": "BULLISH",
+      "strength": "WEAK",
+      "total": 9,
+      "bullish_count": 5,
+      "bearish_count": 1,
+      "neutral_count": 3,
+      "bullish_pct": 55.6,
+      "bearish_pct": 11.1,
+      "hype_pct": 0.0,
+      "fud_pct": 0.0,
+      "ticker": "META",
+      "name": "Meta",
+      "mentions": 9
+    },
+    "GOOGL": {
+      "compound": 0.1855,
+      "label": "BULLISH",
+      "strength": "WEAK",
+      "total": 3,
+      "bullish_count": 1,
+      "bearish_count": 1,
+      "neutral_count": 1,
+      "bullish_pct": 33.3,
+      "bearish_pct": 33.3,
+      "hype_pct": 0.0,
+      "fud_pct": 0.0,
+      "ticker": "GOOGL",
+      "name": "Alphabet",
+      "mentions": 3
+    },
+    "AMZN": {
+      "compound": 0.4109,
+      "label": "BULLISH",
+      "strength": "MODERATE",
+      "total": 2,
+      "bullish_count": 2,
+      "bearish_count": 0,
+      "neutral_count": 0,
+      "bullish_pct": 100.0,
+      "bearish_pct": 0.0,
+      "hype_pct": 0.0,
+      "fud_pct": 0.0,
+      "ticker": "AMZN",
+      "name": "Amazon",
+      "mentions": 2
+    },
+    "QQQ": {
+      "compound": 0.7845,
+      "label": "BULLISH",
+      "strength": "STRONG",
+      "total": 2,
+      "bullish_count": 2,
+      "bearish_count": 0,
+      "neutral_count": 0,
+      "bullish_pct": 100.0,
+      "bearish_pct": 0.0,
+      "hype_pct": 0.0,
+      "fud_pct": 0.0,
+      "ticker": "QQQ",
+      "name": "NASDAQ ETF",
+      "mentions": 2
+    },
+    "BTC": {
+      "compound": -0.2454,
+      "label": "BEARISH",
+      "strength": "MODERATE",
+      "total": 2,
+      "bullish_count": 1,
+      "bearish_count": 1,
+      "neutral_count": 0,
+      "bullish_pct": 50.0,
+      "bearish_pct": 50.0,
+      "hype_pct": 0.0,
+      "fud_pct": 0.0,
+      "ticker": "BTC",
+      "name": "Bitcoin",
+      "mentions": 2
+    },
+    "NVDA": {
+      "compound": 0.8619,
+      "label": "BULLISH",
+      "strength": "STRONG",
+      "total": 2,
+      "bullish_count": 2,
+      "bearish_count": 0,
+      "neutral_count": 0,
+      "bullish_pct": 100.0,
+      "bearish_pct": 0.0,
+      "hype_pct": 0.0,
+      "fud_pct": 0.0,
+      "ticker": "NVDA",
+      "name": "NVIDIA",
+      "mentions": 2
+    },
+    "TSLA": {
+      "compound": -0.4215,
+      "label": "BEARISH",
+      "strength": "MODERATE",
+      "total": 1,
+      "bullish_count": 0,
+      "bearish_count": 1,
+      "neutral_count": 0,
+      "bullish_pct": 0.0,
+      "bearish_pct": 100.0,
+      "hype_pct": 0.0,
+      "fud_pct": 0.0,
+      "ticker": "TSLA",
+      "name": "Tesla",
+      "mentions": 1
+    },
+    "AAPL": {
+      "compound": 0.6124,
+      "label": "BULLISH",
+      "strength": "STRONG",
+      "total": 1,
+      "bullish_count": 1,
+      "bearish_count": 0,
+      "neutral_count": 0,
+      "bullish_pct": 100.0,
+      "bearish_pct": 0.0,
+      "hype_pct": 0.0,
+      "fud_pct": 0.0,
+      "ticker": "AAPL",
+      "name": "Apple",
+      "mentions": 1
+    }
+  },
+  "google_trends": {},
+  "trending_searches": []
+}

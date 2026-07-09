@@ -1,0 +1,258 @@
+{
+  "agent": {
+    "name": "IndiaIntelAgent",
+    "version": "1.0.0",
+    "company": "Mudholkars and Co",
+    "description": "Monitors 25 India-specific event categories across 25 Indian/global news sources"
+  },
+
+  "schedule": {
+    "interval_minutes": 30,
+    "full_report_times": ["08:00", "09:00", "12:00", "15:30", "18:00"],
+    "timezone": "Asia/Kolkata"
+  },
+
+  "news_sources": {
+    "rss_feeds": [
+      {"name": "Economic Times Markets",    "url": "https://economictimes.indiatimes.com/markets/rssfeeds/1977021501.cms",         "priority": "critical"},
+      {"name": "Economic Times Economy",    "url": "https://economictimes.indiatimes.com/news/economy/rssfeeds/20604788.cms",       "priority": "critical"},
+      {"name": "Economic Times Politics",   "url": "https://economictimes.indiatimes.com/news/politics-and-nation/rssfeeds/1052732854.cms", "priority": "high"},
+      {"name": "Economic Times Industry",   "url": "https://economictimes.indiatimes.com/industry/rssfeeds/13352306.cms",           "priority": "high"},
+      {"name": "Mint Markets",              "url": "https://www.livemint.com/rss/markets",                                          "priority": "critical"},
+      {"name": "Mint Economy",              "url": "https://www.livemint.com/rss/economy",                                          "priority": "high"},
+      {"name": "Mint Companies",            "url": "https://www.livemint.com/rss/companies",                                        "priority": "high"},
+      {"name": "NDTV Profit",               "url": "https://feeds.feedburner.com/ndtvprofit-latest",                                "priority": "high"},
+      {"name": "NDTV India",                "url": "https://feeds.feedburner.com/ndtvnews-india-news",                              "priority": "medium"},
+      {"name": "MoneyControl News",         "url": "https://www.moneycontrol.com/rss/latestnews.xml",                               "priority": "critical"},
+      {"name": "MoneyControl Markets",      "url": "https://www.moneycontrol.com/rss/marketreports.xml",                            "priority": "critical"},
+      {"name": "Business Standard",         "url": "https://www.business-standard.com/rss/home_page_top_stories.rss",               "priority": "high"},
+      {"name": "Zee Business",              "url": "https://zeebiz.com/feed",                                                       "priority": "medium"},
+      {"name": "The Hindu Business",        "url": "https://www.thehindu.com/business/feeder/default.rss",                          "priority": "high"},
+      {"name": "India Today Business",      "url": "https://www.indiatoday.in/rss/1206578",                                         "priority": "medium"},
+      {"name": "Press Trust of India",      "url": "https://feeds.ptinews.com/pti%2Fnews",                                          "priority": "high"},
+      {"name": "RBI Press Releases",        "url": "https://rbi.org.in/Scripts/bs_viewrssxml.aspx?Id=1",                            "priority": "critical"},
+      {"name": "SEBI Orders",               "url": "https://www.sebi.gov.in/sebi_data/rss/sebi_orders_rss.xml",                     "priority": "critical"},
+      {"name": "BSE Corporate Filings",     "url": "https://www.bseindia.com/Msource/Board/BSECorpaction.xml",                      "priority": "high"},
+      {"name": "PIB India (Govt Press)",    "url": "https://pib.gov.in/RssMain.aspx?ModId=6&Lang=1&Regid=3",                        "priority": "high"},
+      {"name": "Reuters India",             "url": "https://feeds.reuters.com/reuters/INbusinessNews",                               "priority": "high"},
+      {"name": "Bloomberg India",           "url": "https://feeds.bloomberg.com/india/news.rss",                                    "priority": "high"},
+      {"name": "NSE India News",            "url": "https://www.nseindia.com/json/rss.xml",                                         "priority": "critical"},
+      {"name": "Investing.com India",       "url": "https://in.investing.com/rss/news_25.rss",                                      "priority": "high"},
+      {"name": "ET Auto",                   "url": "https://auto.economictimes.indiatimes.com/rss/topstories",                       "priority": "medium"}
+    ]
+  },
+
+  "categories": {
+    "RBI_MONETARY_POLICY": {
+      "id": 1,
+      "keywords": ["rbi", "repo rate", "reverse repo", "crr", "slr", "monetary policy", "mpc", "shaktikanta", "sanjay malhotra", "inflation target", "liquidity", "open market operations", "rbi governor"],
+      "severity_boost": 2.5,
+      "market_relevance": "CRITICAL",
+      "description": "RBI rate decisions, monetary policy, liquidity measures"
+    },
+    "UNION_BUDGET_TAXATION": {
+      "id": 2,
+      "keywords": ["union budget", "budget 2026", "fiscal deficit", "tax", "income tax", "gst", "customs duty", "finance minister", "nirmala sitharaman", "capex", "disinvestment", "fiscal policy"],
+      "severity_boost": 2.5,
+      "market_relevance": "CRITICAL",
+      "description": "Union Budget, taxation, fiscal policy"
+    },
+    "SEBI_REGULATIONS": {
+      "id": 3,
+      "keywords": ["sebi", "circular", "regulation", "insider trading", "fpi", "mutual fund sebi", "derivatives", "f&o", "margin", "delisting", "ipo regulation", "bulk deal", "block deal"],
+      "severity_boost": 2.0,
+      "market_relevance": "CRITICAL",
+      "description": "SEBI circulars, market regulations, F&O rules"
+    },
+    "FII_DII_FLOWS": {
+      "id": 4,
+      "keywords": ["fii", "fpi", "dii", "foreign institutional", "domestic institutional", "net buy", "net sell", "outflow", "inflow", "foreign portfolio", "equity flow", "debt flow"],
+      "severity_boost": 2.0,
+      "market_relevance": "CRITICAL",
+      "description": "FII/DII buying and selling activity"
+    },
+    "NIFTY_SENSEX_TECHNICAL": {
+      "id": 5,
+      "keywords": ["nifty", "sensex", "nse", "bse", "nifty50", "bank nifty", "52 week", "all time high", "support", "resistance", "breakout", "breakdown", "market rally", "market crash", "circuit breaker"],
+      "severity_boost": 2.0,
+      "market_relevance": "CRITICAL",
+      "description": "Nifty/Sensex levels, technical moves, circuit breakers"
+    },
+    "CORPORATE_EARNINGS": {
+      "id": 6,
+      "keywords": ["quarterly results", "q1", "q2", "q3", "q4", "earnings", "profit", "revenue", "ebitda", "net profit", "results", "guidance", "analyst estimate", "beat", "miss", "dividend declared"],
+      "severity_boost": 1.8,
+      "market_relevance": "CRITICAL",
+      "description": "Corporate quarterly results and earnings guidance"
+    },
+    "INDIA_INFLATION_CPI": {
+      "id": 7,
+      "keywords": ["inflation", "cpi", "wpi", "consumer price", "wholesale price", "food inflation", "core inflation", "iip", "index of industrial production", "pmi india"],
+      "severity_boost": 1.8,
+      "market_relevance": "HIGH",
+      "description": "India CPI, WPI, IIP data releases"
+    },
+    "INDIA_GDP_GROWTH": {
+      "id": 8,
+      "keywords": ["gdp", "growth rate", "india economy", "recession", "economic growth", "q1 gdp", "advance estimate", "cso", "mospi", "gdp forecast", "slowdown", "expansion"],
+      "severity_boost": 1.8,
+      "market_relevance": "HIGH",
+      "description": "India GDP, economic growth data"
+    },
+    "CRUDE_OIL_INDIA": {
+      "id": 9,
+      "keywords": ["crude oil", "brent", "wti", "petrol price", "diesel price", "fuel price", "atf", "ongc", "oil india", "bpcl", "hpcl", "iocl", "oil ministry", "petroleum"],
+      "severity_boost": 2.0,
+      "market_relevance": "CRITICAL",
+      "description": "Crude oil prices impact on Indian economy and stocks"
+    },
+    "RUPEE_FOREX": {
+      "id": 10,
+      "keywords": ["rupee", "inr", "usd/inr", "forex", "dollar", "currency", "rbi intervention", "forex reserve", "current account deficit", "cad", "balance of payment", "exchange rate"],
+      "severity_boost": 1.8,
+      "market_relevance": "HIGH",
+      "description": "Rupee movement, forex reserves, CAD"
+    },
+    "INDIA_GEOPOLITICS": {
+      "id": 11,
+      "keywords": ["india china", "india pakistan", "india us", "border", "lac", "loc", "surgical strike", "war", "diplomacy", "modi foreign", "g20", "quad", "brics india", "un india", "trade war india"],
+      "severity_boost": 2.0,
+      "market_relevance": "HIGH",
+      "description": "India's geopolitical relations affecting markets"
+    },
+    "AGRICULTURE_MONSOON": {
+      "id": 12,
+      "keywords": ["monsoon", "rainfall", "kharif", "rabi", "crop", "msp", "minimum support price", "imd forecast", "el nino", "la nina", "drought india", "food grain", "wheat procurement", "rice export"],
+      "severity_boost": 1.5,
+      "market_relevance": "HIGH",
+      "description": "Monsoon, crop output, MSP, food security"
+    },
+    "BANKING_NPA": {
+      "id": 13,
+      "keywords": ["npa", "bad loan", "provisioning", "capital adequacy", "bank merger", "psu bank", "private bank", "yes bank", "credit growth", "loan growth", "asset quality", "stressed asset", "recovery"],
+      "severity_boost": 1.8,
+      "market_relevance": "HIGH",
+      "description": "Banking sector NPAs, mergers, credit growth"
+    },
+    "IT_SECTOR_INDIA": {
+      "id": 14,
+      "keywords": ["tcs", "infosys", "wipro", "hcl tech", "tech mahindra", "it sector", "software exports", "h1b visa", "us recession it", "deal wins", "attrition", "fresher hiring", "it guidance"],
+      "severity_boost": 1.8,
+      "market_relevance": "HIGH",
+      "description": "Indian IT sector — deal wins, visa, attrition, US demand"
+    },
+    "INFRASTRUCTURE_CAPEX": {
+      "id": 15,
+      "keywords": ["infrastructure", "national highway", "railway", "bullet train", "metro", "airport", "port", "smart city", "pm gati shakti", "nia", "roads", "capex india", "pli scheme", "production linked"],
+      "severity_boost": 1.5,
+      "market_relevance": "HIGH",
+      "description": "India infrastructure spending, PLI schemes, capex"
+    },
+    "INDIA_EV_AUTO": {
+      "id": 16,
+      "keywords": ["maruti", "tata motors", "mahindra", "bajaj auto", "hero moto", "electric vehicle india", "ev policy", "fame scheme", "auto sales", "vehicle sales", "bs6", "scrappage policy"],
+      "severity_boost": 1.5,
+      "market_relevance": "MEDIUM",
+      "description": "Indian auto sector, EV policy, vehicle sales"
+    },
+    "REAL_ESTATE_INDIA": {
+      "id": 17,
+      "keywords": ["real estate india", "dlf", "godrej properties", "prestige", "oberoi realty", "housing", "property price", "affordable housing", "pmay", "rera", "stamp duty", "home loan rate"],
+      "severity_boost": 1.3,
+      "market_relevance": "MEDIUM",
+      "description": "Indian real estate, housing policy, RERA"
+    },
+    "STARTUPS_IPO": {
+      "id": 18,
+      "keywords": ["ipo", "initial public offering", "startup india", "unicorn", "funding round", "series b", "series c", "valuation", "drhp", "sebi ipo", "listing", "grey market premium", "gmp"],
+      "severity_boost": 1.5,
+      "market_relevance": "HIGH",
+      "description": "IPOs, startups, funding rounds, listing performance"
+    },
+    "POWER_ENERGY_INDIA": {
+      "id": 19,
+      "keywords": ["power sector", "ntpc", "adani green", "tata power", "solar india", "wind energy", "coal india", "power grid", "electricity demand", "renewable target", "green hydrogen", "energy transition"],
+      "severity_boost": 1.3,
+      "market_relevance": "MEDIUM",
+      "description": "India power sector, renewables, energy transition"
+    },
+    "PHARMA_HEALTHCARE": {
+      "id": 20,
+      "keywords": ["sun pharma", "dr reddy", "cipla", "biocon", "lupin", "usfda", "drug approval", "warning letter", "import alert", "pharma export", "healthcare india", "ayushman bharat", "jan aushadhi"],
+      "severity_boost": 1.5,
+      "market_relevance": "HIGH",
+      "description": "Indian pharma USFDA approvals, healthcare policy"
+    },
+    "INDIA_DEFENCE": {
+      "id": 21,
+      "keywords": ["defence india", "hal", "bel", "bhel defence", "drdo", "make in india defence", "defence budget", "arms import", "defence export", "rafale", "tejas", "agni", "aatmanirbhar defence"],
+      "severity_boost": 1.3,
+      "market_relevance": "MEDIUM",
+      "description": "India defence sector, DRDO, make-in-India defence"
+    },
+    "GST_TRADE_POLICY": {
+      "id": 22,
+      "keywords": ["gst council", "gst rate", "gst collection", "export india", "import duty", "trade deficit", "trade surplus", "fta india", "rcep", "wto india", "export incentive", "duty drawback"],
+      "severity_boost": 1.5,
+      "market_relevance": "HIGH",
+      "description": "GST, trade policy, export-import data"
+    },
+    "INDIA_POLITICS": {
+      "id": 23,
+      "keywords": ["modi", "bjp", "congress", "election india", "state election", "cabinet", "parliament session", "rajya sabha", "lok sabha", "ordinance", "president india", "coalition", "political stability"],
+      "severity_boost": 1.8,
+      "market_relevance": "HIGH",
+      "description": "Indian political events, elections, policy decisions"
+    },
+    "COMMODITY_METALS_INDIA": {
+      "id": 24,
+      "keywords": ["tata steel", "jsw steel", "hindalco", "vedanta", "nmdc", "coal india", "steel price", "aluminium india", "copper india", "zinc", "iron ore", "mcx", "commodity india", "metal index"],
+      "severity_boost": 1.5,
+      "market_relevance": "HIGH",
+      "description": "Indian metals, commodity prices on MCX"
+    },
+    "BLACK_SWAN_INDIA": {
+      "id": 25,
+      "keywords": ["market halt", "circuit breaker", "trading suspended", "exchange closed", "emergency india", "financial crisis india", "bank run india", "scam india", "fraud india", "ponzi india"],
+      "severity_boost": 3.0,
+      "market_relevance": "CRITICAL",
+      "description": "Black swan events specific to Indian markets"
+    }
+  },
+
+  "severity_keywords": {
+    "CRITICAL": ["collapse", "crash", "ban", "fraud", "scam", "halt", "circuit", "crisis", "emergency", "default", "bankrupt", "war", "attack", "resign", "sacked"],
+    "HIGH":     ["hike", "cut", "surge", "drop", "warning", "sanction", "miss", "beat", "record", "all time", "strike", "shutdown", "recall", "delay", "approval"],
+    "MEDIUM":   ["report", "data", "increase", "decrease", "launch", "announce", "plan", "sign", "deal", "partnership", "expand", "contract"],
+    "LOW":      ["study", "survey", "consider", "review", "monitor", "meet", "discuss", "explore"]
+  },
+
+  "nse_stocks": {
+    "IT":       ["TCS", "INFY", "WIPRO", "HCLTECH", "TECHM", "LTIM", "MPHASIS"],
+    "BANKING":  ["HDFCBANK", "ICICIBANK", "KOTAKBANK", "AXISBANK", "SBIN", "BANKBARODA", "INDUSINDBK"],
+    "OIL_GAS":  ["RELIANCE", "ONGC", "IOC", "BPCL", "HINDPETRO", "OIL", "GAIL"],
+    "METALS":   ["TATASTEEL", "JSWSTEEL", "HINDALCO", "VEDL", "SAIL", "NMDC", "COALINDIA"],
+    "AUTO":     ["MARUTI", "TATAMOTORS", "M&M", "BAJAJ-AUTO", "HEROMOTOCO", "EICHERMOT"],
+    "PHARMA":   ["SUNPHARMA", "DRREDDY", "CIPLA", "DIVISLAB", "LUPIN", "AUROPHARMA"],
+    "FMCG":     ["HINDUNILVR", "ITC", "NESTLEIND", "BRITANNIA", "DABUR", "MARICO"],
+    "REALTY":   ["DLF", "GODREJPROP", "OBEROIRLTY", "PRESTIGE", "BRIGADE"],
+    "INFRA":    ["LT", "KNR", "NCC", "IRB", "KNRCON", "AHLUCONT"],
+    "CEMENT":   ["ULTRACEMCO", "SHREECEM", "AMBUJACEMENT", "ACC", "RAMCOCEM"],
+    "POWER":    ["NTPC", "POWERGRID", "TATAPOWER", "ADANIPOWER", "TORNTPOWER"],
+    "NBFC":     ["BAJFINANCE", "BAJAJFINSV", "CHOLAFIN", "MUTHOOTFIN", "MANAPPURAM"],
+    "DEFENCE":  ["HAL", "BEL", "BHEL", "MIDHANI", "COCHINSHIP"],
+    "TELECOM":  ["BHARTIARTL", "IDEA", "HFCL"],
+    "JEWELLERY":["TITAN", "KALYAN", "SENCO"],
+    "AGRI":     ["UPL", "PIIND", "COROMANDEL", "RALLIS"],
+    "INSURANCE":["HDFCLIFE", "SBILIFE", "ICICIGI", "STARHEALTH"],
+    "GREEN":    ["ADANIGREEN", "TATAPOWER", "INOXWIND", "SUZLON"]
+  },
+
+  "reporting": {
+    "reports_dir": "reports",
+    "logs_dir": "logs",
+    "max_articles_per_source": 10,
+    "max_age_hours": 12,
+    "top_events_in_report": 10
+  }
+}

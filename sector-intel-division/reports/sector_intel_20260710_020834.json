@@ -1,0 +1,579 @@
+{
+  "agent": "SectorIntelDivision",
+  "company": "Mudholkars and Co",
+  "timestamp": "2026-07-09T20:38:34.901361Z",
+  "ist_time": "10 Jul 2026 02:08 IST",
+  "period": "1mo",
+  "sectors_analyzed": 2,
+  "sector_ranking": [
+    {
+      "rank": null,
+      "sector": "IT",
+      "return": NaN,
+      "signal": "NEUTRAL",
+      "breadth": 0.0,
+      "stocks": 18,
+      "top_stock": "TCS",
+      "top_return": NaN
+    },
+    {
+      "rank": null,
+      "sector": "BANKING",
+      "return": NaN,
+      "signal": "NEUTRAL",
+      "breadth": 0.0,
+      "stocks": 19,
+      "top_stock": "HDFCBANK",
+      "top_return": NaN
+    }
+  ],
+  "full_data": [
+    {
+      "sector": "IT",
+      "period": "1mo",
+      "timestamp": "2026-07-09T20:38:30.749460Z",
+      "stocks_analyzed": 18,
+      "sector_return": NaN,
+      "breadth_pct": 0.0,
+      "positive_stocks": 0,
+      "negative_stocks": 0,
+      "sector_signal": "NEUTRAL",
+      "top_performers": [
+        {
+          "price": NaN,
+          "pct_return": NaN,
+          "period_high": 2231.0,
+          "period_low": 1976.8,
+          "avg_volume": 4292751,
+          "near_high": false,
+          "ticker": "TCS"
+        },
+        {
+          "price": NaN,
+          "pct_return": NaN,
+          "period_high": 1171.4,
+          "period_low": 982.4,
+          "avg_volume": 13516567,
+          "near_high": false,
+          "ticker": "INFY"
+        },
+        {
+          "price": NaN,
+          "pct_return": NaN,
+          "period_high": 185.25,
+          "period_low": 169.0,
+          "avg_volume": 21579100,
+          "near_high": false,
+          "ticker": "WIPRO"
+        },
+        {
+          "price": NaN,
+          "pct_return": NaN,
+          "period_high": 1176.5,
+          "period_low": 1030.0,
+          "avg_volume": 4047440,
+          "near_high": false,
+          "ticker": "HCLTECH"
+        },
+        {
+          "price": NaN,
+          "pct_return": NaN,
+          "period_high": 1479.94,
+          "period_low": 1309.96,
+          "avg_volume": 2364059,
+          "near_high": false,
+          "ticker": "TECHM"
+        }
+      ],
+      "worst_performers": [
+        {
+          "price": NaN,
+          "pct_return": NaN,
+          "period_high": 111.1,
+          "period_low": 83.3,
+          "avg_volume": 3717629,
+          "near_high": false,
+          "ticker": "NIITLTD"
+        },
+        {
+          "price": NaN,
+          "pct_return": NaN,
+          "period_high": 798.25,
+          "period_low": 707.1,
+          "avg_volume": 439501,
+          "near_high": false,
+          "ticker": "INTELLECT"
+        },
+        {
+          "price": NaN,
+          "pct_return": NaN,
+          "period_high": 514.9,
+          "period_low": 452.9,
+          "avg_volume": 1044225,
+          "near_high": false,
+          "ticker": "NEWGEN"
+        },
+        {
+          "price": NaN,
+          "pct_return": NaN,
+          "period_high": 1685.0,
+          "period_low": 1542.0,
+          "avg_volume": 35757,
+          "near_high": false,
+          "ticker": "MASTEK"
+        },
+        {
+          "price": NaN,
+          "pct_return": NaN,
+          "period_high": 680.8,
+          "period_low": 580.41,
+          "avg_volume": 2037464,
+          "near_high": false,
+          "ticker": "SONACOMS"
+        }
+      ],
+      "all_stocks": [
+        {
+          "price": NaN,
+          "pct_return": NaN,
+          "period_high": 2231.0,
+          "period_low": 1976.8,
+          "avg_volume": 4292751,
+          "near_high": false,
+          "ticker": "TCS"
+        },
+        {
+          "price": NaN,
+          "pct_return": NaN,
+          "period_high": 1171.4,
+          "period_low": 982.4,
+          "avg_volume": 13516567,
+          "near_high": false,
+          "ticker": "INFY"
+        },
+        {
+          "price": NaN,
+          "pct_return": NaN,
+          "period_high": 185.25,
+          "period_low": 169.0,
+          "avg_volume": 21579100,
+          "near_high": false,
+          "ticker": "WIPRO"
+        },
+        {
+          "price": NaN,
+          "pct_return": NaN,
+          "period_high": 1176.5,
+          "period_low": 1030.0,
+          "avg_volume": 4047440,
+          "near_high": false,
+          "ticker": "HCLTECH"
+        },
+        {
+          "price": NaN,
+          "pct_return": NaN,
+          "period_high": 1479.94,
+          "period_low": 1309.96,
+          "avg_volume": 2364059,
+          "near_high": false,
+          "ticker": "TECHM"
+        },
+        {
+          "price": NaN,
+          "pct_return": NaN,
+          "period_high": 2340.26,
+          "period_low": 2065.72,
+          "avg_volume": 578311,
+          "near_high": false,
+          "ticker": "MPHASIS"
+        },
+        {
+          "price": NaN,
+          "pct_return": NaN,
+          "period_high": 1523.6,
+          "period_low": 1356.2,
+          "avg_volume": 3400367,
+          "near_high": false,
+          "ticker": "COFORGE"
+        },
+        {
+          "price": NaN,
+          "pct_return": NaN,
+          "period_high": 5145.0,
+          "period_low": 4244.5,
+          "avg_volume": 971722,
+          "near_high": false,
+          "ticker": "PERSISTENT"
+        },
+        {
+          "price": NaN,
+          "pct_return": NaN,
+          "period_high": 363.1,
+          "period_low": 335.0,
+          "avg_volume": 841493,
+          "near_high": false,
+          "ticker": "HAPPSTMNDS"
+        },
+        {
+          "price": NaN,
+          "pct_return": NaN,
+          "period_high": 774.0,
+          "period_low": 543.35,
+          "avg_volume": 3247468,
+          "near_high": false,
+          "ticker": "KPITTECH"
+        },
+        {
+          "price": NaN,
+          "pct_return": NaN,
+          "period_high": 3504.8,
+          "period_low": 3030.0,
+          "avg_volume": 109608,
+          "near_high": false,
+          "ticker": "LTTS"
+        },
+        {
+          "price": NaN,
+          "pct_return": NaN,
+          "period_high": 4215.4,
+          "period_low": 3562.0,
+          "avg_volume": 321384,
+          "near_high": false,
+          "ticker": "TATAELXSI"
+        },
+        {
+          "price": NaN,
+          "pct_return": NaN,
+          "period_high": 912.8,
+          "period_low": 821.0,
+          "avg_volume": 513453,
+          "near_high": false,
+          "ticker": "CYIENT"
+        },
+        {
+          "price": NaN,
+          "pct_return": NaN,
+          "period_high": 680.8,
+          "period_low": 580.41,
+          "avg_volume": 2037464,
+          "near_high": false,
+          "ticker": "SONACOMS"
+        },
+        {
+          "price": NaN,
+          "pct_return": NaN,
+          "period_high": 1685.0,
+          "period_low": 1542.0,
+          "avg_volume": 35757,
+          "near_high": false,
+          "ticker": "MASTEK"
+        },
+        {
+          "price": NaN,
+          "pct_return": NaN,
+          "period_high": 514.9,
+          "period_low": 452.9,
+          "avg_volume": 1044225,
+          "near_high": false,
+          "ticker": "NEWGEN"
+        },
+        {
+          "price": NaN,
+          "pct_return": NaN,
+          "period_high": 798.25,
+          "period_low": 707.1,
+          "avg_volume": 439501,
+          "near_high": false,
+          "ticker": "INTELLECT"
+        },
+        {
+          "price": NaN,
+          "pct_return": NaN,
+          "period_high": 111.1,
+          "period_low": 83.3,
+          "avg_volume": 3717629,
+          "near_high": false,
+          "ticker": "NIITLTD"
+        }
+      ]
+    },
+    {
+      "sector": "BANKING",
+      "period": "1mo",
+      "timestamp": "2026-07-09T20:38:34.901240Z",
+      "stocks_analyzed": 19,
+      "sector_return": NaN,
+      "breadth_pct": 0.0,
+      "positive_stocks": 0,
+      "negative_stocks": 0,
+      "sector_signal": "NEUTRAL",
+      "top_performers": [
+        {
+          "price": NaN,
+          "pct_return": NaN,
+          "period_high": 843.0,
+          "period_low": 720.39,
+          "avg_volume": 36528859,
+          "near_high": false,
+          "ticker": "HDFCBANK"
+        },
+        {
+          "price": NaN,
+          "pct_return": NaN,
+          "period_high": 1433.0,
+          "period_low": 1252.7,
+          "avg_volume": 14672024,
+          "near_high": false,
+          "ticker": "ICICIBANK"
+        },
+        {
+          "price": NaN,
+          "pct_return": NaN,
+          "period_high": 413.8,
+          "period_low": 369.1,
+          "avg_volume": 17318564,
+          "near_high": false,
+          "ticker": "KOTAKBANK"
+        },
+        {
+          "price": NaN,
+          "pct_return": NaN,
+          "period_high": 1400.1,
+          "period_low": 1271.5,
+          "avg_volume": 6371893,
+          "near_high": false,
+          "ticker": "AXISBANK"
+        },
+        {
+          "price": NaN,
+          "pct_return": NaN,
+          "period_high": 1059.8,
+          "period_low": 983.0,
+          "avg_volume": 11390281,
+          "near_high": false,
+          "ticker": "SBIN"
+        }
+      ],
+      "worst_performers": [
+        {
+          "price": NaN,
+          "pct_return": NaN,
+          "period_high": 94.5,
+          "period_low": 79.6,
+          "avg_volume": 18558106,
+          "near_high": false,
+          "ticker": "MAHABANK"
+        },
+        {
+          "price": NaN,
+          "pct_return": NaN,
+          "period_high": 884.95,
+          "period_low": 769.25,
+          "avg_volume": 2824195,
+          "near_high": false,
+          "ticker": "INDIANB"
+        },
+        {
+          "price": NaN,
+          "pct_return": NaN,
+          "period_high": 307.85,
+          "period_low": 268.95,
+          "avg_volume": 2858600,
+          "near_high": false,
+          "ticker": "KARURVYSYA"
+        },
+        {
+          "price": NaN,
+          "pct_return": NaN,
+          "period_high": 231.82,
+          "period_low": 184.54,
+          "avg_volume": 3527241,
+          "near_high": false,
+          "ticker": "CUB"
+        },
+        {
+          "price": NaN,
+          "pct_return": NaN,
+          "period_high": 1090.4,
+          "period_low": 947.25,
+          "avg_volume": 2154111,
+          "near_high": false,
+          "ticker": "AUBANK"
+        }
+      ],
+      "all_stocks": [
+        {
+          "price": NaN,
+          "pct_return": NaN,
+          "period_high": 843.0,
+          "period_low": 720.39,
+          "avg_volume": 36528859,
+          "near_high": false,
+          "ticker": "HDFCBANK"
+        },
+        {
+          "price": NaN,
+          "pct_return": NaN,
+          "period_high": 1433.0,
+          "period_low": 1252.7,
+          "avg_volume": 14672024,
+          "near_high": false,
+          "ticker": "ICICIBANK"
+        },
+        {
+          "price": NaN,
+          "pct_return": NaN,
+          "period_high": 413.8,
+          "period_low": 369.1,
+          "avg_volume": 17318564,
+          "near_high": false,
+          "ticker": "KOTAKBANK"
+        },
+        {
+          "price": NaN,
+          "pct_return": NaN,
+          "period_high": 1400.1,
+          "period_low": 1271.5,
+          "avg_volume": 6371893,
+          "near_high": false,
+          "ticker": "AXISBANK"
+        },
+        {
+          "price": NaN,
+          "pct_return": NaN,
+          "period_high": 1059.8,
+          "period_low": 983.0,
+          "avg_volume": 11390281,
+          "near_high": false,
+          "ticker": "SBIN"
+        },
+        {
+          "price": NaN,
+          "pct_return": NaN,
+          "period_high": 287.2,
+          "period_low": 239.0,
+          "avg_volume": 14473009,
+          "near_high": false,
+          "ticker": "BANKBARODA"
+        },
+        {
+          "price": NaN,
+          "pct_return": NaN,
+          "period_high": 110.2,
+          "period_low": 100.45,
+          "avg_volume": 18409981,
+          "near_high": false,
+          "ticker": "PNB"
+        },
+        {
+          "price": NaN,
+          "pct_return": NaN,
+          "period_high": 136.33,
+          "period_low": 120.5,
+          "avg_volume": 31394713,
+          "near_high": false,
+          "ticker": "CANBK"
+        },
+        {
+          "price": NaN,
+          "pct_return": NaN,
+          "period_high": 172.51,
+          "period_low": 153.5,
+          "avg_volume": 13605730,
+          "near_high": false,
+          "ticker": "UNIONBANK"
+        },
+        {
+          "price": NaN,
+          "pct_return": NaN,
+          "period_high": 1038.0,
+          "period_low": 880.32,
+          "avg_volume": 2553334,
+          "near_high": false,
+          "ticker": "INDUSINDBK"
+        },
+        {
+          "price": NaN,
+          "pct_return": NaN,
+          "period_high": 334.3,
+          "period_low": 306.35,
+          "avg_volume": 7326154,
+          "near_high": false,
+          "ticker": "FEDERALBNK"
+        },
+        {
+          "price": NaN,
+          "pct_return": NaN,
+          "period_high": 81.77,
+          "period_low": 72.05,
+          "avg_volume": 25542770,
+          "near_high": false,
+          "ticker": "IDFCFIRSTB"
+        },
+        {
+          "price": NaN,
+          "pct_return": NaN,
+          "period_high": 218.13,
+          "period_low": 193.51,
+          "avg_volume": 9194558,
+          "near_high": false,
+          "ticker": "BANDHANBNK"
+        },
+        {
+          "price": NaN,
+          "pct_return": NaN,
+          "period_high": 381.7,
+          "period_low": 345.95,
+          "avg_volume": 5821120,
+          "near_high": false,
+          "ticker": "RBLBANK"
+        },
+        {
+          "price": NaN,
+          "pct_return": NaN,
+          "period_high": 1090.4,
+          "period_low": 947.25,
+          "avg_volume": 2154111,
+          "near_high": false,
+          "ticker": "AUBANK"
+        },
+        {
+          "price": NaN,
+          "pct_return": NaN,
+          "period_high": 231.82,
+          "period_low": 184.54,
+          "avg_volume": 3527241,
+          "near_high": false,
+          "ticker": "CUB"
+        },
+        {
+          "price": NaN,
+          "pct_return": NaN,
+          "period_high": 307.85,
+          "period_low": 268.95,
+          "avg_volume": 2858600,
+          "near_high": false,
+          "ticker": "KARURVYSYA"
+        },
+        {
+          "price": NaN,
+          "pct_return": NaN,
+          "period_high": 884.95,
+          "period_low": 769.25,
+          "avg_volume": 2824195,
+          "near_high": false,
+          "ticker": "INDIANB"
+        },
+        {
+          "price": NaN,
+          "pct_return": NaN,
+          "period_high": 94.5,
+          "period_low": 79.6,
+          "avg_volume": 18558106,
+          "near_high": false,
+          "ticker": "MAHABANK"
+        }
+      ]
+    }
+  ]
+}

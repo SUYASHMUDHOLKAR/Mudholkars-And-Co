@@ -1,0 +1,12 @@
+# Mudholkars and Co — All Agent Dependencies
+# Everything FREE, no paid APIs
+
+yfinance==1.2.0
+pandas==2.3.3
+numpy==2.0.2
+requests==2.32.3
+feedparser==6.0.11
+vaderSentiment==3.3.2
+pytrends==4.9.2
+ta==0.11.0
+tzdata==2026.2

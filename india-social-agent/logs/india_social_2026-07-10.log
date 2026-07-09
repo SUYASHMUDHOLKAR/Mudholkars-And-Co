@@ -1,0 +1,41 @@
+2026-07-10 01:31:05,598 | INFO     | India Social Media Sentiment Agent — Mudholkars and Co
+2026-07-10 01:31:05,598 | INFO     | ============================================================
+2026-07-10 01:31:05,598 | INFO     | 🇮🇳 INDIA SOCIAL MEDIA AGENT — Starting
+2026-07-10 01:31:05,598 | INFO     | ============================================================
+2026-07-10 01:31:05,605 | INFO     | Fetching India social media data...
+2026-07-10 01:31:06,526 | WARNING  | r/IndiaInvestments is private or restricted
+2026-07-10 01:31:06,875 | WARNING  | r/DalalStreetBets is private or restricted
+2026-07-10 01:31:07,184 | WARNING  | r/IndianStockMarket is private or restricted
+2026-07-10 01:31:07,569 | WARNING  | r/IndianStreetBets is private or restricted
+2026-07-10 01:31:07,925 | WARNING  | r/india is private or restricted
+2026-07-10 01:31:08,303 | WARNING  | r/IndiaBusiness is private or restricted
+2026-07-10 01:31:08,651 | WARNING  | r/mutualfunds is private or restricted
+2026-07-10 01:31:08,774 | WARNING  | StockTwits RELIANCE error: 403 Client Error: Forbidden for url: https://api.stocktwits.com/api/2/streams/symbol/RELIANCE.json
+2026-07-10 01:31:08,889 | WARNING  | StockTwits TCS error: 403 Client Error: Forbidden for url: https://api.stocktwits.com/api/2/streams/symbol/TCS.json
+2026-07-10 01:31:09,016 | WARNING  | StockTwits INFY error: 403 Client Error: Forbidden for url: https://api.stocktwits.com/api/2/streams/symbol/INFY.json
+2026-07-10 01:31:09,139 | WARNING  | StockTwits HDFCBANK error: 403 Client Error: Forbidden for url: https://api.stocktwits.com/api/2/streams/symbol/HDFCBANK.json
+2026-07-10 01:31:09,264 | WARNING  | StockTwits ICICIBANK error: 403 Client Error: Forbidden for url: https://api.stocktwits.com/api/2/streams/symbol/ICICIBANK.json
+2026-07-10 01:31:12,467 | WARNING  | Google Trends India error: The request failed: Google returned a response with code 429
+2026-07-10 01:31:12,856 | WARNING  | Google Trends India realtime error: The request failed: Google returned a response with code 404
+2026-07-10 01:31:12,856 | INFO     | India posts total: 0
+2026-07-10 01:31:12,856 | INFO     | Fetched 0 India posts
+2026-07-10 01:31:12,856 | WARNING  | No posts fetched
+2026-07-10 01:31:51,010 | INFO     | India Social Media Sentiment Agent — Mudholkars and Co
+2026-07-10 01:31:51,011 | INFO     | ============================================================
+2026-07-10 01:31:51,011 | INFO     | 🇮🇳 INDIA SOCIAL MEDIA AGENT — Starting
+2026-07-10 01:31:51,011 | INFO     | ============================================================
+2026-07-10 01:31:51,018 | INFO     | Fetching India financial media...
+2026-07-10 01:31:51,140 | INFO     | [ET Markets               ] 15 posts
+2026-07-10 01:31:51,528 | INFO     | [ET Industry              ] 15 posts
+2026-07-10 01:31:51,909 | INFO     | [ET Stocks                ] 15 posts
+2026-07-10 01:31:52,366 | INFO     | [Mint Markets             ] 15 posts
+2026-07-10 01:31:52,757 | INFO     | [Mint Companies           ] 15 posts
+2026-07-10 01:31:53,910 | INFO     | [NDTV Profit              ] 15 posts
+2026-07-10 01:31:54,474 | INFO     | [Investing.com India      ] 10 posts
+2026-07-10 01:31:54,852 | INFO     | [The Hindu Business       ] 15 posts
+2026-07-10 01:31:55,328 | INFO     | [India Today Biz          ] 15 posts
+2026-07-10 01:31:56,635 | INFO     | Google Trends India: 5 keywords
+2026-07-10 01:31:56,635 | INFO     | India total: 130 posts
+2026-07-10 01:31:56,635 | INFO     | Fetched 130 India posts
+2026-07-10 01:31:56,667 | INFO     | India sentiment: BULLISH (+0.245)
+2026-07-10 01:31:56,670 | INFO     | Trending India tickers: TCS, SENSEX, NIFTY, SBIN, GOOGL
