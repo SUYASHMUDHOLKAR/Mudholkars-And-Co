@@ -103,10 +103,10 @@ jobs:
           # Weekend = research only
           if [ "$DOW" -ge 6 ]; then
             echo "📚 WEEKEND MODE"
-            run_with_retry "Global Intel" "cd global-intel-agent && python intel_agent.py --once && cd .."
-            run_with_retry "India Intel" "cd india-intel-agent && python india_intel_agent.py --once && cd .."
-            run_with_retry "Social Media" "cd social-media-agent && python social_media_agent.py --once && cd .."
-            run_with_retry "Buzz Hunter" "cd buzz-hunter-agent && python buzz_hunter.py --once && cd .."
+            run_with_retry "Global Intel" "python global-intel-agent/intel_agent.py --once"
+            run_with_retry "India Intel" "python india-intel-agent/india_intel_agent.py --once"
+            run_with_retry "Social Media" "python social-media-agent/social_media_agent.py --once"
+            run_with_retry "Buzz Hunter" "python buzz-hunter-agent/buzz_hunter.py --once"
             run_with_retry "Agent Meeting" "python agent_meeting.py"
             exit 0
           fi
@@ -131,17 +131,17 @@ jobs:
           if [ "$HOUR" -eq 16 ]; then
             echo "📊 POST-MARKET"
             run_with_retry "Full Scan" "python full_pipeline.py"
-            run_with_retry "Sector Intel" "cd sector-intel-division && python run_sectors.py --all --period 1mo && cd .."
+            run_with_retry "Sector Intel" "python sector-intel-division/run_sectors.py --all --period 1mo"
             run_with_retry "Agent Meeting" "python agent_meeting.py"
             exit 0
           fi
 
           # Off-hours = Research
           echo "📚 RESEARCH MODE"
-          run_with_retry "Global Intel" "cd global-intel-agent && python intel_agent.py --once && cd .."
-          run_with_retry "India Intel" "cd india-intel-agent && python india_intel_agent.py --once && cd .."
-          run_with_retry "Social Media" "cd social-media-agent && python social_media_agent.py --once && cd .."
-          run_with_retry "Buzz Hunter" "cd buzz-hunter-agent && python buzz_hunter.py --once && cd .."
+          run_with_retry "Global Intel" "python global-intel-agent/intel_agent.py --once"
+          run_with_retry "India Intel" "python india-intel-agent/india_intel_agent.py --once"
+          run_with_retry "Social Media" "python social-media-agent/social_media_agent.py --once"
+          run_with_retry "Buzz Hunter" "python buzz-hunter-agent/buzz_hunter.py --once"
           run_with_retry "Agent Meeting" "python agent_meeting.py"
 
       # ═══════════════════════════════════════════════
