@@ -1,3 +1,4 @@
+import os
 """
 buzz_hunter.py
 --------------
@@ -134,6 +135,7 @@ def _print_report(report: dict):
 
 
 def main():
+    os.chdir(os.path.dirname(os.path.abspath(__file__)))
     parser = argparse.ArgumentParser(description="🕵️ Buzz Hunter — Mudholkars and Co")
     parser.add_argument("--once", action="store_true")
     args = parser.parse_args()

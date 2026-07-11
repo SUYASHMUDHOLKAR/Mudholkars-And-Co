@@ -270,7 +270,7 @@ def main():
     parser.add_argument("--config", default="config/intel_config.json", help="Config file path")
     args = parser.parse_args()
 
-    config = load_config(args.config)
+    config = load_config(os.path.join(os.path.dirname(__file__), args.config))
     rep    = config.get("reporting", {})
     setup_logging(rep.get("logs_dir", "logs"))
 

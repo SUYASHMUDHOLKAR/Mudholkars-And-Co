@@ -1,3 +1,4 @@
+import os
 """
 india_intel_agent.py
 --------------------
@@ -277,7 +278,7 @@ def main():
     parser.add_argument("--config", default="config/india_intel_config.json")
     args = parser.parse_args()
 
-    config = load_config(args.config)
+    config = load_config(os.path.join(os.path.dirname(__file__), args.config))
     setup_logging(config.get("reporting", {}).get("logs_dir", "logs"))
 
     logger.info("India Intelligence Agent — Mudholkars and Co")

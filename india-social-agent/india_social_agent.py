@@ -1,3 +1,4 @@
+import os
 """
 india_social_agent.py
 ---------------------
@@ -141,6 +142,7 @@ def _print_report(report: dict):
 
 
 def main():
+    os.chdir(os.path.dirname(os.path.abspath(__file__)))
     parser = argparse.ArgumentParser(description="India Social Media Sentiment Agent")
     parser.add_argument("--once", action="store_true")
     args = parser.parse_args()

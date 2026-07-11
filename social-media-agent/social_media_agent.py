@@ -1,3 +1,4 @@
+import os
 """
 social_media_agent.py
 ---------------------
@@ -137,6 +138,7 @@ def _print_report(report: dict):
 
 
 def main():
+    os.chdir(os.path.dirname(os.path.abspath(__file__)))
     parser = argparse.ArgumentParser(description="Global Social Media Sentiment Agent")
     parser.add_argument("--once", action="store_true")
     args = parser.parse_args()
