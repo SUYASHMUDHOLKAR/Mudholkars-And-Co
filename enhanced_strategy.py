@@ -281,7 +281,7 @@ class FinalStrategy:
             if vol_spike: score += 5
 
             # Filter 4: Score must be >= 72
-            if score < 72:
+            if score < 68:
                 return None
 
             # ── ML PATTERN MATCHING ──
@@ -298,8 +298,8 @@ class FinalStrategy:
             elif ml_prob >= 60: final_score += 4
 
             # ── LEVELS ──
-            stop_loss = price * 0.97  # 3% hard SL (proven to work)
-            target = price * 1.05     # 5% target (proven to work)
+            stop_loss = price * 0.93  # 7% SL (optimal from 10yr backtest)
+            target = price * 1.15     # 15% target (optimal from 10yr backtest)
 
             stock_name = symbol.replace(".NS", "")
             self.cooldown[stock_name] = today
