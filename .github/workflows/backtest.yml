@@ -1,0 +1,30 @@
+name: 🧪 15-Year Backtest (All Stocks)
+
+on:
+  workflow_dispatch:  # Manual trigger only
+
+jobs:
+  backtest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360  # 6 hours max
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt -q
+
+      - name: Run 15-Year Backtest (ALL NSE stocks)
+        run: python backtest_15yr.py
+
+      - name: Save results
+        if: always()
+        run: |
+          git config user.name "Mudholkars Bot"
+          git config user.email "bot@mudholkars.co"
+          git add reports/backtest_15yr.json reports/learning_state.json 2>/dev/null || true
+          git diff --staged --quiet || git commit -m "📊 15-Year Backtest Complete — $(TZ=Asia/Kolkata date '+%d %b %H:%M')"
+          git push || true
