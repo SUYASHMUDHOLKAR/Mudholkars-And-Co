@@ -49,6 +49,7 @@ from risk_agent import RiskAgent
 
 # Capital — single source of truth
 CAPITAL = int(os.environ.get("INITIAL_CAPITAL", 1000000))
+MIN_SCORE = 68  # Minimum consensus score for entry (from backtest optimal)
 
 
 def _load_focus_stocks() -> list:
@@ -81,6 +82,24 @@ def run_full_pipeline(quick: bool = False):
     logger.info("=" * 65)
 
     focus_stocks = _load_focus_stocks()
+
+    # ══════════════════════════════════════════════════════════════
+    # STEP 0: PRE-MARKET SCANNER (sets aggression for the day)
+    # ══════════════════════════════════════════════════════════════
+    logger.info("\n🌅 STEP 0: Pre-Market Scanner...")
+    threshold_adj = 0
+    premarket_bias = "NEUTRAL"
+    try:
+        from premarket_scanner import PreMarketScanner
+        pm = PreMarketScanner()
+        pm_result = pm.scan()
+        premarket_bias = pm_result.get("bias", "NEUTRAL")
+        threshold_adj = pm_result.get("threshold_adjustment", 0)
+        logger.info(f"  Mode: {pm_result.get('mode', '?')} | Bias: {premarket_bias} | "
+                    f"US: {pm_result.get('us_market', 0):+.1f}% | "
+                    f"Threshold adj: {threshold_adj:+d}")
+    except Exception as e:
+        logger.warning(f"  Pre-market scanner skipped: {e}")
 
     # ══════════════════════════════════════════════════════════════
     # STEP 1: MARKET REGIME (global filter)
@@ -729,6 +748,38 @@ def run_full_pipeline(quick: bool = False):
             agent_counts[agent_name] = agent_counts.get(agent_name, 0) + 1
     logger.info(f"  ✅ ACTIVE AGENTS: {len(agent_counts)}")
     logger.info(f"  Names: {sorted(agent_counts.keys())}")
+
+    # ══════════════════════════════════════════════════════════════
+    # STEP 11b: MULTI-TIMEFRAME FILTER (removes weak setups)
+    # ══════════════════════════════════════════════════════════════
+    logger.info("\n📊 STEP 11b: Multi-Timeframe Confirmation...")
+    try:
+        from multi_timeframe import MultiTimeframeFilter
+        mtf = MultiTimeframeFilter()
+        # Only check top consensus candidates (saves time)
+        buy_candidates = [r["stock"] for r in consensus_results
+                         if r["consensus"] in ("STRONG BUY", "BUY") and r["confidence"] >= 50]
+
+        mtf_results = mtf.check_batch(buy_candidates[:15])
+        passed = [s for s, r in mtf_results.items() if r.get("pass")]
+        failed = [s for s, r in mtf_results.items() if not r.get("pass")]
+
+        if failed:
+            logger.info(f"  ❌ MTF rejected: {failed}")
+        if passed:
+            logger.info(f"  ✅ MTF passed: {passed}")
+
+        # Remove failed stocks from consensus (downgrade to HOLD)
+        for r in consensus_results:
+            if r["stock"] in failed:
+                r["consensus"] = "HOLD"
+                r["_mtf_rejected"] = True
+    except Exception as e:
+        logger.warning(f"  Multi-timeframe filter skipped: {e}")
+
+    # Apply pre-market threshold adjustment
+    effective_min_score = MIN_SCORE + threshold_adj if 'threshold_adj' in dir() else MIN_SCORE
+    logger.info(f"  Effective min score: {effective_min_score} (base {MIN_SCORE} + premarket {threshold_adj:+d})")
 
     # ══════════════════════════════════════════════════════════════
     # STEP 12: RISK AGENT — Position sizing

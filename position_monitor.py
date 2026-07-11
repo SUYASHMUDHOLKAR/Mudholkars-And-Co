@@ -109,12 +109,20 @@ def _send_telegram(msg: str) -> bool:
 def check_positions() -> list:
     """
     Check all open positions against current prices.
+    Uses TrailingStopV2 for smart partial profit booking.
     Returns list of actions taken.
     """
     positions = _load_positions()
     if not positions:
         logger.info("  No open positions to monitor.")
         return []
+
+    # Import trailing stop v2
+    try:
+        from trailing_stop_v2 import TrailingStopV2
+        use_v2 = True
+    except ImportError:
+        use_v2 = False
 
     actions = []
     modified = False
@@ -141,6 +149,56 @@ def check_positions() -> list:
         logger.info(f"  {stock}: ₹{price:.2f} (entry ₹{entry:.2f}) | "
                     f"P&L: {pnl_pct:+.1f}% (₹{pnl_abs:+,.0f}) | "
                     f"SL: ₹{sl:.2f} | TGT: ₹{target:.2f}")
+
+        # ── TrailingStopV2: Smart partial profit booking ──
+        if use_v2:
+            stage = pos.get("trailing_stage", 0)
+            ts = TrailingStopV2(entry, qty, sl, target)
+            ts.stage = stage
+            ts.highest_price = trailing_high
+            ts.shares_remaining = pos.get("shares_remaining", qty)
+            ts.partial_booked = pos.get("partial_booked", False)
+
+            result = ts.check(price)
+            action_type = result.get("action", "HOLD")
+
+            if action_type == "SELL_HALF":
+                sell_qty = result.get("sell_qty", qty // 2)
+                pos["shares_remaining"] = qty - sell_qty
+                pos["partial_booked"] = True
+                pos["stop_loss"] = entry  # move to breakeven
+                pos["trailing_stage"] = 1
+                modified = True
+                logger.info(f"    📈 PARTIAL PROFIT: Sell {sell_qty} @ ₹{price:.2f} (+5%)")
+
+                msg = (f"📈 <b>PARTIAL PROFIT — {stock}</b>\n"
+                       f"━━━━━━━━━━━━━━━━━━━━━\n\n"
+                       f"💰 Selling {sell_qty} shares @ ₹{price:.2f}\n"
+                       f"📊 Profit: +5% on half position\n"
+                       f"🛡️ SL moved to breakeven (₹{entry:.2f})\n"
+                       f"📌 Remaining {pos['shares_remaining']} shares trailing...\n\n"
+                       f"⏰ {datetime.now(IST).strftime('%H:%M IST')}")
+                _send_telegram(msg)
+
+                actions.append({"stock": stock, "action": "SELL_HALF", "price": price,
+                               "qty_sold": sell_qty, "pnl_pct": 5.0})
+                continue  # don't check old SL/target
+
+            elif action_type == "TRAIL":
+                new_sl = result.get("new_sl", sl)
+                if new_sl > pos["stop_loss"]:
+                    pos["stop_loss"] = round(new_sl, 2)
+                    pos["trailing_stage"] = 2
+                    modified = True
+                    logger.info(f"    📈 Trailing SL raised to ₹{new_sl:.2f}")
+
+            elif action_type == "SELL_ALL":
+                # Full target hit on remaining shares
+                pos["trailing_stage"] = 3
+                # Fall through to target hit logic below
+
+            # Update state
+            pos["trailing_stage"] = ts.stage if ts.stage > pos.get("trailing_stage", 0) else pos.get("trailing_stage", 0)
 
         # Update trailing high
         if price > trailing_high:
