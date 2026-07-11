@@ -1,49 +1,20 @@
 {
   "capital": 1000000,
-  "available_cash": 1000000,
-  "positions": [],
-  "closed_trades": [],
-  "pnl": 0,
-  "target": 10000000,
-  "start_date": "2026-07-14",
-  "strategy": {
-    "swing": {
-      "allocation_pct": 60,
-      "capital": 600000,
-      "max_positions": 4,
-      "target_pct": 5.0,
-      "sl_pct": 3.0,
-      "hold_days": "3-7 days",
-      "order_type": "CNC",
-      "trades_per_week": 3
-    },
-    "positional": {
-      "allocation_pct": 30,
-      "capital": 300000,
-      "max_positions": 3,
-      "target_pct": 12.0,
-      "sl_pct": 5.0,
-      "hold_days": "2-6 weeks",
-      "order_type": "CNC",
-      "trades_per_month": 3
-    },
-    "investment": {
-      "allocation_pct": 10,
-      "capital": 100000,
-      "max_positions": 3,
-      "target_pct": 40.0,
-      "sl_pct": 15.0,
-      "hold_days": "3-12 months",
-      "order_type": "CNC",
-      "trades_per_quarter": 2
+  "available_cash": 918878,
+  "positions": [
+    {
+      "stock": "HAL",
+      "entry_price": 4506.78,
+      "quantity": 18,
+      "cost": 81122,
+      "stop_loss": 4371.58,
+      "target": 4732.12,
+      "entry_date": "2026-07-10",
+      "status": "OPEN"
     }
-  },
-  "rules": {
-    "follow_blindly": true,
-    "max_risk_per_trade_pct": 3,
-    "auto_track_positions": true,
-    "auto_learn": true,
-    "no_intraday": true,
-    "reason": "Full-time job. GTT handles exits. 2 min/day max effort."
-  }
+  ],
+  "closed_trades": [],
+  "pnl": 0.36,
+  "target": 10000000,
+  "start_date": "2026-07-10"
 }

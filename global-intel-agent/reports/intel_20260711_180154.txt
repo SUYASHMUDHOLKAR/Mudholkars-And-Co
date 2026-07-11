@@ -1,0 +1,106 @@
+=================================================================
+  GLOBAL INTELLIGENCE REPORT — Mudholkars and Co
+  11 Jul 2026 18:01 IST
+=================================================================
+
+ARTICLES ANALYSED  : 128
+India Relevant     : 19
+Severity Breakdown : CRITICAL=14  HIGH=7  MEDIUM=39
+
+⚠ CRITICAL ALERTS (14)
+----------------------------------------
+  [GEOPOLITICAL          ] Inside the Secret Factory That Supplies Ukraine’s War Drones
+    → Geopolitical tension → risk-off, FII outflows, defensive stocks
+    → Urgency: IMMEDIATE  |  Source: NYT Business
+  [GOVERNMENT_POLICY     ] Fed Chair Warsh will be in the hot seat as lawmakers press for his rea
+    → Policy change → sector-specific regulatory impact
+    → Urgency: IMMEDIATE  |  Source: MarketWatch
+  [ENERGY_COMMODITIES    ] Nomura sees 22% upside in Ather Energy. Here's why it's the brokerage'
+    → Energy/commodity shift → Oil PSUs, Aviation, Paints affected
+    → Urgency: IMMEDIATE  |  Source: Mint Markets
+  [ENERGY_COMMODITIES    ] Hundreds of thousands evacuated as Typhoon Bavi barrels towards China
+    → Energy/commodity shift → Oil PSUs, Aviation, Paints affected
+    → Urgency: IMMEDIATE  |  Source: Al Jazeera
+  [ENERGY_COMMODITIES    ] China Tells Refiners to Keep Fuel Output High as Iran War Drags
+    → Energy/commodity shift → Oil PSUs, Aviation, Paints affected
+    → Urgency: IMMEDIATE  |  Source: Bloomberg Markets
+
+TOP 10 EVENTS BY MARKET IMPACT
+----------------------------------------
+   1. [CRITICAL] [GEOPOLITICAL          ] Score=100  ▼ 🇮🇳
+      SBI Funds Management IPO: SBI offloads 1.42% stake to 30 investors ahead of
+      Sectors: IT(BEAR), METALS(BEAR), DEFENCE(BULL)
+   2. [CRITICAL] [ENERGY_COMMODITIES    ] Score= 88  ▼
+      China Tells Refiners to Keep Fuel Output High as Iran War Drags
+      Sectors: OIL_GAS(BULL), AVIATION(BEAR), PAINTS(BEAR)
+   3. [CRITICAL] [GEOPOLITICAL          ] Score= 80  ▼
+      Inside the Secret Factory That Supplies Ukraine’s War Drones
+      Sectors: IT(BEAR), METALS(BEAR), DEFENCE(BULL)
+   4. [CRITICAL] [GOVERNMENT_POLICY     ] Score= 80  ◆
+      Fed Chair Warsh will be in the hot seat as lawmakers press for his read on 
+   5. [CRITICAL] [ENERGY_COMMODITIES    ] Score= 80  ◆
+      Nomura sees 22% upside in Ather Energy. Here's why it's the brokerage's top
+      Sectors: OIL_GAS(BULL), AVIATION(BEAR), PAINTS(BEAR)
+   6. [CRITICAL] [ENERGY_COMMODITIES    ] Score= 80  ▼
+      Hundreds of thousands evacuated as Typhoon Bavi barrels towards China
+      Sectors: OIL_GAS(BULL), AVIATION(BEAR), PAINTS(BEAR)
+   7. [CRITICAL] [GEOPOLITICAL          ] Score= 80  ▼
+      Russian missile attacks wound 11 in Kyiv
+      Sectors: IT(BEAR), METALS(BEAR), DEFENCE(BULL)
+   8. [CRITICAL] [PANDEMIC_HEALTH       ] Score= 80  ▼
+      ‘A new consumer’: how weight-loss drugs are shaking up clothes shopping
+      Sectors: PHARMA(BULL), FMCG(BULL), AVIATION(BEAR)
+   9. [CRITICAL] [ENERGY_COMMODITIES    ] Score= 80  ▼
+      Europe’s slow electrification is a ‘major mistake’, warns IEA chief
+      Sectors: OIL_GAS(BULL), AVIATION(BEAR), PAINTS(BEAR)
+  10. [CRITICAL] [TECHNOLOGY_DISRUPTION ] Score= 80  ◆
+      Apple sues OpenAI, its employees claiming theft of trade secrets
+      Sectors: IT(MIXE), TELECOM(BULL), AUTO(MIXE)
+
+INDIAN SECTOR OUTLOOK (from global news)
+----------------------------------------
+  ▲ DEFENCE           : BULLISH        (score +19.8)  |  HAL, BEL, BHEL
+  ▲ TELECOM           : BULLISH        (score +14.8)  |  BHARTIARTL, IDEA
+  ▲ GREEN_ENERGY      : BULLISH        (score +13.2)  |  ADANIGREEN, TATAPOWER, GREENKO
+  ▲ OIL_GAS           : BULLISH        (score +8.7)  |  RELIANCE, ONGC, IOC
+  ▲ BANKING           : BULLISH        (score +7.6)  |  HDFCBANK, ICICIBANK, KOTAKBANK
+  ▲ PHARMA            : BULLISH        (score +3.5)  |  SUNPHARMA, DRREDDY, CIPLA
+  ▲ POWER             : BULLISH        (score +2.3)  |  NTPC, POWERGRID, TATAPOWER
+  ▲ GOLD              : BULLISH        (score +2.2)  |  
+  ▲ INFRA             : MILD_BULLISH   (score +1.0)  |  LT, KNR, NCC
+  ◆ CEMENT            : NEUTRAL        (score +0.0)  |  ULTRACEMCO, SHREECEM, AMBUJACEMENT
+  ◆ AGRI              : NEUTRAL        (score +0.0)  |  UPL, PIIND, COROMANDEL
+  ◆ INSURANCE         : NEUTRAL        (score -0.2)  |  HDFCLIFE, SBILIFE, ICICIGI
+  ▼ NBFC              : BEARISH        (score -1.9)  |  BAJFINANCE, BAJAJFINSV, CHOLAFIN
+  ▼ FMCG              : BEARISH        (score -7.1)  |  HINDUNILVR, ITC, NESTLEIND
+  ▼ REALTY            : BEARISH        (score -7.6)  |  DLF, GODREJPROP, OBEROIRLTY
+  ▼ PAINTS            : BEARISH        (score -12.0)  |  ASIANPAINT, BERGER, INDIGO
+  ▼ AUTO              : BEARISH        (score -14.5)  |  MARUTI, TATAMOTORS, M&M
+  ▼ AVIATION          : BEARISH        (score -18.4)  |  INDIGO, SPICEJET
+  ▼ IT                : BEARISH        (score -20.6)  |  TCS, INFY, WIPRO
+  ▼ METALS            : BEARISH        (score -21.1)  |  TATASTEEL, JSWSTEEL, HINDALCO
+
+EVENTS BY CATEGORY
+----------------------------------------
+  TECHNOLOGY_DISRUPTION       : 44 articles
+  GEOPOLITICAL                : 21 articles
+  ENERGY_COMMODITIES          : 10 articles
+  GOVERNMENT_POLICY           : 9 articles
+  LEGAL_REGULATION            : 7 articles
+  PANDEMIC_HEALTH             : 7 articles
+  AUTOMOBILE_EV               : 5 articles
+  ELECTION_POLITICS           : 4 articles
+  SUPPLY_CHAIN                : 3 articles
+  CLIMATE_ESG                 : 3 articles
+  CURRENCY_DEBT               : 3 articles
+  CENTRAL_BANK                : 3 articles
+  BLACK_SWAN                  : 2 articles
+  NATURAL_DISASTER            : 1 articles
+  LABOR_SOCIAL                : 1 articles
+  AVIATION_TRAVEL             : 1 articles
+  TRADE_ECONOMICS             : 1 articles
+  DEFENSE_SPACE               : 1 articles
+  AGRICULTURE_FOOD            : 1 articles
+  SCIENCE_INNOVATION          : 1 articles
+
+=================================================================

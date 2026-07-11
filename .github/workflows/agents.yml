@@ -1,217 +1,38 @@
-name: 🏢 Mudholkars & Co — 24/7 Agent Army (Auto-Healing)
+name: 🏢 Mudholkars & Co
 
 on:
   schedule:
-    # TIER 1: Trading hours — quick scan 200 stocks every 15 min
-    - cron: '*/15 3-10 * * 1-5'
-    # TIER 2: Post-market 4 PM IST (10:30 UTC) — FULL scan ALL 2370 stocks
-    - cron: '30 10 * * 1-5'
-    # TIER 3: Weekend deep analysis (Saturday 10 AM IST = 4:30 UTC)
-    - cron: '30 4 * * 6'
-    # Research: every 2 hours off-market
-    - cron: '0 */2 * * *'
-    # Weekly learning review: Sunday 8 PM IST (UTC 14:30)
-    - cron: '30 14 * * 0'
-
+    - cron: '*/15 3-10 * * 1-5'  # Trading: every 15 min Mon-Fri
+    - cron: '0 */2 * * *'        # Research: every 2 hours
+    - cron: '30 4 * * 6'         # Weekend deep scan
+    - cron: '30 14 * * 0'        # Sunday learning review
   workflow_dispatch:
-    inputs:
-      mode:
-        description: 'Run mode'
-        required: true
-        default: 'auto'
-        type: choice
-        options:
-          - auto
-          - meeting
-          - full-scan
-          - health-check
-
-env:
-  TZ: 'Asia/Kolkata'
 
 jobs:
-  run-company:
+  run:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
-    # ═══════════════════════════════════════════════
-    # AUTO-HEAL: Retry entire job up to 3 times
-    # ═══════════════════════════════════════════════
-    strategy:
-      max-parallel: 1
-      fail-fast: false
-
+    timeout-minutes: 30
     steps:
-      - name: 📥 Checkout
-        uses: actions/checkout@v4
-
-      - name: 🐍 Setup Python
-        uses: actions/setup-python@v5
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
           cache: 'pip'
 
-      - name: 📦 Install dependencies
+      - name: Install
         run: pip install -r requirements.txt -q
 
-      - name: 🔧 Setup Python Path
-        run: |
-          echo "PYTHONPATH=$GITHUB_WORKSPACE:$GITHUB_WORKSPACE/market-intel-division:$GITHUB_WORKSPACE/social-media-agent:$GITHUB_WORKSPACE/india-social-agent:$GITHUB_WORKSPACE/buzz-hunter-agent:$GITHUB_WORKSPACE/global-intel-agent:$GITHUB_WORKSPACE/india-intel-agent" >> $GITHUB_ENV
+      - name: Run
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python run_github.py
 
-      - name: 🔐 Create .env from secrets
-        run: |
-          echo "GROWW_ACCESS_TOKEN=${{ secrets.GROWW_ACCESS_TOKEN }}" >> .env
-          echo "GROWW_API_SECRET=${{ secrets.GROWW_API_SECRET }}" >> .env
-          echo "TELEGRAM_BOT_TOKEN=${{ secrets.TELEGRAM_BOT_TOKEN }}" >> .env
-          echo "TELEGRAM_CHAT_ID=${{ secrets.TELEGRAM_CHAT_ID }}" >> .env
-          echo "INITIAL_CAPITAL=5000" >> .env
-
-      # ═══════════════════════════════════════════════
-      # AUTO-HEAL WRAPPER: Retries each step 3x
-      # ═══════════════════════════════════════════════
-      - name: 🏢 Run Company (auto-detect mode + auto-heal)
-        id: run_company
-        continue-on-error: true
-        run: |
-          set +e  # don't exit on error
-
-          HOUR=$(TZ=Asia/Kolkata date +%H)
-          MIN=$(TZ=Asia/Kolkata date +%M)
-          DOW=$(date +%u)
-
-          echo "═══════════════════════════════════════════"
-          echo "  🏢 Mudholkars & Co — $(TZ=Asia/Kolkata date '+%d %b %H:%M IST')"
-          echo "  Hour=$HOUR Min=$MIN Day=$DOW"
-          echo "═══════════════════════════════════════════"
-
-          run_with_retry() {
-            local name="$1"
-            shift
-            local cmd="$@"
-            local max_attempts=3
-            local attempt=1
-
-            while [ $attempt -le $max_attempts ]; do
-              echo "▶ $name (attempt $attempt/$max_attempts)"
-              eval "$cmd"
-              if [ $? -eq 0 ]; then
-                echo "✔ $name succeeded"
-                return 0
-              fi
-              echo "⚠ $name failed (attempt $attempt)"
-              attempt=$((attempt + 1))
-              if [ $attempt -le $max_attempts ]; then
-                echo "  Healing: waiting 15s before retry..."
-                sleep 15
-              fi
-            done
-            echo "✘ $name FAILED after $max_attempts attempts"
-            return 1
-          }
-
-          # Weekend = research + strategy + DEEP SCAN
-          if [ "$DOW" -ge 6 ]; then
-            echo "📚 WEEKEND MODE — DEEP ANALYSIS (all 2,370 stocks)"
-            run_with_retry "Deep Full Scan" "python full_pipeline.py"
-            run_with_retry "Insider Deals" "python nse_delivery_scanner.py"
-            run_with_retry "Global Intel" "python global-intel-agent/intel_agent.py --once"
-            run_with_retry "India Intel" "python india-intel-agent/india_intel_agent.py --once"
-            run_with_retry "Social Media" "python social-media-agent/social_media_agent.py --once"
-            run_with_retry "Buzz Hunter" "python buzz-hunter-agent/buzz_hunter.py --once"
-            run_with_retry "Weekend Strategist" "python weekend_strategist.py"
-            run_with_retry "Agent Meeting" "python agent_meeting.py"
-            exit 0
-          fi
-
-          # Trading hours (9-15 IST)
-          if [ "$HOUR" -ge 9 ] && [ "$HOUR" -le 15 ]; then
-            echo "📈 TRADING MODE"
-            run_with_retry "Full Pipeline" "python full_pipeline.py --quick"
-            run_with_retry "Agent Meeting" "python agent_meeting.py"
-            exit 0
-          fi
-
-          # Pre-market (8:00-9:00)
-          if [ "$HOUR" -eq 8 ]; then
-            echo "🌅 PRE-MARKET"
-            run_with_retry "Morning Scan" "python full_pipeline.py --quick"
-            run_with_retry "Agent Meeting" "python agent_meeting.py"
-            exit 0
-          fi
-
-          # Post-market (16:00-17:00) — FULL SCAN ALL 2370 STOCKS
-          if [ "$HOUR" -eq 16 ]; then
-            echo "📊 POST-MARKET — FULL SCAN (all 2,370 stocks)"
-            run_with_retry "Full Scan ALL" "python full_pipeline.py"
-            run_with_retry "Insider Deals" "python nse_delivery_scanner.py"
-            run_with_retry "Sector Intel" "python sector-intel-division/run_sectors.py --all --period 1mo"
-            run_with_retry "Agent Meeting" "python agent_meeting.py"
-            exit 0
-          fi
-
-          # Off-hours = Research
-          echo "📚 RESEARCH MODE"
-          run_with_retry "Global Intel" "python global-intel-agent/intel_agent.py --once"
-          run_with_retry "India Intel" "python india-intel-agent/india_intel_agent.py --once"
-          run_with_retry "Social Media" "python social-media-agent/social_media_agent.py --once"
-          run_with_retry "Buzz Hunter" "python buzz-hunter-agent/buzz_hunter.py --once"
-          run_with_retry "Agent Meeting" "python agent_meeting.py"
-
-      # ═══════════════════════════════════════════════
-      # AUTO-HEAL: If main step failed, retry once more
-      # ═══════════════════════════════════════════════
-      - name: 🔄 Auto-Heal (retry if previous step failed)
-        if: steps.run_company.outcome == 'failure'
-        run: |
-          echo "🔄 AUTO-HEALING: Previous step failed, retrying..."
-          sleep 30
-          python full_pipeline.py --quick || python agent_meeting.py || echo "Partial recovery"
-
-      # ═══════════════════════════════════════════════
-      # HEALTH CHECK: Always runs, saves status
-      # ═══════════════════════════════════════════════
-      - name: 🏥 Health Check
-        if: always()
-        run: |
-          python3 -c "
-          import json
-          from datetime import datetime
-          from pathlib import Path
-
-          Path('reports').mkdir(exist_ok=True)
-          health = {
-              'status': 'RUNNING',
-              'last_run': datetime.utcnow().isoformat() + 'Z',
-              'mode': '$(TZ=Asia/Kolkata date +%H | python3 -c \"import sys; h=int(sys.stdin.read()); print('TRADING' if 9<=h<=15 else 'RESEARCH')\")',
-              'run_number': ${{ github.run_number }},
-              'triggered_by': '${{ github.event_name }}',
-              'previous_step': '${{ steps.run_company.outcome }}',
-          }
-          with open('reports/health.json', 'w') as f:
-              json.dump(health, f, indent=2)
-          print(f'Health: {health[\"status\"]} | Mode: {health[\"mode\"]} | Run: {health[\"run_number\"]}')
-          "
-
-      # ═══════════════════════════════════════════════
-      # SAVE: Commit reports back to repo
-      # ═══════════════════════════════════════════════
-      - name: 💾 Save reports to repo
+      - name: Save reports
         if: always()
         run: |
           git config user.name "Mudholkars Bot"
           git config user.email "bot@mudholkars.co"
           git add reports/ 2>/dev/null || true
-          git diff --staged --quiet || git commit -m "🤖 $(TZ=Asia/Kolkata date '+%d %b %H:%M') | Run #${{ github.run_number }}"
+          git diff --staged --quiet || git commit -m "🤖 $(TZ=Asia/Kolkata date '+%d %b %H:%M')"
           git push || true
-
-      # ═══════════════════════════════════════════════
-      # ALERT: Notify if critical failure
-      # ═══════════════════════════════════════════════
-      - name: 🚨 Alert on critical failure
-        if: failure()
-        run: |
-          echo "🚨 CRITICAL: Agent run failed after all retries!"
-          echo "Check: https://github.com/SUYASHMUDHOLKAR/Mudholkars-And-Co/actions"
-          # When Telegram is set up, this will send alert to your phone:
-          # curl -s "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
-          #   -d "chat_id=${TELEGRAM_CHAT_ID}" \
-          #   -d "text=🚨 MUDHOLKARS CO: Agent run FAILED! Check GitHub Actions."
