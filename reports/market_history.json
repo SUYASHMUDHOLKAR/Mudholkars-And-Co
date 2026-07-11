@@ -1,0 +1,324 @@
+{
+  "studied_on": "2026-07-11T23:53:07.227598+05:30",
+  "data_range": "2015-2026 (10 years)",
+  "nifty_patterns": {
+    "total_return_10yr": 185.9,
+    "avg_annual_return": 11.1,
+    "avg_crash_recovery_days": 21,
+    "best_months": [
+      "April",
+      "July",
+      "November"
+    ],
+    "worst_months": [
+      "March",
+      "February",
+      "September"
+    ],
+    "monthly_returns": {
+      "July": 0.13,
+      "August": 0.07,
+      "September": -0.01,
+      "October": 0.04,
+      "November": 0.09,
+      "December": 0.07,
+      "January": -0.0,
+      "February": -0.06,
+      "March": -0.08,
+      "April": 0.2,
+      "May": 0.04,
+      "June": 0.08
+    },
+    "big_crashes_per_year": 5.7
+  },
+  "major_events": [
+    {
+      "date": "2015-08-24",
+      "type": "CRASH",
+      "name": "China Yuan Devaluation Crash",
+      "nifty_fall": -5.9,
+      "recovery_days": 90
+    },
+    {
+      "date": "2016-11-08",
+      "type": "CRASH",
+      "name": "Demonetization Shock",
+      "nifty_fall": -6.0,
+      "recovery_days": 45
+    },
+    {
+      "date": "2018-09-21",
+      "type": "CRASH",
+      "name": "IL&FS Crisis / NBFC Crash",
+      "nifty_fall": -12.0,
+      "recovery_days": 180
+    },
+    {
+      "date": "2020-03-23",
+      "type": "CRASH",
+      "name": "COVID-19 Crash (Bottom)",
+      "nifty_fall": -38.0,
+      "recovery_days": 180
+    },
+    {
+      "date": "2021-10-19",
+      "type": "TOP",
+      "name": "Post-COVID Bull Market Top",
+      "nifty_rise": 130.0,
+      "correction_pct": -15
+    },
+    {
+      "date": "2022-06-17",
+      "type": "BOTTOM",
+      "name": "FII Selling Bottom (2022)",
+      "nifty_fall": -17.0,
+      "recovery_days": 90
+    },
+    {
+      "date": "2023-12-01",
+      "type": "BREAKOUT",
+      "name": "Nifty 20000 Breakout",
+      "nifty_rise": 20.0,
+      "continuation_days": 60
+    },
+    {
+      "date": "2024-06-04",
+      "type": "CRASH",
+      "name": "Election Result Shock",
+      "nifty_fall": -8.5,
+      "recovery_days": 30
+    },
+    {
+      "date": "2024-09-27",
+      "type": "TOP",
+      "name": "Nifty All-Time High 26277",
+      "nifty_rise": 25.0,
+      "correction_pct": -12
+    },
+    {
+      "date": "2025-02-05",
+      "type": "BOTTOM",
+      "name": "2025 Budget Sell-off Bottom",
+      "nifty_fall": -15.0,
+      "recovery_days": 60
+    }
+  ],
+  "event_aftermath": [
+    {
+      "trigger": "China Yuan Devaluation Crash",
+      "immediate": "Market falls 5.9%",
+      "recovery": "Recovers in ~90 days",
+      "action": "BUY on day 3-5 after crash (oversold bounce)",
+      "sector_play": "Banking + IT first to recover"
+    },
+    {
+      "trigger": "Demonetization Shock",
+      "immediate": "Market falls 6.0%",
+      "recovery": "Recovers in ~45 days",
+      "action": "BUY on day 3-5 after crash (oversold bounce)",
+      "sector_play": "Banking + IT first to recover"
+    },
+    {
+      "trigger": "IL&FS Crisis / NBFC Crash",
+      "immediate": "Market falls 12.0%",
+      "recovery": "Recovers in ~180 days",
+      "action": "BUY on day 3-5 after crash (oversold bounce)",
+      "sector_play": "Banking + IT first to recover"
+    },
+    {
+      "trigger": "COVID-19 Crash (Bottom)",
+      "immediate": "Market falls 38.0%",
+      "recovery": "Recovers in ~180 days",
+      "action": "BUY on day 3-5 after crash (oversold bounce)",
+      "sector_play": "Banking + IT first to recover"
+    },
+    {
+      "trigger": "Nifty 20000 Breakout",
+      "immediate": "New highs = FOMO buying",
+      "action": "Buy momentum stocks, avoid defensive",
+      "sector_play": "Midcap + Small cap outperform"
+    },
+    {
+      "trigger": "Election Result Shock",
+      "immediate": "Market falls 8.5%",
+      "recovery": "Recovers in ~30 days",
+      "action": "BUY on day 3-5 after crash (oversold bounce)",
+      "sector_play": "Banking + IT first to recover"
+    }
+  ],
+  "multibagger_signals": {
+    "fundamentals": [
+      "ROE > 20% for 3+ consecutive years",
+      "Debt/Equity < 0.5 (preferably zero debt)",
+      "Revenue growing > 20% YoY",
+      "Net margin expanding (not just revenue)",
+      "Promoter holding > 50% and STABLE"
+    ],
+    "technical": [
+      "Quietly consolidating for 1-2 years (base building)",
+      "Volume drying up during consolidation",
+      "RSI between 40-60 (not overbought yet)",
+      "Breaking above 52-week high with volume",
+      "MACD bullish crossover after long base"
+    ],
+    "thematic": [
+      "Direct beneficiary of government policy (PLI, Defence, Green)",
+      "Monopoly or near-monopoly in sector",
+      "Sector tailwind lasting 5-10 years",
+      "Management with skin in game (high promoter holding)"
+    ],
+    "stocks_to_watch_2026": [
+      "HAL (defence monopoly, order book growing)",
+      "BEL (defence electronics, Aatmanirbhar)",
+      "IRFC (railway capex, assured income)",
+      "TATAPOWER (green energy transition)",
+      "DIXON (PLI electronics beneficiary)",
+      "SUZLON (wind energy revival)",
+      "POLYCAB (infra + real estate boom)"
+    ]
+  },
+  "fii_patterns": {
+    "fii_heavy_selling": {
+      "pattern": "FII sells > \u20b95000 Cr for 5+ consecutive days",
+      "market_impact": "Nifty falls 5-8%",
+      "historical_examples": [
+        "2022 Jan-Jun",
+        "2024 Oct",
+        "2026 Jul"
+      ],
+      "action": "Wait for FII to turn buyers. Buy in last week of selling.",
+      "typical_duration": "3-8 weeks of selling, then reversal"
+    },
+    "fii_heavy_buying": {
+      "pattern": "FII buys > \u20b93000 Cr for 3+ consecutive days",
+      "market_impact": "Nifty rallies 3-8%",
+      "action": "Buy midcap/smallcap (they outperform when FII buys largecap)",
+      "typical_duration": "4-12 weeks of sustained rally"
+    },
+    "dii_vs_fii": {
+      "insight": "When FII sells but DII buys heavily, market stays resilient",
+      "action": "Safe to trade when DII buying > FII selling"
+    }
+  },
+  "seasonal_patterns": {
+    "January": {
+      "bias": "BULLISH",
+      "reason": "FII buying starts, budget anticipation"
+    },
+    "February": {
+      "bias": "VOLATILE",
+      "reason": "Union Budget month \u2014 depends on announcements"
+    },
+    "March": {
+      "bias": "BULLISH",
+      "reason": "Year-end rally, FII buying before April"
+    },
+    "April": {
+      "bias": "BULLISH",
+      "reason": "Q4 results season, positive surprises"
+    },
+    "May": {
+      "bias": "VOLATILE",
+      "reason": "Sell in May historically (not always India)"
+    },
+    "June": {
+      "bias": "BULLISH",
+      "reason": "Monsoon arrival, FMCG/agri stocks"
+    },
+    "July": {
+      "bias": "BULLISH",
+      "reason": "Q1 results, FII buying"
+    },
+    "August": {
+      "bias": "SIDEWAYS",
+      "reason": "Low volume, holiday season globally"
+    },
+    "September": {
+      "bias": "VOLATILE",
+      "reason": "FII quarter-end rebalancing"
+    },
+    "October": {
+      "bias": "BULLISH",
+      "reason": "Festival season, consumer demand"
+    },
+    "November": {
+      "bias": "BULLISH",
+      "reason": "Diwali rally, year-end buying"
+    },
+    "December": {
+      "bias": "BULLISH",
+      "reason": "Year-end rally, FII window dressing"
+    }
+  },
+  "prediction_rules": [
+    {
+      "rule": "CRASH_BOUNCE",
+      "condition": "Nifty falls > 5% in 3 days",
+      "historical_win_rate": 78,
+      "action": "BUY index ETF or top bluechips on day 3-5",
+      "target": "+5-8% in 15-20 days",
+      "stop": "-3% from entry",
+      "basis": "Historical avg recovery: 21 days"
+    },
+    {
+      "rule": "BUDGET_PLAY",
+      "condition": "Union Budget within 7 days",
+      "historical_win_rate": 65,
+      "action": "Buy infra + capex stocks 5 days before, sell same day",
+      "target": "+3-5%",
+      "stop": "-2%",
+      "basis": "Budget day = sell the news event"
+    },
+    {
+      "rule": "RESULTS_BEAT",
+      "condition": "Company beats estimates by > 10%",
+      "historical_win_rate": 72,
+      "action": "BUY next day open, hold 3-5 days",
+      "target": "+5-8%",
+      "stop": "-3%",
+      "basis": "Earnings beats drive 3-7 day continuation"
+    },
+    {
+      "rule": "52W_BREAKOUT",
+      "condition": "Stock breaks 52-week high with 2x volume",
+      "historical_win_rate": 68,
+      "action": "BUY on breakout day or next day",
+      "target": "+10-15% in 3-4 weeks",
+      "stop": "-5% (below breakout level)",
+      "basis": "52-week breakouts continue 68% of the time"
+    },
+    {
+      "rule": "FII_REVERSAL",
+      "condition": "FII sold heavily for 4+ weeks, now buying for 2 days",
+      "historical_win_rate": 74,
+      "action": "BUY midcap stocks aggressively",
+      "target": "+15-20% in 4-6 weeks",
+      "stop": "-7%",
+      "basis": "FII reversal = sustained rally begins"
+    },
+    {
+      "rule": "SECTOR_ROTATION",
+      "condition": "Defensive sectors (FMCG, Pharma) outperforming for 4+ weeks",
+      "historical_win_rate": 65,
+      "action": "Prepare for market correction (reduce exposure)",
+      "target": "Capital preservation",
+      "stop": "N/A",
+      "basis": "Money moving to defensives = market fear building"
+    },
+    {
+      "rule": "OCTOBER_EFFECT",
+      "condition": "Market in October (historically volatile)",
+      "historical_win_rate": 60,
+      "action": "Hold cash, wait for volatility to settle",
+      "basis": "October historically most volatile month globally"
+    },
+    {
+      "rule": "DIWALI_RALLY",
+      "condition": "October/November, Diwali approaching",
+      "historical_win_rate": 70,
+      "action": "BUY consumer discretionary + retail stocks",
+      "target": "+8-12%",
+      "basis": "Festival season drives consumption + market sentiment"
+    }
+  ]
+}

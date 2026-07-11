@@ -1,0 +1,115 @@
+{
+  "optimal": {
+    "score": 68,
+    "target": 15,
+    "sl": 7,
+    "hold": 21,
+    "trades": 375,
+    "wr": 50.9,
+    "avg": 1.22,
+    "monthly": 9.8
+  },
+  "top_10": [
+    {
+      "score": 68,
+      "target": 15,
+      "sl": 7,
+      "hold": 21,
+      "trades": 375,
+      "wr": 50.9,
+      "avg": 1.22,
+      "monthly": 9.8
+    },
+    {
+      "score": 68,
+      "target": 20,
+      "sl": 7,
+      "hold": 21,
+      "trades": 375,
+      "wr": 50.7,
+      "avg": 1.18,
+      "monthly": 9.4
+    },
+    {
+      "score": 72,
+      "target": 20,
+      "sl": 7,
+      "hold": 14,
+      "trades": 299,
+      "wr": 54.8,
+      "avg": 1.14,
+      "monthly": 9.2
+    },
+    {
+      "score": 65,
+      "target": 15,
+      "sl": 7,
+      "hold": 21,
+      "trades": 725,
+      "wr": 50.3,
+      "avg": 1.12,
+      "monthly": 8.9
+    },
+    {
+      "score": 72,
+      "target": 15,
+      "sl": 7,
+      "hold": 14,
+      "trades": 299,
+      "wr": 54.8,
+      "avg": 1.11,
+      "monthly": 8.9
+    },
+    {
+      "score": 72,
+      "target": 15,
+      "sl": 7,
+      "hold": 21,
+      "trades": 299,
+      "wr": 50.5,
+      "avg": 1.11,
+      "monthly": 8.9
+    },
+    {
+      "score": 68,
+      "target": 20,
+      "sl": 7,
+      "hold": 14,
+      "trades": 375,
+      "wr": 54.4,
+      "avg": 1.1,
+      "monthly": 8.8
+    },
+    {
+      "score": 72,
+      "target": 8,
+      "sl": 7,
+      "hold": 21,
+      "trades": 299,
+      "wr": 53.5,
+      "avg": 1.1,
+      "monthly": 8.8
+    },
+    {
+      "score": 68,
+      "target": 15,
+      "sl": 7,
+      "hold": 14,
+      "trades": 375,
+      "wr": 54.7,
+      "avg": 1.09,
+      "monthly": 8.7
+    },
+    {
+      "score": 72,
+      "target": 20,
+      "sl": 7,
+      "hold": 21,
+      "trades": 299,
+      "wr": 50.5,
+      "avg": 1.08,
+      "monthly": 8.7
+    }
+  ],
+  "tested": 144
+}

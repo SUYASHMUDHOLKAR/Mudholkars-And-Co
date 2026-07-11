@@ -1,0 +1,113 @@
+{
+  "trained_on": "6 months, {total} trades simulated",
+  "overall_win_rate": 48.0,
+  "signal_weights": {
+    "MACD_BULL": 1.21,
+    "RSI_LOW": 1.33,
+    "ABOVE_MA50": 1.14,
+    "ABOVE_EMA20": 1.13,
+    "CROSSOVER": 1.3
+  },
+  "best_days": {
+    "Monday": 50.2,
+    "Tuesday": 48.1,
+    "Wednesday": 47.1,
+    "Thursday": 45.6,
+    "Friday": 48.5
+  },
+  "stock_preference": {
+    "RELIANCE": {
+      "wr": 47.3,
+      "avg": -0.34
+    },
+    "TCS": {
+      "wr": 41.9,
+      "avg": -0.61
+    },
+    "HDFCBANK": {
+      "wr": 47.0,
+      "avg": 0.18
+    },
+    "INFY": {
+      "wr": 48.5,
+      "avg": -0.5
+    },
+    "ICICIBANK": {
+      "wr": 53.3,
+      "avg": 0.86
+    },
+    "SBIN": {
+      "wr": 55.2,
+      "avg": 0.19
+    },
+    "BAJFINANCE": {
+      "wr": 67.7,
+      "avg": 1.35
+    },
+    "SUNPHARMA": {
+      "wr": 58.5,
+      "avg": 0.46
+    },
+    "LT": {
+      "wr": 46.2,
+      "avg": 0.57
+    },
+    "MARUTI": {
+      "wr": 48.3,
+      "avg": 0.54
+    },
+    "HCLTECH": {
+      "wr": 47.3,
+      "avg": -0.94
+    },
+    "ONGC": {
+      "wr": 43.1,
+      "avg": -0.9
+    },
+    "NTPC": {
+      "wr": 38.8,
+      "avg": -0.74
+    },
+    "COALINDIA": {
+      "wr": 35.1,
+      "avg": -0.66
+    },
+    "HAL": {
+      "wr": 48.4,
+      "avg": 0.7
+    },
+    "BHARTIARTL": {
+      "wr": 40.0,
+      "avg": 0.08
+    },
+    "WIPRO": {
+      "wr": 41.8,
+      "avg": -0.84
+    },
+    "TATASTEEL": {
+      "wr": 50.8,
+      "avg": 0.08
+    },
+    "ITC": {
+      "wr": 48.4,
+      "avg": -0.11
+    },
+    "TITAN": {
+      "wr": 52.1,
+      "avg": 0.88
+    }
+  },
+  "prefer_stocks": [
+    "SBIN",
+    "BAJFINANCE",
+    "SUNPHARMA"
+  ],
+  "avoid_stocks": [
+    "TCS",
+    "ONGC",
+    "NTPC",
+    "COALINDIA",
+    "BHARTIARTL",
+    "WIPRO"
+  ]
+}

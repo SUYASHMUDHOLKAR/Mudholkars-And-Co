@@ -1,0 +1,271 @@
+{
+  "timestamp": "10 Jul 2026 10:45 IST",
+  "final_calls": [
+    {
+      "stock": "HAL",
+      "consensus": "BUY",
+      "confidence": 100.0,
+      "agents": "3/3",
+      "entry": 4500.8,
+      "stop_loss": 4313.79,
+      "target": 4874.83,
+      "quantity": 4,
+      "risk_reward": 2.0,
+      "invest": 18003.2
+    }
+  ],
+  "consensus": [
+    {
+      "stock": "HAL",
+      "verdict": "BUY",
+      "confidence": 100.0
+    },
+    {
+      "stock": "HDFCBANK",
+      "verdict": "HOLD",
+      "confidence": 100.0
+    },
+    {
+      "stock": "ICICIBANK",
+      "verdict": "HOLD",
+      "confidence": 100.0
+    },
+    {
+      "stock": "BAJFINANCE",
+      "verdict": "HOLD",
+      "confidence": 100.0
+    },
+    {
+      "stock": "SUNPHARMA",
+      "verdict": "HOLD",
+      "confidence": 100.0
+    },
+    {
+      "stock": "HCLTECH",
+      "verdict": "HOLD",
+      "confidence": 100.0
+    },
+    {
+      "stock": "ONGC",
+      "verdict": "HOLD",
+      "confidence": 100.0
+    },
+    {
+      "stock": "TATASTEEL",
+      "verdict": "HOLD",
+      "confidence": 100.0
+    },
+    {
+      "stock": "JSWSTEEL",
+      "verdict": "HOLD",
+      "confidence": 100.0
+    },
+    {
+      "stock": "CIPLA",
+      "verdict": "HOLD",
+      "confidence": 100.0
+    },
+    {
+      "stock": "DIVISLAB",
+      "verdict": "HOLD",
+      "confidence": 100.0
+    },
+    {
+      "stock": "NESTLEIND",
+      "verdict": "HOLD",
+      "confidence": 100.0
+    },
+    {
+      "stock": "BRITANNIA",
+      "verdict": "HOLD",
+      "confidence": 100.0
+    },
+    {
+      "stock": "ASIANPAINT",
+      "verdict": "HOLD",
+      "confidence": 100.0
+    },
+    {
+      "stock": "AXISBANK",
+      "verdict": "HOLD",
+      "confidence": 100.0
+    },
+    {
+      "stock": "TECHM",
+      "verdict": "HOLD",
+      "confidence": 100.0
+    },
+    {
+      "stock": "DLF",
+      "verdict": "HOLD",
+      "confidence": 100.0
+    },
+    {
+      "stock": "GODREJPROP",
+      "verdict": "HOLD",
+      "confidence": 100.0
+    },
+    {
+      "stock": "CHOLAFIN",
+      "verdict": "HOLD",
+      "confidence": 100.0
+    },
+    {
+      "stock": "MUTHOOTFIN",
+      "verdict": "HOLD",
+      "confidence": 100.0
+    },
+    {
+      "stock": "ULTRACEMCO",
+      "verdict": "HOLD",
+      "confidence": 100.0
+    },
+    {
+      "stock": "TCS",
+      "verdict": "HOLD",
+      "confidence": 66.7
+    },
+    {
+      "stock": "INFY",
+      "verdict": "HOLD",
+      "confidence": 66.7
+    },
+    {
+      "stock": "SBIN",
+      "verdict": "HOLD",
+      "confidence": 66.7
+    },
+    {
+      "stock": "LT",
+      "verdict": "HOLD",
+      "confidence": 66.7
+    },
+    {
+      "stock": "BHARTIARTL",
+      "verdict": "HOLD",
+      "confidence": 66.7
+    },
+    {
+      "stock": "BEL",
+      "verdict": "HOLD",
+      "confidence": 66.7
+    },
+    {
+      "stock": "DIXON",
+      "verdict": "HOLD",
+      "confidence": 66.7
+    },
+    {
+      "stock": "MARUTI",
+      "verdict": "HOLD",
+      "confidence": 50.0
+    },
+    {
+      "stock": "TITAN",
+      "verdict": "HOLD",
+      "confidence": 50.0
+    },
+    {
+      "stock": "COALINDIA",
+      "verdict": "HOLD",
+      "confidence": 50.0
+    },
+    {
+      "stock": "HINDALCO",
+      "verdict": "HOLD",
+      "confidence": 50.0
+    },
+    {
+      "stock": "DRREDDY",
+      "verdict": "HOLD",
+      "confidence": 50.0
+    },
+    {
+      "stock": "KOTAKBANK",
+      "verdict": "HOLD",
+      "confidence": 50.0
+    },
+    {
+      "stock": "INDUSINDBK",
+      "verdict": "HOLD",
+      "confidence": 50.0
+    },
+    {
+      "stock": "IRFC",
+      "verdict": "HOLD",
+      "confidence": 50.0
+    },
+    {
+      "stock": "SUZLON",
+      "verdict": "HOLD",
+      "confidence": 50.0
+    },
+    {
+      "stock": "TATAPOWER",
+      "verdict": "HOLD",
+      "confidence": 50.0
+    },
+    {
+      "stock": "ADANIGREEN",
+      "verdict": "HOLD",
+      "confidence": 50.0
+    },
+    {
+      "stock": "IRCTC",
+      "verdict": "HOLD",
+      "confidence": 50.0
+    },
+    {
+      "stock": "TRENT",
+      "verdict": "HOLD",
+      "confidence": 50.0
+    },
+    {
+      "stock": "INDIGO",
+      "verdict": "HOLD",
+      "confidence": 50.0
+    },
+    {
+      "stock": "POWERGRID",
+      "verdict": "HOLD",
+      "confidence": 50.0
+    },
+    {
+      "stock": "ITC",
+      "verdict": "HOLD",
+      "confidence": 50.0
+    },
+    {
+      "stock": "RELIANCE",
+      "verdict": "HOLD",
+      "confidence": 33.3
+    },
+    {
+      "stock": "ADANIENT",
+      "verdict": "HOLD",
+      "confidence": 33.3
+    },
+    {
+      "stock": "WIPRO",
+      "verdict": "HOLD",
+      "confidence": 33.3
+    },
+    {
+      "stock": "NTPC",
+      "verdict": "HOLD",
+      "confidence": 0.0
+    },
+    {
+      "stock": "PIIND",
+      "verdict": "HOLD",
+      "confidence": 0.0
+    }
+  ],
+  "critical_news": [
+    "Rs 5 lakh crore wealth boost! Top 5 factors fuelling today's 800-point Sensex rally",
+    "Gold prices fall to Rs 1.44 lakh/10 gram; silver dips Rs 6,300 this week as Iran war raises inflation worries. What\u2019s next?",
+    "IT Stocks Rally: Infosys, LTM, Tech Mahindra Shares Jump Over 4% After TCS Q1 Meets Estimates",
+    "SK Hynix raises $26.5 billion in U.S. offering. What to know about the stock.",
+    "Warsh picks ex-BoE chief King and tech boss Andreessen to reform Fed"
+  ]
+}

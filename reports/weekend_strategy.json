@@ -1,0 +1,166 @@
+{
+  "agent": "WeekendStrategist",
+  "timestamp": "11 Jul 2026 18:01 IST",
+  "market_review": {
+    "nifty_weekly_return": -0.41,
+    "nifty_close": 24206.9,
+    "week_high": 24530.9,
+    "week_low": 23805.2,
+    "trend": "SIDEWAYS",
+    "next_week_bias": "CAUTIOUS"
+  },
+  "trade_review": {
+    "capital": 1000000,
+    "positions": [
+      {
+        "stock": "HAL",
+        "entry_price": 4506.78,
+        "quantity": 18,
+        "cost": 81122,
+        "stop_loss": 4371.58,
+        "target": 4732.12,
+        "entry_date": "2026-07-10",
+        "status": "OPEN"
+      }
+    ],
+    "closed_trades": 0,
+    "total_pnl": 0.36
+  },
+  "next_week_picks": [
+    {
+      "stock": "HAL",
+      "score": 77,
+      "price": 4506.8,
+      "rsi": 60.5,
+      "macd": "BULL",
+      "trend": "UP",
+      "week_return": 1.49,
+      "setup": "MOMENTUM"
+    },
+    {
+      "stock": "TCS",
+      "score": 75,
+      "price": 2069.0,
+      "rsi": 43.5,
+      "macd": "BULL",
+      "trend": "DOWN",
+      "week_return": 0.55,
+      "setup": "BUILDING"
+    },
+    {
+      "stock": "ONGC",
+      "score": 75,
+      "price": 244.96,
+      "rsi": 44.8,
+      "macd": "BULL",
+      "trend": "DOWN",
+      "week_return": 0.43,
+      "setup": "BUILDING"
+    },
+    {
+      "stock": "TATASTEEL",
+      "score": 75,
+      "price": 191.19,
+      "rsi": 44.9,
+      "macd": "BULL",
+      "trend": "DOWN",
+      "week_return": 0.17,
+      "setup": "BUILDING"
+    },
+    {
+      "stock": "WIPRO",
+      "score": 75,
+      "price": 175.46,
+      "rsi": 41.9,
+      "macd": "BULL",
+      "trend": "DOWN",
+      "week_return": 0.65,
+      "setup": "BUILDING"
+    },
+    {
+      "stock": "INFY",
+      "score": 72,
+      "price": 1068.0,
+      "rsi": 47.9,
+      "macd": "BULL",
+      "trend": "MID",
+      "week_return": 2.48,
+      "setup": "MOMENTUM"
+    },
+    {
+      "stock": "BAJFINANCE",
+      "score": 72,
+      "price": 1020.5,
+      "rsi": 63.8,
+      "macd": "BULL",
+      "trend": "UP",
+      "week_return": -0.84,
+      "setup": "MOMENTUM"
+    },
+    {
+      "stock": "SUNPHARMA",
+      "score": 72,
+      "price": 1935.5,
+      "rsi": 71.7,
+      "macd": "BULL",
+      "trend": "UP",
+      "week_return": 1.45,
+      "setup": "MOMENTUM"
+    },
+    {
+      "stock": "TITAN",
+      "score": 72,
+      "price": 4584.4,
+      "rsi": 68.0,
+      "macd": "BULL",
+      "trend": "UP",
+      "week_return": 2.57,
+      "setup": "MOMENTUM"
+    },
+    {
+      "stock": "HCLTECH",
+      "score": 72,
+      "price": 1164.1,
+      "rsi": 55.4,
+      "macd": "BULL",
+      "trend": "MID",
+      "week_return": 2.64,
+      "setup": "MOMENTUM"
+    }
+  ],
+  "sector_rotation": {
+    "sector_returns": {
+      "IT": 1.23,
+      "DEFENCE": 0.33,
+      "METALS": 0.04,
+      "OIL": -0.02,
+      "BANKING": -0.85,
+      "POWER": -1.03,
+      "AUTO": -1.49,
+      "PHARMA": -3.08
+    },
+    "money_flowing_in": [
+      "IT"
+    ],
+    "money_flowing_out": [
+      "POWER",
+      "AUTO",
+      "PHARMA"
+    ],
+    "top_sector": "IT",
+    "worst_sector": "PHARMA"
+  },
+  "agent_tasks": {
+    "Scout": "Focus on: HAL, TCS, ONGC, TATASTEEL, WIPRO. Track volume spikes Monday AM.",
+    "Technical": "Run deep TA on: HAL, TCS, ONGC, TATASTEEL, WIPRO, INFY, BAJFINANCE. Look for MACD crossovers.",
+    "Fundamental": "Check Q1 results calendar. Any earnings this week for top picks?",
+    "BuzzHunter": "Track social buzz on: HAL, TCS, ONGC, TATASTEEL, WIPRO. Weekend hype = Monday pop.",
+    "SectorIntel": "Focus on IT sectors. Money flowing IN here.",
+    "GlobalIntel": "Watch for: Fed news, oil prices, global risk events.",
+    "IndiaIntel": "Track: FII flow Mon AM, any govt policy news, RBI commentary.",
+    "SocialMedia": "Monitor weekend discussions on HAL, TCS, ONGC.",
+    "RiskAgent": "Max exposure 60% until market confirms trend. Tight SLs.",
+    "Avoid": "Reduce exposure to: POWER, AUTO, PHARMA \u2014 money flowing OUT."
+  },
+  "monday_brief": "\ud83c\udf05 MONDAY MORNING BRIEF \u2014 Mudholkars & Co\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\n\ud83d\udcc8 Last Week: Nifty -0.4% | Trend: SIDEWAYS\n\ud83d\udd2e Next Week Bias: CAUTIOUS\n\n\ud83c\udfaf TOP PICKS FOR THIS WEEK:\n  1. HAL \u2014 Score 77 | RSI=60.5 | MOMENTUM\n  2. TCS \u2014 Score 75 | RSI=43.5 | BUILDING\n  3. ONGC \u2014 Score 75 | RSI=44.8 | BUILDING\n  4. TATASTEEL \u2014 Score 75 | RSI=44.9 | BUILDING\n  5. WIPRO \u2014 Score 75 | RSI=41.9 | BUILDING\n\n\ud83d\udd04 SECTOR ROTATION:\n  Money IN: IT\n  Money OUT: POWER, AUTO, PHARMA\n\n\ud83d\udccb AGENT TASKS:\n  Scout: Focus on: HAL, TCS, ONGC, TATASTEEL, WIPRO. Track volume spi\n  Focus sectors: IT\n  Avoid: Reduce exposure to: POWER, AUTO, PHARMA \u2014 money flowing OUT.\n\n\u23f0 First scan: Monday 9:30 AM (automatic)"
+}

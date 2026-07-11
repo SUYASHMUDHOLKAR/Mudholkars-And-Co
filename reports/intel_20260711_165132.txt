@@ -1,0 +1,105 @@
+=================================================================
+  GLOBAL INTELLIGENCE REPORT — Mudholkars and Co
+  11 Jul 2026 16:51 IST
+=================================================================
+
+ARTICLES ANALYSED  : 129
+India Relevant     : 17
+Severity Breakdown : CRITICAL=18  HIGH=10  MEDIUM=33
+
+⚠ CRITICAL ALERTS (18)
+----------------------------------------
+  [GOVERNMENT_POLICY     ] Fed Chair Warsh will be in the hot seat as lawmakers press for his rea
+    → Policy change → sector-specific regulatory impact
+    → Urgency: IMMEDIATE  |  Source: MarketWatch
+  [GEOPOLITICAL          ] Dhamaal 4 Box Office Collection Day 1: Ajay Devgn's Comedy Opens On St
+    → Geopolitical tension → risk-off, FII outflows, defensive stocks
+    → Urgency: IMMEDIATE  |  Source: NDTV Business
+  [ENERGY_COMMODITIES    ] Nomura sees 22% upside in Ather Energy. Here's why it's the brokerage'
+    → Energy/commodity shift → Oil PSUs, Aviation, Paints affected
+    → Urgency: IMMEDIATE  |  Source: Mint Markets
+  [GEOPOLITICAL          ] INS Mahendragiri Commissioned: Everything To Know About India's New Wa
+    → Geopolitical tension → risk-off, FII outflows, defensive stocks
+    → Urgency: IMMEDIATE  |  Source: NDTV Business
+  [ENERGY_COMMODITIES    ] Hundreds of thousands evacuated as Typhoon Bavi barrels towards China
+    → Energy/commodity shift → Oil PSUs, Aviation, Paints affected
+    → Urgency: IMMEDIATE  |  Source: Al Jazeera
+
+TOP 10 EVENTS BY MARKET IMPACT
+----------------------------------------
+   1. [CRITICAL] [GEOPOLITICAL          ] Score=100  ▼ 🇮🇳
+      INS Mahendragiri Commissioned: Everything To Know About India's New Warship
+      Sectors: IT(BEAR), METALS(BEAR), DEFENCE(BULL)
+   2. [CRITICAL] [GEOPOLITICAL          ] Score=100  ▼ 🇮🇳
+      SBI Funds Management IPO: SBI offloads 1.42% stake to 30 investors ahead of
+      Sectors: IT(BEAR), METALS(BEAR), DEFENCE(BULL)
+   3. [CRITICAL] [ENERGY_COMMODITIES    ] Score= 88  ▼
+      China Tells Refiners to Keep Fuel Output High as Iran War Drags
+      Sectors: OIL_GAS(BULL), AVIATION(BEAR), PAINTS(BEAR)
+   4. [CRITICAL] [GOVERNMENT_POLICY     ] Score= 80  ◆
+      Fed Chair Warsh will be in the hot seat as lawmakers press for his read on 
+   5. [CRITICAL] [GEOPOLITICAL          ] Score= 80  ▼
+      Dhamaal 4 Box Office Collection Day 1: Ajay Devgn's Comedy Opens On Strong 
+      Sectors: IT(BEAR), METALS(BEAR), DEFENCE(BULL)
+   6. [CRITICAL] [ENERGY_COMMODITIES    ] Score= 80  ◆
+      Nomura sees 22% upside in Ather Energy. Here's why it's the brokerage's top
+      Sectors: OIL_GAS(BULL), AVIATION(BEAR), PAINTS(BEAR)
+   7. [CRITICAL] [ENERGY_COMMODITIES    ] Score= 80  ▼
+      Hundreds of thousands evacuated as Typhoon Bavi barrels towards China
+      Sectors: OIL_GAS(BULL), AVIATION(BEAR), PAINTS(BEAR)
+   8. [CRITICAL] [GEOPOLITICAL          ] Score= 80  ▼
+      Russian missile attacks wound 11 in Kyiv
+      Sectors: IT(BEAR), METALS(BEAR), DEFENCE(BULL)
+   9. [CRITICAL] [ELECTION_POLITICS     ] Score= 80  ◆
+      Trump threatens Iran after chants for his death erupted at Khamenei funeral
+      Sectors: INFRA(BULL), CEMENT(BULL), POWER(BULL)
+  10. [CRITICAL] [PANDEMIC_HEALTH       ] Score= 80  ▼
+      ‘A new consumer’: how weight-loss drugs are shaking up clothes shopping
+      Sectors: PHARMA(BULL), FMCG(BULL), AVIATION(BEAR)
+
+INDIAN SECTOR OUTLOOK (from global news)
+----------------------------------------
+  ▲ DEFENCE           : BULLISH        (score +22.1)  |  HAL, BEL, BHEL
+  ▲ TELECOM           : BULLISH        (score +13.9)  |  BHARTIARTL, IDEA
+  ▲ GREEN_ENERGY      : BULLISH        (score +12.4)  |  ADANIGREEN, TATAPOWER, GREENKO
+  ▲ BANKING           : BULLISH        (score +7.9)  |  HDFCBANK, ICICIBANK, KOTAKBANK
+  ▲ OIL_GAS           : BULLISH        (score +7.1)  |  RELIANCE, ONGC, IOC
+  ▲ POWER             : BULLISH        (score +5.1)  |  NTPC, POWERGRID, TATAPOWER
+  ▲ PHARMA            : BULLISH        (score +4.1)  |  SUNPHARMA, DRREDDY, CIPLA
+  ▲ INFRA             : BULLISH        (score +2.6)  |  LT, KNR, NCC
+  ▲ CEMENT            : BULLISH        (score +1.8)  |  ULTRACEMCO, SHREECEM, AMBUJACEMENT
+  ▲ GOLD              : BULLISH        (score +1.6)  |  
+  ◆ AGRI              : NEUTRAL        (score +0.0)  |  UPL, PIIND, COROMANDEL
+  ◆ INSURANCE         : NEUTRAL        (score -0.2)  |  HDFCLIFE, SBILIFE, ICICIGI
+  ▼ NBFC              : BEARISH        (score -3.6)  |  BAJFINANCE, BAJAJFINSV, CHOLAFIN
+  ▼ FMCG              : BEARISH        (score -5.7)  |  HINDUNILVR, ITC, NESTLEIND
+  ▼ REALTY            : BEARISH        (score -9.9)  |  DLF, GODREJPROP, OBEROIRLTY
+  ▼ PAINTS            : BEARISH        (score -11.4)  |  ASIANPAINT, BERGER, INDIGO
+  ▼ AUTO              : BEARISH        (score -15.3)  |  MARUTI, TATAMOTORS, M&M
+  ▼ AVIATION          : BEARISH        (score -18.4)  |  INDIGO, SPICEJET
+  ▼ METALS            : BEARISH        (score -21.4)  |  TATASTEEL, JSWSTEEL, HINDALCO
+  ▼ IT                : BEARISH        (score -23.2)  |  TCS, INFY, WIPRO
+
+EVENTS BY CATEGORY
+----------------------------------------
+  TECHNOLOGY_DISRUPTION       : 45 articles
+  GEOPOLITICAL                : 20 articles
+  GOVERNMENT_POLICY           : 9 articles
+  ENERGY_COMMODITIES          : 9 articles
+  PANDEMIC_HEALTH             : 8 articles
+  LEGAL_REGULATION            : 7 articles
+  ELECTION_POLITICS           : 5 articles
+  CENTRAL_BANK                : 5 articles
+  AUTOMOBILE_EV               : 4 articles
+  CURRENCY_DEBT               : 3 articles
+  TRADE_ECONOMICS             : 3 articles
+  AVIATION_TRAVEL             : 2 articles
+  CLIMATE_ESG                 : 2 articles
+  SUPPLY_CHAIN                : 2 articles
+  NATURAL_DISASTER            : 1 articles
+  BLACK_SWAN                  : 1 articles
+  DEFENSE_SPACE               : 1 articles
+  AGRICULTURE_FOOD            : 1 articles
+  SCIENCE_INNOVATION          : 1 articles
+
+=================================================================
