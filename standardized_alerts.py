@@ -15,25 +15,40 @@ Message Types (you'll receive ONLY these 5 types):
 That's it. No noise. Only actionable.
 """
 
+import os
 import requests
 import logging
 from datetime import datetime
+from pathlib import Path
 from zoneinfo import ZoneInfo
 
 logger = logging.getLogger(__name__)
 
-TOKEN = "8979796737:AAGhw3n5YyO556A-rw60Oxbm7eJNWAF6pGo"
-CHAT_ID = "6621137200"
+# Load .env if present (for local development)
+_env_file = Path(__file__).parent / ".env"
+if _env_file.exists():
+    for line in _env_file.read_text().splitlines():
+        line = line.strip()
+        if line and not line.startswith("#") and "=" in line:
+            k, v = line.split("=", 1)
+            os.environ.setdefault(k.strip(), v.strip())
+
+TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "")
+CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID", "")
 IST = ZoneInfo("Asia/Kolkata")
 
 
 def _send(msg: str) -> bool:
+    if not TOKEN or not CHAT_ID:
+        logger.warning("Telegram not configured. Set TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID env vars.")
+        return False
     try:
         r = requests.post(f"https://api.telegram.org/bot{TOKEN}/sendMessage",
                          json={"chat_id": CHAT_ID, "text": msg, "parse_mode": "HTML"},
                          timeout=10)
         return r.status_code == 200
-    except:
+    except Exception as e:
+        logger.error(f"Telegram send failed: {e}")
         return False
 
 

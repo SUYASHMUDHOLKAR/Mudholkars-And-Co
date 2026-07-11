@@ -6,8 +6,10 @@ Fetches REAL data from NSE India website:
   2. Options chain (call/put OI, volume, unusual activity)
 
 No API key needed. Free. Direct from NSE.
+Includes retry/backoff to handle NSE rate-limiting and blocks.
 """
 
+import time
 import logging
 import requests
 import json
@@ -23,9 +25,33 @@ NSE_HEADERS = {
     "Referer": "https://www.nseindia.com/",
 }
 
+# Retry configuration
+MAX_RETRIES = 3
+BACKOFF_BASE = 2  # seconds: 2, 4, 8
+
+
+def _retry_with_backoff(func):
+    """Decorator: retry a function with exponential backoff on failure."""
+    def wrapper(*args, **kwargs):
+        last_error = None
+        for attempt in range(1, MAX_RETRIES + 1):
+            try:
+                return func(*args, **kwargs)
+            except (requests.exceptions.RequestException, requests.exceptions.Timeout,
+                    requests.exceptions.ConnectionError, json.JSONDecodeError) as e:
+                last_error = e
+                if attempt < MAX_RETRIES:
+                    wait = BACKOFF_BASE ** attempt
+                    logger.warning(f"  NSE retry {attempt}/{MAX_RETRIES} after {wait}s: {e}")
+                    time.sleep(wait)
+                else:
+                    logger.error(f"  NSE failed after {MAX_RETRIES} retries: {e}")
+        raise last_error if last_error else RuntimeError("NSE fetch failed")
+    return wrapper
+
 
 class NSEDataFeed:
-    """Fetches live data directly from NSE India website."""
+    """Fetches live data directly from NSE India website with retry/backoff."""
 
     def __init__(self):
         self.session = requests.Session()
@@ -33,11 +59,49 @@ class NSEDataFeed:
         self._init_session()
 
     def _init_session(self):
-        """Hit NSE homepage first to get cookies (required)."""
-        try:
-            self.session.get("https://www.nseindia.com", timeout=10)
-        except:
-            pass
+        """Hit NSE homepage first to get cookies (required). Retries on failure."""
+        for attempt in range(1, MAX_RETRIES + 1):
+            try:
+                resp = self.session.get("https://www.nseindia.com", timeout=10)
+                if resp.status_code == 200:
+                    return
+            except Exception as e:
+                if attempt < MAX_RETRIES:
+                    wait = BACKOFF_BASE ** attempt
+                    logger.warning(f"  NSE session init retry {attempt}: {e} (waiting {wait}s)")
+                    time.sleep(wait)
+                else:
+                    logger.error(f"  NSE session init failed after {MAX_RETRIES} retries")
+
+    def _get_with_retry(self, url: str, timeout: int = 12) -> Optional[requests.Response]:
+        """GET request with automatic retry and session refresh."""
+        for attempt in range(1, MAX_RETRIES + 1):
+            try:
+                resp = self.session.get(url, timeout=timeout)
+                if resp.status_code == 200:
+                    return resp
+                elif resp.status_code in (401, 403):
+                    # Session expired — refresh cookies
+                    logger.info(f"  NSE session expired (HTTP {resp.status_code}), refreshing...")
+                    self._init_session()
+                elif resp.status_code == 429:
+                    # Rate limited
+                    wait = BACKOFF_BASE ** (attempt + 1)  # longer wait for rate limit
+                    logger.warning(f"  NSE rate limited (429). Waiting {wait}s...")
+                    time.sleep(wait)
+                else:
+                    logger.warning(f"  NSE HTTP {resp.status_code} for {url}")
+            except (requests.exceptions.Timeout, requests.exceptions.ConnectionError) as e:
+                if attempt < MAX_RETRIES:
+                    wait = BACKOFF_BASE ** attempt
+                    logger.warning(f"  NSE retry {attempt}/{MAX_RETRIES}: {e} (waiting {wait}s)")
+                    time.sleep(wait)
+                    # Refresh session on connection errors
+                    self._init_session()
+                else:
+                    logger.error(f"  NSE request failed after {MAX_RETRIES} retries: {url}")
+                    return None
+        return None
 
     # ═══════════════════════════════════════════════════════════
     # FII/DII DAILY DATA
@@ -53,14 +117,14 @@ class NSEDataFeed:
         """
         try:
             url = "https://www.nseindia.com/api/fiidiiTradeReact"
-            resp = self.session.get(url, timeout=10)
+            resp = self._get_with_retry(url)
 
-            if resp.status_code != 200:
+            if not resp or resp.status_code != 200:
                 # Fallback URL
                 url = "https://www.nseindia.com/api/fiidiiActivity"
-                resp = self.session.get(url, timeout=10)
+                resp = self._get_with_retry(url)
 
-            if resp.status_code != 200:
+            if not resp or resp.status_code != 200:
                 return self._fii_fallback()
 
             data = resp.json()
@@ -152,9 +216,9 @@ class NSEDataFeed:
             if symbol not in ("NIFTY", "BANKNIFTY", "FINNIFTY"):
                 url = f"https://www.nseindia.com/api/option-chain-equities?symbol={symbol}"
 
-            resp = self.session.get(url, timeout=15)
-            if resp.status_code != 200:
-                return {"error": f"HTTP {resp.status_code}", "symbol": symbol}
+            resp = self._get_with_retry(url, timeout=15)
+            if not resp or resp.status_code != 200:
+                return {"error": f"HTTP {resp.status_code if resp else 'timeout'}", "symbol": symbol}
 
             data = resp.json()
             records = data.get("records", {})

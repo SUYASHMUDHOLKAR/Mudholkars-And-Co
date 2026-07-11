@@ -2,10 +2,14 @@ name: 🏢 Mudholkars & Co
 
 on:
   schedule:
-    - cron: '*/15 3-10 * * 1-5'  # Trading: every 15 min Mon-Fri
-    - cron: '0 */2 * * *'        # Research: every 2 hours
-    - cron: '30 4 * * 6'         # Weekend deep scan
-    - cron: '30 14 * * 0'        # Sunday learning review
+    # Trading hours: every 15 min, Mon-Fri, 9:00-15:30 IST (3:30-10:00 UTC)
+    - cron: '*/15 3-10 * * 1-5'
+    # Research: every 2 hours (off-market intel scan)
+    - cron: '0 */2 * * *'
+    # Weekend strategy: Saturday 10:00 IST (4:30 UTC)
+    - cron: '30 4 * * 6'
+    # Sunday learning review: 20:00 IST (14:30 UTC)
+    - cron: '30 14 * * 0'
   workflow_dispatch:
 
 jobs:
@@ -26,6 +30,8 @@ jobs:
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          INITIAL_CAPITAL: ${{ secrets.INITIAL_CAPITAL || '1000000' }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
         run: python run_github.py
 
       - name: Save reports

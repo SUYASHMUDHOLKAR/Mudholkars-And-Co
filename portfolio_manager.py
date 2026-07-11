@@ -1,20 +1,21 @@
 """
 portfolio_manager.py
 --------------------
-Mudholkars and Co — AGGRESSIVE Portfolio Manager
+Mudholkars and Co — Portfolio Manager
 
-Capital: ₹5,000 (ultra-aggressive mode)
-Strategy: Maximum growth with tight risk control
+Capital: ₹10,00,000 (₹10 Lakh) — Target: ₹1 Crore
+Strategy: Swing + Positional with tight risk control
 
-With ₹5000:
-  - Max 2 positions at a time (₹2500 each)
-  - Targets: +5-10% per trade
-  - Stop-loss: -3% strict
-  - Focus: high-momentum, small/mid cap stocks with buzz
-  - Hold time: 1-5 days (swing + BTST)
-  - Expected: 15-30 trades/month
+With ₹10L:
+  - Max 5 positions at a time (~₹2L each)
+  - Targets: +5-15% per trade
+  - Stop-loss: -3% strict (trail after +3%)
+  - Focus: high-conviction consensus plays (4+ agents agree)
+  - Hold time: 1-21 days (swing + positional)
+  - Expected: 5-10 trades/month (quality over quantity)
 """
 
+import os
 import json
 import logging
 from datetime import datetime, date
@@ -23,21 +24,23 @@ from zoneinfo import ZoneInfo
 
 logger = logging.getLogger(__name__)
 
+CAPITAL = int(os.environ.get("INITIAL_CAPITAL", 1000000))
+
 
 class PortfolioManager:
     """
-    Aggressive portfolio manager for small capital.
-    Makes every rupee work hard.
+    Portfolio manager for ₹10L capital.
+    Quality trades only — consensus-driven.
     """
 
-    def __init__(self, capital: float = 5000):
-        self.capital = capital
-        self.available_cash = capital
+    def __init__(self, capital: float = None):
+        self.capital = capital or CAPITAL
+        self.available_cash = self.capital
         self.positions = []
         self.closed_trades = []
         self.pnl = 0.0
-        self.max_positions = 2
-        self.max_risk_per_trade_pct = 3.0  # tight 3% SL
+        self.max_positions = int(os.environ.get("MAX_POSITIONS", 5))
+        self.max_risk_per_trade_pct = float(os.environ.get("MAX_RISK_PCT", 2.0))
         self.target_multiplier = 2.5  # Risk:Reward = 1:2.5
         self.state_file = Path("reports/portfolio_state.json")
 
@@ -52,7 +55,7 @@ class PortfolioManager:
         """Check if we can take a new position."""
         return (
             len(self.positions) < self.max_positions
-            and self.available_cash >= 500  # minimum ₹500 per trade
+            and self.available_cash >= 10000  # minimum ₹10K per trade
         )
 
     def open_position(self, stock: str, price: float, quantity: int,
@@ -140,20 +143,20 @@ class PortfolioManager:
         return actions
 
     # ------------------------------------------------------------------
-    # Position sizing for ₹5000 capital
+    # Position sizing for ₹10L capital
     # ------------------------------------------------------------------
 
     def calculate_aggressive_position(self, stock: str, price: float,
                                        stop_loss: float) -> dict:
         """
-        Calculate position for aggressive ₹5000 portfolio.
-        Uses 50% of available cash per trade (max 2 positions).
+        Calculate position size based on risk management.
+        Allocates max 20% of capital per position (5 positions max).
         """
-        allocation = self.available_cash * 0.50  # 50% per trade
+        allocation = min(self.available_cash * 0.50, self.capital * 0.20)  # max 20% of total capital
         quantity = int(allocation / price)
 
         if quantity <= 0:
-            return {"approved": False, "reason": "Price too high for capital"}
+            return {"approved": False, "reason": "Price too high for allocation"}
 
         cost = quantity * price
         risk_per_share = price - stop_loss
@@ -202,11 +205,11 @@ class PortfolioManager:
         avg_loss = sum(t["pnl"] for t in losers) / len(losers) if losers else 0
 
         return {
-            "initial_capital":  5000,
+            "initial_capital":  CAPITAL,
             "current_capital":  round(self.capital, 2),
             "available_cash":   round(self.available_cash, 2),
             "total_pnl":        round(total_pnl, 2),
-            "pnl_pct":          round(total_pnl / 5000 * 100, 2),
+            "pnl_pct":          round(total_pnl / CAPITAL * 100, 2),
             "total_trades":     total_trades,
             "winners":          len(winners),
             "losers":           len(losers),
@@ -227,7 +230,7 @@ class PortfolioManager:
         print(f"  💼 PORTFOLIO STATUS — Mudholkars and Co")
         print(f"  {ist}")
         print(f"{'='*55}")
-        print(f"  Capital:     ₹{perf['current_capital']:,.2f} (started ₹5,000)")
+        print(f"  Capital:     ₹{perf['current_capital']:,.2f} (started ₹{CAPITAL:,.0f})")
         print(f"  Cash Free:   ₹{perf['available_cash']:,.2f}")
         print(f"  Total P&L:   ₹{perf['total_pnl']:+,.2f} ({perf['pnl_pct']:+.1f}%)")
         print(f"  Trades:      {perf['total_trades']} total | Win: {perf['win_rate']:.0f}%")
