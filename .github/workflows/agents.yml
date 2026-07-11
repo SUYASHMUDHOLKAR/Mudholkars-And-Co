@@ -2,10 +2,14 @@ name: 🏢 Mudholkars & Co — 24/7 Agent Army (Auto-Healing)
 
 on:
   schedule:
-    # Trading hours: every 15 min (IST 9:15-15:30 = UTC 3:45-10:00)
+    # TIER 1: Trading hours — quick scan 200 stocks every 15 min
     - cron: '*/15 3-10 * * 1-5'
-    # Research hours: every 60 min (24/7)
-    - cron: '0 */1 * * *'
+    # TIER 2: Post-market 4 PM IST (10:30 UTC) — FULL scan ALL 2370 stocks
+    - cron: '30 10 * * 1-5'
+    # TIER 3: Weekend deep analysis (Saturday 10 AM IST = 4:30 UTC)
+    - cron: '30 4 * * 6'
+    # Research: every 2 hours off-market
+    - cron: '0 */2 * * *'
     # Weekly learning review: Sunday 8 PM IST (UTC 14:30)
     - cron: '30 14 * * 0'
 
@@ -28,7 +32,7 @@ env:
 jobs:
   run-company:
     runs-on: ubuntu-latest
-    timeout-minutes: 12
+    timeout-minutes: 60
     # ═══════════════════════════════════════════════
     # AUTO-HEAL: Retry entire job up to 3 times
     # ═══════════════════════════════════════════════
@@ -104,9 +108,11 @@ jobs:
             return 1
           }
 
-          # Weekend = research + strategy
+          # Weekend = research + strategy + DEEP SCAN
           if [ "$DOW" -ge 6 ]; then
-            echo "📚 WEEKEND MODE"
+            echo "📚 WEEKEND MODE — DEEP ANALYSIS (all 2,370 stocks)"
+            run_with_retry "Deep Full Scan" "python full_pipeline.py"
+            run_with_retry "Insider Deals" "python nse_delivery_scanner.py"
             run_with_retry "Global Intel" "python global-intel-agent/intel_agent.py --once"
             run_with_retry "India Intel" "python india-intel-agent/india_intel_agent.py --once"
             run_with_retry "Social Media" "python social-media-agent/social_media_agent.py --once"
@@ -132,10 +138,11 @@ jobs:
             exit 0
           fi
 
-          # Post-market (16:00-17:00)
+          # Post-market (16:00-17:00) — FULL SCAN ALL 2370 STOCKS
           if [ "$HOUR" -eq 16 ]; then
-            echo "📊 POST-MARKET"
-            run_with_retry "Full Scan" "python full_pipeline.py"
+            echo "📊 POST-MARKET — FULL SCAN (all 2,370 stocks)"
+            run_with_retry "Full Scan ALL" "python full_pipeline.py"
+            run_with_retry "Insider Deals" "python nse_delivery_scanner.py"
             run_with_retry "Sector Intel" "python sector-intel-division/run_sectors.py --all --period 1mo"
             run_with_retry "Agent Meeting" "python agent_meeting.py"
             exit 0

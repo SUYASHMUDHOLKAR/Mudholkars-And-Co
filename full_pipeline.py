@@ -69,19 +69,9 @@ def run_full_pipeline(quick: bool = False):
         # Quick mode: top 200 stocks (Nifty 200 equivalent)
         scan_stocks = [f"{s}.NS" for s in all_nse[:200]]
     else:
-        scan_stocks = [
-            "RELIANCE.NS", "TCS.NS", "HDFCBANK.NS", "INFY.NS", "ICICIBANK.NS",
-            "SBIN.NS", "BAJFINANCE.NS", "SUNPHARMA.NS", "LT.NS", "MARUTI.NS",
-            "TITAN.NS", "HCLTECH.NS", "ADANIENT.NS", "ONGC.NS", "NTPC.NS",
-            "COALINDIA.NS", "HAL.NS", "BHARTIARTL.NS", "WIPRO.NS", "TATASTEEL.NS",
-            "JSWSTEEL.NS", "HINDALCO.NS", "DRREDDY.NS", "CIPLA.NS", "DIVISLAB.NS",
-            "NESTLEIND.NS", "BRITANNIA.NS", "ASIANPAINT.NS", "KOTAKBANK.NS",
-            "AXISBANK.NS", "INDUSINDBK.NS", "TECHM.NS", "DLF.NS", "GODREJPROP.NS",
-            "IRFC.NS", "SUZLON.NS", "TATAPOWER.NS", "ADANIGREEN.NS",
-            "IRCTC.NS", "ZOMATO.NS", "PIIND.NS", "CHOLAFIN.NS",
-            "MUTHOOTFIN.NS", "BEL.NS", "DIXON.NS", "TRENT.NS",
-            "INDIGO.NS", "ULTRACEMCO.NS", "POWERGRID.NS", "ITC.NS",
-        ]
+        # FULL MODE: Scan ALL 2,370 NSE stocks (runs at 4 PM daily)
+        scan_stocks = [f"{s}.NS" for s in all_nse]
+        logger.info(f"FULL SCAN MODE: {len(scan_stocks)} stocks (all NSE)")
 
     ta_results = {}
     fa_results = {}
@@ -316,6 +306,7 @@ def run_full_pipeline(quick: bool = False):
 if __name__ == "__main__":
     import argparse
     parser = argparse.ArgumentParser()
-    parser.add_argument("--quick", action="store_true")
+    parser.add_argument("--quick", action="store_true", help="Scan 200 stocks (market hours)")
+    parser.add_argument("--deep", action="store_true", help="Deep TA+FA on all stocks (weekend)")
     args = parser.parse_args()
     run_full_pipeline(quick=args.quick)
