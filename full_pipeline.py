@@ -219,6 +219,34 @@ def run_full_pipeline(quick: bool = False):
         if signals:
             all_stocks_signals[stock] = signals
 
+    # ── STEP 5b: Advanced Scanners ────────────────────────────────
+    logger.info("\n🔬 STEP 5b: Market Regime + Breakouts + Sector Momentum...")
+    try:
+        sys.path.insert(0, str(BASE))
+        from market_regime import MarketRegimeDetector
+        from breakout_scanner import BreakoutScanner
+        from sector_momentum import SectorMomentumScorer
+        from earnings_calendar import EarningsCalendar
+
+        regime = MarketRegimeDetector().detect()
+        logger.info(f"  Market Regime: {regime['regime']} | Aggression: {regime['aggression']}")
+
+        breakouts = BreakoutScanner().scan([s.replace('.NS','') for s in scan_stocks[:50]])
+        if breakouts:
+            logger.info(f"  Breakouts: {len(breakouts)} stocks breaking 52-week highs")
+            for b in breakouts[:3]:
+                all_stocks_signals.setdefault(b['symbol'], {})['Breakout'] = {
+                    'direction': 'BULLISH', 'score': 75,
+                    'signal': f'52-week breakout at {b["price"]}', 'weight': 1.5
+                }
+
+        top_sectors = SectorMomentumScorer().get_top_sectors()
+        top_sector_names = [s['sector'] for s in top_sectors if s['signal'] == 'BUY']
+        logger.info(f"  Hot sectors: {top_sector_names}")
+
+    except Exception as e:
+        logger.warning(f"  Advanced scan skipped: {e}")
+
     consensus_results = ce.evaluate_batch(all_stocks_signals)
 
     # ── STEP 6: RISK AGENT ────────────────────────────────────────
