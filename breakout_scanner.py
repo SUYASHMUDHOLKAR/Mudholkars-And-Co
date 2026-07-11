@@ -117,7 +117,7 @@ class BreakoutScanner:
         ns_sym: str,
         batch_data,
         yf,
-    ) -> Dict[str, Any] | None:
+    ) -> dict:
         """
         Check a single symbol.  Uses batch_data if available,
         otherwise falls back to individual yfinance download.
