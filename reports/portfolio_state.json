@@ -4,45 +4,46 @@
   "positions": [],
   "closed_trades": [],
   "pnl": 0,
+  "target": 10000000,
+  "start_date": "2026-07-14",
   "strategy": {
-    "intraday": {
-      "allocation_pct": 30,
-      "capital": 300000,
-      "max_positions": 3,
-      "target_pct": 1.5,
-      "sl_pct": 0.75,
-      "trades_per_day": 3,
-      "exit_by": "15:15",
-      "order_type": "MIS"
-    },
     "swing": {
-      "allocation_pct": 40,
-      "capital": 400000,
+      "allocation_pct": 60,
+      "capital": 600000,
       "max_positions": 4,
       "target_pct": 5.0,
       "sl_pct": 3.0,
       "hold_days": "3-7 days",
-      "order_type": "CNC"
+      "order_type": "CNC",
+      "trades_per_week": 3
     },
     "positional": {
-      "allocation_pct": 20,
-      "capital": 200000,
+      "allocation_pct": 30,
+      "capital": 300000,
       "max_positions": 3,
-      "target_pct": 15.0,
-      "sl_pct": 7.0,
-      "hold_days": "2-8 weeks",
-      "order_type": "CNC"
+      "target_pct": 12.0,
+      "sl_pct": 5.0,
+      "hold_days": "2-6 weeks",
+      "order_type": "CNC",
+      "trades_per_month": 3
     },
     "investment": {
       "allocation_pct": 10,
       "capital": 100000,
-      "max_positions": 5,
-      "target_pct": 50.0,
+      "max_positions": 3,
+      "target_pct": 40.0,
       "sl_pct": 15.0,
       "hold_days": "3-12 months",
-      "order_type": "CNC"
+      "order_type": "CNC",
+      "trades_per_quarter": 2
     }
   },
-  "target": 10000000,
-  "start_date": "2026-07-14"
+  "rules": {
+    "follow_blindly": true,
+    "max_risk_per_trade_pct": 3,
+    "auto_track_positions": true,
+    "auto_learn": true,
+    "no_intraday": true,
+    "reason": "Full-time job. GTT handles exits. 2 min/day max effort."
+  }
 }
