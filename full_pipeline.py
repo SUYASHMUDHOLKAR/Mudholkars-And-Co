@@ -59,13 +59,15 @@ def run_full_pipeline(quick: bool = False):
     fa = FundamentalAnalyst()
 
     # Stocks to scan
+    # Load full NSE stock universe
+    sys.path.insert(0, str(BASE / "market-intel-division"))
+    from core.stock_universe import StockUniverse
+    su = StockUniverse(str(BASE / "market-intel-division"))
+    all_nse = su.get_all_stocks()
+    
     if quick:
-        scan_stocks = [
-            "RELIANCE.NS", "TCS.NS", "HDFCBANK.NS", "INFY.NS", "ICICIBANK.NS",
-            "SBIN.NS", "BAJFINANCE.NS", "SUNPHARMA.NS", "LT.NS", "MARUTI.NS",
-            "TITAN.NS", "HCLTECH.NS", "ADANIENT.NS", "ONGC.NS", "NTPC.NS",
-            "COALINDIA.NS", "HAL.NS", "BHARTIARTL.NS", "WIPRO.NS", "TATASTEEL.NS",
-        ]
+        # Quick mode: top 200 stocks (Nifty 200 equivalent)
+        scan_stocks = [f"{s}.NS" for s in all_nse[:200]]
     else:
         scan_stocks = [
             "RELIANCE.NS", "TCS.NS", "HDFCBANK.NS", "INFY.NS", "ICICIBANK.NS",

@@ -49,6 +49,10 @@ jobs:
       - name: 📦 Install dependencies
         run: pip install -r requirements.txt -q
 
+      - name: 🔧 Setup Python Path
+        run: |
+          echo "PYTHONPATH=$GITHUB_WORKSPACE:$GITHUB_WORKSPACE/market-intel-division:$GITHUB_WORKSPACE/social-media-agent:$GITHUB_WORKSPACE/india-social-agent:$GITHUB_WORKSPACE/buzz-hunter-agent:$GITHUB_WORKSPACE/global-intel-agent:$GITHUB_WORKSPACE/india-intel-agent" >> $GITHUB_ENV
+
       - name: 🔐 Create .env from secrets
         run: |
           echo "GROWW_ACCESS_TOKEN=${{ secrets.GROWW_ACCESS_TOKEN }}" >> .env
@@ -100,13 +104,14 @@ jobs:
             return 1
           }
 
-          # Weekend = research only
+          # Weekend = research + strategy
           if [ "$DOW" -ge 6 ]; then
             echo "📚 WEEKEND MODE"
             run_with_retry "Global Intel" "python global-intel-agent/intel_agent.py --once"
             run_with_retry "India Intel" "python india-intel-agent/india_intel_agent.py --once"
             run_with_retry "Social Media" "python social-media-agent/social_media_agent.py --once"
             run_with_retry "Buzz Hunter" "python buzz-hunter-agent/buzz_hunter.py --once"
+            run_with_retry "Weekend Strategist" "python weekend_strategist.py"
             run_with_retry "Agent Meeting" "python agent_meeting.py"
             exit 0
           fi
